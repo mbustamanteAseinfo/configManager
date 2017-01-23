@@ -1,0 +1,57 @@
+﻿using Microsoft.SqlServer.Management.Common;
+using Microsoft.SqlServer.Management.Smo;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace EvoScriptExecute
+{
+    class SqlConnectionHelper
+    {
+        private readonly string _connectionString;
+        private readonly SqlConnectionStringBuilder _connectionStringBuilder;
+
+        public SqlConnectionHelper(string connectionString)
+        {
+            _connectionString = connectionString;
+            _connectionStringBuilder = new SqlConnectionStringBuilder(_connectionString);
+        }
+
+        public SqlConnectionHelper(SqlConnectionStringBuilder sqlConnectionStringBuilder)
+        {
+            _connectionString = sqlConnectionStringBuilder.ToString();
+            _connectionStringBuilder = sqlConnectionStringBuilder;
+        }
+
+        public string ConnectionString
+        {
+            get { return _connectionString; }
+        }
+
+        public string ServerName
+        {
+            get { return _connectionStringBuilder.DataSource; }
+        }
+
+        public string DatabaseName
+        {
+            get { return _connectionStringBuilder.InitialCatalog; }
+        }
+
+        public Server GetServer()
+        {
+            var sqlConnection = new SqlConnection(_connectionString);
+            return new Server(new ServerConnection(sqlConnection));
+        }
+
+        public void ExecuteScript(string scriptText)
+        {
+            var server = GetServer();
+            server.ConnectionContext.ExecuteNonQuery(scriptText);
+        }
+    }
+}

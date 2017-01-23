@@ -1,0 +1,25 @@
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.pdb
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.Data.ConnectionUI.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Smo.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Dmf.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Form1.resources
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Properties.Resources.resources
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.csproj.GenerateResource.Cache
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.dll
+c:\users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.manifest
+C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.application
+C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe.manifest
+C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.application
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
