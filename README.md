@@ -10,8 +10,8 @@ Este software realiza un mapa de ejecución basada en un folder estructurado que
 Este folder debe contener de manera estructurada los scripts que se desean ejecutar, siguiendo las convenciones listadas a continuacion:
 
 * Un folder contenedor pricipal que sera tomado como la ruta para el software
-* Cada directorio debe tener dos caracteres numericos que identiquen su posicion en la ejecución, un espacio, un guion, un espacio, el nombre de la base de datos donde deben ser ejecutados(estos nombres son los convencionales de Evolution), un espacio, un guion, un espacio y el nombre del directorio. Ej. 00 - Primeros Pasos
-* Cada script .sql dentro de los directorios debe tener dos caracteres numericos que identifiquen su posicion en la ejecución, un espacio, un guion, un espacio, el nombre de la base de datos donde deben ser ejecutados(estos nombres son los convencionales de Evolution), un espacio, un guion, un espacio y el nombre del script. Ej. 00 - PrimerScript.sql
+* Cada directorio debe tener dos caracteres numericos que identiquen su posicion en la ejecución, un espacio, un guion, un espacio, el nombre del directorio. Ej. 00 - Primeros Pasos
+* Cada script .sql dentro de los directorios debe tener dos caracteres numericos que identifiquen su posicion en la ejecución, un espacio, un guion, un espacio, el nombre de la base de datos donde deben ser ejecutados(estos nombres son los convencionales de Evolution), un espacio, un guion, un espacio y el nombre del script. Ej. 00 - EvoData - PrimerScript.sql
 
 ####Conevención de escritura de los scripts
 
