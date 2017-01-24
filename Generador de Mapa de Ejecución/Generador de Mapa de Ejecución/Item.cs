@@ -13,6 +13,7 @@ namespace Generador_de_Mapa_de_Ejecución
         string necesary;
         string daddy;
         string scriptName;
+        string dataBase;
 
         public string Path
         {
@@ -76,6 +77,19 @@ namespace Generador_de_Mapa_de_Ejecución
             set
             {
                 scriptName = value;
+            }
+        }
+
+        public string DataBase
+        {
+            get
+            {
+                return dataBase;
+            }
+
+            set
+            {
+                dataBase = value;
             }
         }
     }
