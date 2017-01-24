@@ -36,7 +36,7 @@ namespace Generador_de_Mapa_de_Ejecución
             List<Item> iList = new List<Item>();
             ProcessDirectory(directorio, "0", iList);
             string json = JsonConvert.SerializeObject(iList, Formatting.Indented);
-            string fileToSave = "mapadeejecucion.json";
+            string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
             if (File.Exists(fileToSave)) {
                 File.Delete(fileToSave);
                 File.WriteAllText(fileToSave, json);
@@ -59,12 +59,13 @@ namespace Generador_de_Mapa_de_Ejecución
                 foreach (FileInfo f in fileEntries)
                 {
                     Item nItem = new Item();
-                    nItem.Path = f.FullName;
-                    nItem.Daddy = dadStep.Replace(' ', '.') + f.Name.Split('-')[0].Trim().ToString();
-                    nItem.Step = f.Name.Split('-')[0].Trim().ToString();
-                    nItem.Necesary = "1";
-                    nItem.ScriptName = f.Name;
+                    nItem.Ruta = f.FullName;
+                    nItem.Posicion = dadStep.Replace(' ', '.') + f.Name.Split('-')[0].Trim().ToString();
+                    nItem.Paso = f.Name.Split('-')[0].Trim().ToString();
+                    nItem.Necesario = "1";
+                    nItem.Nombre = f.Name;
                     nItem.DataBase = f.Name.Split('-')[1].Trim().ToString();
+                    nItem.Ejecutado = "0";
                     iList.Add(nItem);
                 }
             }
