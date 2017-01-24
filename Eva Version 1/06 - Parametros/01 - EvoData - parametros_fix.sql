@@ -195,7 +195,11 @@ INSERT tbl_temp_apa_alcances_parametros(apa_fecha_inicio, apa_fecha_final, apa_c
 ( NULL, NULL, 'BaseXIII_GastoRep_CodigoAgrupador', 'pa', NULL, NULL, NULL, '46', 'admin', '2016-08-04 08:28:59', NULL, NULL),
 ( NULL, NULL, 'CodigoDoc_CedulaCSSExtranjeros', 'pa', NULL, NULL, NULL, '15', 'admin', '2016-08-16 14:22:59', NULL, NULL),
 ( NULL, NULL, 'TiempoNoTrabajadoValidaTraslapeConPermiso', 'pa', NULL, NULL, NULL, '0', 'admin', '2016-09-30 08:54:17', NULL, NULL),
-( NULL, NULL, 'CodigoDoc_FichaDigitalCSS', 'pa', NULL, NULL, NULL, '16', 'admin', '2016-10-20 09:01:57', NULL, NULL)
+( NULL, NULL, 'CodigoDoc_FichaDigitalCSS', 'pa', NULL, NULL, NULL, '16', 'admin', '2016-10-20 09:01:57', NULL, NULL),
+( NULL, NULL, 'CodigoRubroSalario', 'pa', NULL, NULL, NULL, '1', NULL, NULL, NULL, NULL),
+( NULL, NULL, 'CodigoPlanillaQuincenal', 'pa', NULL, NULL, NULL, '1', NULL, NULL, NULL, NULL),
+( NULL, NULL, 'CuotaEmpleadoSeguroSocial', 'pa', NULL, NULL, NULL, '9.75', NULL, NULL, NULL, NULL),
+( NULL, NULL, 'CuotaPatronoSeguroSocial', 'pa', NULL, NULL, NULL, '12.25', NULL, NULL, NULL, NULL)
 GO
 insert into gen.apa_alcances_parametros(apa_fecha_inicio, apa_fecha_final, apa_codpar, apa_codpai, apa_codgrc, apa_codcia, apa_codcdt, apa_valor, apa_usuario_grabacion, apa_fecha_grabacion, apa_usuario_modificacion, apa_fecha_modificacion) select apa_fecha_inicio, apa_fecha_final, apa_codpar, apa_codpai, apa_codgrc, apa_codcia, apa_codcdt, apa_valor, apa_usuario_grabacion, apa_fecha_grabacion, apa_usuario_modificacion, apa_fecha_modificacion from tbl_temp_apa_alcances_parametros
 where apa_codpar not in (select apa_codpar from gen.apa_alcances_parametros) and apa_codpai = 'pa' and apa_codpar in (select par_codigo from gen.par_parametros);

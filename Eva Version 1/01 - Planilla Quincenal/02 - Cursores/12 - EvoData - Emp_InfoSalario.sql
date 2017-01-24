@@ -70,7 +70,7 @@ SELECT emp_codigo,
   from exp.emp_empleos
   join exp.exp_expedientes on exp_codigo = emp_codexp
   join eor.plz_plazas on emp_codplz = plz_codigo
-  join exp.fn_get_datos_rubro_salarial (null, ''S'',@fecha_fin_ppl,''pa'') sal on sal.codemp = emp_codigo and sal.codtpl = emp_codtpl
+  left join exp.fn_get_datos_rubro_salarial (null, ''S'',@fecha_fin_ppl,''pa'') sal on sal.codemp = emp_codigo and sal.codtpl = emp_codtpl
   left join exp.fn_get_datos_rubro_salarial(NULL, ''G'', @fecha_fin_ppl, ''pa'') gto on gto.codemp = emp_codigo and gto.codtpl = emp_codtpl
  WHERE plz_codcia = @codcia
    and ((emp_estado = ''A'') or (emp_estado = ''R''))
