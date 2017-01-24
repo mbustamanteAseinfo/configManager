@@ -23,3 +23,6 @@ C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoS
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
+C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
+C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
+C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
