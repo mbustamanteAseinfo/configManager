@@ -12,7 +12,7 @@ namespace EvoScriptExecute
 {
     class SqlConnectionHelper
     {
-        private readonly string _connectionString;
+        private string _connectionString;
         private readonly SqlConnectionStringBuilder _connectionStringBuilder;
 
         public SqlConnectionHelper(string connectionString)
@@ -30,16 +30,19 @@ namespace EvoScriptExecute
         public string ConnectionString
         {
             get { return _connectionString; }
+            set { _connectionString = value; }
         }
 
         public string ServerName
         {
             get { return _connectionStringBuilder.DataSource; }
+            
         }
 
         public string DatabaseName
         {
             get { return _connectionStringBuilder.InitialCatalog; }
+            set { _connectionStringBuilder.InitialCatalog = value; ConnectionString = _connectionStringBuilder.ToString(); }
         }
 
         public Server GetServer()

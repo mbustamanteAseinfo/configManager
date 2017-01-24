@@ -9,73 +9,101 @@ namespace EvoScriptExecute
     class Item
     {
 
-        string path;
-        string step;
-        string necesary;
-        string daddy;
-        string scriptName;
-        public string Path
+        string ruta;
+        string paso;
+        string necesario;
+        string posicion;
+        string nombre;
+        string dataBase;
+        string ejecutado;
+        public string Ruta
         {
             get
             {
-                return path;
+                return ruta;
             }
 
             set
             {
-                path = value;
+                ruta = value;
             }
         }
 
-        public string Step
+        public string Paso
         {
             get
             {
-                return step;
+                return paso;
             }
 
             set
             {
-                step = value;
+                paso = value;
             }
         }
 
-        public string Necesary
+        public string Necesario
         {
             get
             {
-                return necesary;
+                return necesario;
             }
 
             set
             {
-                necesary = value;
+                necesario = value;
             }
         }
 
-        public string Daddy
+        public string Posicion
         {
             get
             {
-                return daddy;
+                return posicion;
             }
 
             set
             {
-                daddy = value;
+                posicion = value;
             }
         }
 
-        public string ScriptName
+        public string Nombre
         {
             get
             {
-                return scriptName;
+                return nombre;
             }
 
             set
             {
-                scriptName = value;
+                nombre = value;
+            }
+        }
+
+        public string DataBase
+        {
+            get
+            {
+                return dataBase;
+            }
+
+            set
+            {
+                dataBase = value;
+            }
+        }
+
+        public string Ejecutado
+        {
+            get
+            {
+                return ejecutado;
+            }
+
+            set
+            {
+                ejecutado = value;
             }
         }
     }
