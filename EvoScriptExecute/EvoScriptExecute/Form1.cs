@@ -46,106 +46,123 @@ namespace EvoScriptExecute
 
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
+                
                 _directory = folderBrowserDialog.SelectedPath;
+                if (!File.Exists(_directory + "\\mapadeejecucion.json")) {
+                    MessageBox.Show("El directorio no contiene el mapa de ejecución(mapadeejecución.json)");
+                    _directory = "";
+                }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            button3.Text = "Iniciado";
-            button3.Enabled = false;
-            bool error = false;
-            _evoConfig = txtEvoConfig.Text;
-            _evoData = txtEvoData.Text;
-            _evoTemp = txtEvoTemp.Text;
-            var sqlConnectionHelper = new SqlConnectionHelper(_conString);
-            string jsonConfig = _directory + "\\mapadeejecucion.json";
-            string json = File.ReadAllText(jsonConfig);
-            var items = JsonConvert.DeserializeObject<List<Item>>(json);
-
-            var ordered = from c in items orderby c.Posicion select c;
-            var orderedEvoConfig = from c in items where c.DataBase == "EvoConfig" orderby c.Posicion select c;
-            var orderedEvoTemp = from c in items where c.DataBase == "EvoTemp" orderby c.Posicion select c;
-
-            if (ordered.Count() > 0)
+            if (_directory.Length > 0)
             {
-
-                /*string[] arr = _conString.Split(';');
-                var catalog = arr.Select((value, index) => new { Value = value, Index = index }).Where(x => x.Value.Contains("Catalog")).FirstOrDefault();
-                string[] dataBase = catalog.Value.Split('=');
-                dataBase[1] = _evoData;
-                arr[catalog.Index] = string.Join("=", dataBase);
-                _conString = string.Join(";", arr);*/
-                
-                foreach (Item i in ordered)
+                if (_conString.Length > 0)
                 {
-                    if (i.Ejecutado == "0")
+                    button3.Text = "Iniciado";
+                    button3.Enabled = false;
+                    bool error = false;
+                    _evoConfig = txtEvoConfig.Text;
+                    _evoData = txtEvoData.Text;
+                    _evoTemp = txtEvoTemp.Text;
+                    var sqlConnectionHelper = new SqlConnectionHelper(_conString);
+                    string jsonConfig = _directory + "\\mapadeejecucion.json";
+                    string json = File.ReadAllText(jsonConfig);
+                    var items = JsonConvert.DeserializeObject<List<Item>>(json);
+
+                    var ordered = from c in items orderby c.Posicion select c;
+                    var orderedEvoConfig = from c in items where c.DataBase == "EvoConfig" orderby c.Posicion select c;
+                    var orderedEvoTemp = from c in items where c.DataBase == "EvoTemp" orderby c.Posicion select c;
+
+                    if (ordered.Count() > 0)
                     {
-                        textBox1.Text += "Ejecutando el script " + i.Nombre + "\r\n";
-                        var fileInfo = new FileInfo(i.Ruta);
-                        string script = fileInfo.OpenText().ReadToEnd();
-                        try
+
+                        /*string[] arr = _conString.Split(';');
+                        var catalog = arr.Select((value, index) => new { Value = value, Index = index }).Where(x => x.Value.Contains("Catalog")).FirstOrDefault();
+                        string[] dataBase = catalog.Value.Split('=');
+                        dataBase[1] = _evoData;
+                        arr[catalog.Index] = string.Join("=", dataBase);
+                        _conString = string.Join(";", arr);*/
+
+                        foreach (Item i in ordered)
                         {
-                            if (i.DataBase == "EvoData")
+                            if (i.Ejecutado == "0")
                             {
-                                if (sqlConnectionHelper.DatabaseName != _evoData)
+                                textBox1.Text += "Ejecutando el script " + i.Nombre + "\r\n";
+                                var fileInfo = new FileInfo(i.Ruta);
+                                string script = fileInfo.OpenText().ReadToEnd();
+                                try
                                 {
-                                    sqlConnectionHelper.DatabaseName = _evoData;
-                                }
-                            }
-                            else
-                            {
-                                if (i.DataBase == "EvoConfig")
-                                {
-                                    if (sqlConnectionHelper.DatabaseName != _evoConfig)
+                                    if (i.DataBase == "EvoData")
                                     {
-                                        sqlConnectionHelper.DatabaseName = _evoConfig;
-                                    }
-                                }
-                                else
-                                {
-                                    if (i.DataBase == "EvoTemp")
-                                    {
-                                        if (sqlConnectionHelper.DatabaseName != _evoTemp)
+                                        if (sqlConnectionHelper.DatabaseName != _evoData)
                                         {
-                                            sqlConnectionHelper.DatabaseName = _evoTemp;
+                                            sqlConnectionHelper.DatabaseName = _evoData;
                                         }
                                     }
+                                    else
+                                    {
+                                        if (i.DataBase == "EvoConfig")
+                                        {
+                                            if (sqlConnectionHelper.DatabaseName != _evoConfig)
+                                            {
+                                                sqlConnectionHelper.DatabaseName = _evoConfig;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (i.DataBase == "EvoTemp")
+                                            {
+                                                if (sqlConnectionHelper.DatabaseName != _evoTemp)
+                                                {
+                                                    sqlConnectionHelper.DatabaseName = _evoTemp;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    sqlConnectionHelper.ExecuteScript(script);
+                                    i.Ejecutado = "1";
+                                }
+                                catch (Exception ex)
+                                {
+                                    textBox1.Text += "Error " + ex.Message + " en el script " + i.Nombre + "\r\n";
+                                    error = true;
+                                    break;
                                 }
                             }
-                            sqlConnectionHelper.ExecuteScript(script);
-                            i.Ejecutado = "1";
-                        }
-                        catch (Exception ex)
-                        {
-                            textBox1.Text += "Error " + ex.Message + " en el script " + i.Nombre + "\r\n";
-                            error = true;
-                            break;
                         }
                     }
+                    string nJson = JsonConvert.SerializeObject(ordered, Formatting.Indented);
+                    string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
+                    if (File.Exists(fileToSave))
+                    {
+                        File.Delete(fileToSave);
+                        File.WriteAllText(fileToSave, nJson);
+                    }
+                    else
+                    {
+                        File.WriteAllText(fileToSave, nJson);
+                    }
+                    if (error)
+                    {
+                        textBox2.Text = "Ejecución no finalizada";
+                    }
+                    else
+                    {
+                        textBox2.Text = "Ejecución finalizada con exito";
+                    }
+
+                    button3.Text = "Finalizado";
+                }
+                else {
+                    MessageBox.Show("Debe seleccionar una base de datos.");
                 }
             }
-            string nJson = JsonConvert.SerializeObject(ordered, Formatting.Indented);
-            string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
-            if (File.Exists(fileToSave))
-            {
-                File.Delete(fileToSave);
-                File.WriteAllText(fileToSave, nJson);
+            else {
+                MessageBox.Show("Debe seleccionar la ruta del mapa de ejecución(mapadeejecucion.json)");
             }
-            else
-            {
-                File.WriteAllText(fileToSave, nJson);
-            }
-            if (error)
-            {
-                textBox2.Text = "Ejecución no finalizada";
-            }
-            else
-            {
-                textBox2.Text = "Ejecución finalizada con exito";
-            }
-
-            button3.Text = "Finalizado";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -209,22 +226,39 @@ namespace EvoScriptExecute
 
         private void btnGenerarME_Click(object sender, EventArgs e)
         {
-
-            List<Item> iList = new List<Item>();
-            ProcessDirectory(directorio, "0", iList);
-            string json = JsonConvert.SerializeObject(iList, Formatting.Indented);
-            string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
-            if (File.Exists(fileToSave))
+            if (directorio.Length > 0)
             {
-                File.Delete(fileToSave);
-                File.WriteAllText(fileToSave, json);
+                List<Item> iList = new List<Item>();
+                ProcessDirectory(directorio, "0", iList);
+                string json = JsonConvert.SerializeObject(iList, Formatting.Indented);
+                string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
+                if (File.Exists(fileToSave))
+                {
+                    File.Delete(fileToSave);
+                    File.WriteAllText(fileToSave, json);
+                }
+                else
+                {
+                    File.WriteAllText(fileToSave, json);
+                }
+                MessageBox.Show("Proceso finalizado con exito. Encontrara el mapa de ejecución en la ruta " + fileToSave);
             }
-            else
-            {
-                File.WriteAllText(fileToSave, json);
+            else {
+                MessageBox.Show("Debe seleccionar la ruta donde se encuentra el folder estructurado que contiene los scripts.");
             }
-            MessageBox.Show("Proceso finalizado con exito. Encontrara el mapa de ejecución en la ruta " + fileToSave);
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            string _conString = "";
+            string _directory = "";
+            string _evoConfig = "";
+            string _evoData = "";
+            string _evoTemp = "";
+            string directorio = "";
+            button3.Text = "Ejecutar";
+            button3.Enabled = true;
         }
     }
 }
