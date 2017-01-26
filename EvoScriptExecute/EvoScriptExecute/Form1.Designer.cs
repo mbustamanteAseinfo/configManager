@@ -43,9 +43,15 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnGenerarME = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnSFolderME = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -149,6 +155,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(-5, -2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -195,6 +202,56 @@
             this.comboBox1.Size = new System.Drawing.Size(516, 21);
             this.comboBox1.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.btnGenerarME);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.btnSFolderME);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(547, 307);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Mapa de Ejecución";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(107, 42);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(330, 20);
+            this.textBox3.TabIndex = 8;
+            // 
+            // btnGenerarME
+            // 
+            this.btnGenerarME.Location = new System.Drawing.Point(443, 40);
+            this.btnGenerarME.Name = "btnGenerarME";
+            this.btnGenerarME.Size = new System.Drawing.Size(75, 23);
+            this.btnGenerarME.TabIndex = 7;
+            this.btnGenerarME.Text = "Generar";
+            this.btnGenerarME.UseVisualStyleBackColor = true;
+            this.btnGenerarME.Click += new System.EventHandler(this.btnGenerarME_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(248, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Seleccionar la ruta donde se encuentran los scripts";
+            // 
+            // btnSFolderME
+            // 
+            this.btnSFolderME.Location = new System.Drawing.Point(26, 40);
+            this.btnSFolderME.Name = "btnSFolderME";
+            this.btnSFolderME.Size = new System.Drawing.Size(75, 23);
+            this.btnSFolderME.TabIndex = 5;
+            this.btnSFolderME.Text = "Folder";
+            this.btnSFolderME.UseVisualStyleBackColor = true;
+            this.btnSFolderME.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +264,8 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -228,6 +287,11 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnGenerarME;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnSFolderME;
     }
 }
 

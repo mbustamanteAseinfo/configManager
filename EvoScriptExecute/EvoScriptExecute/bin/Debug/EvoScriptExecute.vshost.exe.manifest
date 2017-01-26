@@ -62,14 +62,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EvoScriptExecute.exe" size="17392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EvoScriptExecute.exe" size="19952">
       <assemblyIdentity name="EvoScriptExecute" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/DyZCacgDN3zAOmOD5uSWT2qcaw04CskYHyNYP/pETc=</dsig:DigestValue>
+        <dsig:DigestValue>2rpfexXEXW45rTusha7zAVC0MnId5lSS0ltEMBs0bzQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -6,7 +6,7 @@
     "Posicion": "00.01",
     "Nombre": "01 - EvoData - Tipo de planilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\02 - EvoData - Tipos de ingreso.sql",
@@ -15,7 +15,7 @@
     "Posicion": "00.02",
     "Nombre": "02 - EvoData - Tipos de ingreso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\03 - EvoData - Tipos de descuentos.sql",
@@ -24,7 +24,7 @@
     "Posicion": "00.03",
     "Nombre": "03 - EvoData - Tipos de descuentos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\04 - EvoData - Tipo de Reserva.sql",
@@ -33,7 +33,7 @@
     "Posicion": "00.04",
     "Nombre": "04 - EvoData - Tipo de Reserva.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\05 - EvoData - Provincias.sql",
@@ -42,7 +42,7 @@
     "Posicion": "00.05",
     "Nombre": "05 - EvoData - Provincias.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\06 - EvoData - Corregimientos.sql",
@@ -51,7 +51,7 @@
     "Posicion": "00.06",
     "Nombre": "06 - EvoData - Corregimientos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\07 - EvoData - Tipos de horas Extras.sql",
@@ -60,7 +60,7 @@
     "Posicion": "00.07",
     "Nombre": "07 - EvoData - Tipos de horas Extras.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\08 - EvoData - Agrupadores.sql",
@@ -69,7 +69,7 @@
     "Posicion": "00.08",
     "Nombre": "08 - EvoData - Agrupadores.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\09 - EvoData - Ingresos de agrupadores.sql",
@@ -78,7 +78,7 @@
     "Posicion": "00.09",
     "Nombre": "09 - EvoData - Ingresos de agrupadores.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\10 - EvoData - Descuentos agrupador.sql",
@@ -87,7 +87,7 @@
     "Posicion": "00.10",
     "Nombre": "10 - EvoData - Descuentos agrupador.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\11 - EvoData - Parametros de agrupadores.sql",
@@ -96,7 +96,7 @@
     "Posicion": "00.11",
     "Nombre": "11 - EvoData - Parametros de agrupadores.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\12 - EvoData - Alcance de parametros de agrupadores.sql",
@@ -105,7 +105,7 @@
     "Posicion": "00.12",
     "Nombre": "12 - EvoData - Alcance de parametros de agrupadores.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\13 - EvoData - Parametros de formulaciones(REVISAR ANTES DE EJECUTAR).sql",
@@ -114,7 +114,7 @@
     "Posicion": "00.13",
     "Nombre": "13 - EvoData - Parametros de formulaciones(REVISAR ANTES DE EJECUTAR).sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\14 - EvoData - fn_esVacacion.sql",
@@ -123,7 +123,7 @@
     "Posicion": "00.14",
     "Nombre": "14 - EvoData - fn_esVacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\15 - EvoData - fn_total_horas_laborales_periodo_salario.sql",
@@ -132,7 +132,7 @@
     "Posicion": "00.15",
     "Nombre": "15 - EvoData - fn_total_horas_laborales_periodo_salario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\16 - EvoData - fn_total_horas_laborales_periodo.sql",
@@ -141,7 +141,7 @@
     "Posicion": "00.16",
     "Nombre": "16 - EvoData - fn_total_horas_laborales_periodo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\17 - EvoData - FN_DIAS_DOMINGO.sql",
@@ -150,7 +150,7 @@
     "Posicion": "00.17",
     "Nombre": "17 - EvoData - FN_DIAS_DOMINGO.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\18 - EvoData - sal.fn_get_renta_periodo.sql",
@@ -159,7 +159,7 @@
     "Posicion": "00.18",
     "Nombre": "18 - EvoData - sal.fn_get_renta_periodo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\19 - EvoData - sal.fn_get_renta_anual.sql",
@@ -168,7 +168,7 @@
     "Posicion": "00.19",
     "Nombre": "19 - EvoData - sal.fn_get_renta_anual.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\20 - EvoData - pa.proc_cur_SalarioNuevoIngreso.sql",
@@ -177,7 +177,7 @@
     "Posicion": "00.20",
     "Nombre": "20 - EvoData - pa.proc_cur_SalarioNuevoIngreso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\00 - Sub-Rutinas de Formulaciones\\01 - EvoData - agrega_descuentos_historial.sql",
@@ -186,7 +186,7 @@
     "Posicion": "01.00.01",
     "Nombre": "01 - EvoData - agrega_descuentos_historial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\00 - Sub-Rutinas de Formulaciones\\02 - EvoData - agrega_ingresos_historial.sql",
@@ -195,7 +195,7 @@
     "Posicion": "01.00.02",
     "Nombre": "02 - EvoData - agrega_ingresos_historial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\00 - Sub-Rutinas de Formulaciones\\03 - EvoData - agrega_reservas_historial.sql",
@@ -204,7 +204,7 @@
     "Posicion": "01.00.03",
     "Nombre": "03 - EvoData - agrega_reservas_historial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\00 - Sub-Rutinas de Formulaciones\\04 - EvoData - writeLog.sql",
@@ -213,7 +213,7 @@
     "Posicion": "01.00.04",
     "Nombre": "04 - EvoData - writeLog.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\01 - EvoData - pa.GenPla_Inicializacion.sql",
@@ -222,7 +222,7 @@
     "Posicion": "01.01.01",
     "Nombre": "01 - EvoData - pa.GenPla_Inicializacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\02 - EvoData - pa.proc_traslada_no_aplicados.sql",
@@ -231,7 +231,7 @@
     "Posicion": "01.01.02",
     "Nombre": "02 - EvoData - pa.proc_traslada_no_aplicados.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\03 - EvoData - pa.GenPla_DCC_GeneraCuotas.sql",
@@ -240,7 +240,7 @@
     "Posicion": "01.01.03",
     "Nombre": "03 - EvoData - pa.GenPla_DCC_GeneraCuotas.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\04 - EvoData - pa.GenPla_IGC_GeneraCuotas.sql",
@@ -249,7 +249,7 @@
     "Posicion": "01.01.04",
     "Nombre": "04 - EvoData - pa.GenPla_IGC_GeneraCuotas.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\05 - EvoData - pa.GenPla_TNT_Revalua.sql",
@@ -258,7 +258,7 @@
     "Posicion": "01.01.05",
     "Nombre": "05 - EvoData - pa.GenPla_TNT_Revalua.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\06 - EvoData - pa.GenPla_HorasExtras_Revalua.sql",
@@ -267,7 +267,7 @@
     "Posicion": "01.01.06",
     "Nombre": "06 - EvoData - pa.GenPla_HorasExtras_Revalua.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\07 - EvoData - exp.fn_get_datos_rubro_salarial.sql",
@@ -276,7 +276,7 @@
     "Posicion": "01.01.07",
     "Nombre": "07 - EvoData - exp.fn_get_datos_rubro_salarial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\08 - EvoData - pa.GenPla_INC_GeneraPeriodosIncapacidad.sql",
@@ -285,7 +285,7 @@
     "Posicion": "01.01.08",
     "Nombre": "08 - EvoData - pa.GenPla_INC_GeneraPeriodosIncapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\09 - EvoData - pa.GenPla_GeneraRenta.sql",
@@ -294,7 +294,7 @@
     "Posicion": "01.01.09",
     "Nombre": "09 - EvoData - pa.GenPla_GeneraRenta.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\10 - EvoData - pa.GenPla_GeneraRenta_GastoRep.sql",
@@ -303,7 +303,7 @@
     "Posicion": "01.01.10",
     "Nombre": "10 - EvoData - pa.GenPla_GeneraRenta_GastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\11 - EvoData - pa.GenPla_IngresosEventuales_Revalua.sql",
@@ -312,7 +312,7 @@
     "Posicion": "01.01.11",
     "Nombre": "11 - EvoData - pa.GenPla_IngresosEventuales_Revalua.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\12 - EvoData - pa.GenPla_Calcula_Retroactivos.sql",
@@ -321,7 +321,7 @@
     "Posicion": "01.01.12",
     "Nombre": "12 - EvoData - pa.GenPla_Calcula_Retroactivos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\13 - EvoData - pa.GenPla_Calcula_Retroactivos_GastoRep.sql",
@@ -330,7 +330,7 @@
     "Posicion": "01.01.13",
     "Nombre": "13 - EvoData - pa.GenPla_Calcula_Retroactivos_GastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\14 - EvoData - sal.tbl_rap_renta_anual_panama.sql",
@@ -339,7 +339,7 @@
     "Posicion": "01.01.14",
     "Nombre": "14 - EvoData - sal.tbl_rap_renta_anual_panama.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\15 - EvoData - sal.tbl_rag_renta_anual_panama_gr.sql",
@@ -348,7 +348,7 @@
     "Posicion": "01.01.15",
     "Nombre": "15 - EvoData - sal.tbl_rag_renta_anual_panama_gr.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\16 - EvoData - pa.fn_agrupador_valores_periodo_isr2.sql",
@@ -357,7 +357,7 @@
     "Posicion": "01.01.16",
     "Nombre": "16 - EvoData - pa.fn_agrupador_valores_periodo_isr2.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\17 - EvoData - pa.fn_agrupador_valores_periodo_isr.sql",
@@ -366,7 +366,7 @@
     "Posicion": "01.01.17",
     "Nombre": "17 - EvoData - pa.fn_agrupador_valores_periodo_isr.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\18 - EvoData - pa.tbl_qui_quincenal.sql",
@@ -375,7 +375,7 @@
     "Posicion": "01.01.18",
     "Nombre": "18 - EvoData - pa.tbl_qui_quincenal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\19 - EvoData - pa.GenPla_Finalizacion.sql",
@@ -384,7 +384,7 @@
     "Posicion": "01.01.19",
     "Nombre": "19 - EvoData - pa.GenPla_Finalizacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\20 - EvoData - pa.GenPla_Genera_Reservas.sql",
@@ -393,7 +393,7 @@
     "Posicion": "01.01.20",
     "Nombre": "20 - EvoData - pa.GenPla_Genera_Reservas.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\21 - EvoData - pa.GenPla_genera_partida_contable.sql",
@@ -402,7 +402,7 @@
     "Posicion": "01.01.21",
     "Nombre": "21 - EvoData - pa.GenPla_genera_partida_contable.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\22 - EvoData - pa.tbl_dco_datos_contables.sql",
@@ -411,7 +411,7 @@
     "Posicion": "01.01.22",
     "Nombre": "22 - EvoData - pa.tbl_dco_datos_contables.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\01 - Base de datos\\23 - EvoData - pa.aupla_autoriza_planilla.sql",
@@ -420,7 +420,7 @@
     "Posicion": "01.01.23",
     "Nombre": "23 - EvoData - pa.aupla_autoriza_planilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\00 - EvoData - Todos los cursores de Panama para la formulacion.sql",
@@ -429,7 +429,7 @@
     "Posicion": "01.02.00",
     "Nombre": "00 - EvoData - Todos los cursores de Panama para la formulacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\01 - EvoData - AnticipoXIII_Pagado.sql",
@@ -438,7 +438,7 @@
     "Posicion": "01.02.01",
     "Nombre": "01 - EvoData - AnticipoXIII_Pagado.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\02 - EvoData - CuotasDescuentosCiclicos.sql",
@@ -447,7 +447,7 @@
     "Posicion": "01.02.02",
     "Nombre": "02 - EvoData - CuotasDescuentosCiclicos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\03 - EvoData - CuotasIngresosCiclicos.sql",
@@ -456,7 +456,7 @@
     "Posicion": "01.02.03",
     "Nombre": "03 - EvoData - CuotasIngresosCiclicos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\04 - EvoData - Datos_Renta.sql",
@@ -465,7 +465,7 @@
     "Posicion": "01.02.04",
     "Nombre": "04 - EvoData - Datos_Renta.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\05 - EvoData - Datos_Renta_Gastos_Rep.sql",
@@ -474,7 +474,7 @@
     "Posicion": "01.02.05",
     "Nombre": "05 - EvoData - Datos_Renta_Gastos_Rep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\06 - EvoData - DescuentosEstaPlanilla.sql",
@@ -483,7 +483,7 @@
     "Posicion": "01.02.06",
     "Nombre": "06 - EvoData - DescuentosEstaPlanilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\07 - EvoData - DiasPagadosIncapacidad.sql",
@@ -492,7 +492,7 @@
     "Posicion": "01.02.07",
     "Nombre": "07 - EvoData - DiasPagadosIncapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\08 - EvoData - DiasPendientesPagoNuevoIngreso.sql",
@@ -501,7 +501,7 @@
     "Posicion": "01.02.08",
     "Nombre": "08 - EvoData - DiasPendientesPagoNuevoIngreso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\09 - EvoData - DiasPSGS.sql",
@@ -510,7 +510,7 @@
     "Posicion": "01.02.09",
     "Nombre": "09 - EvoData - DiasPSGS.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\10 - EvoData - Emp_HorasExtras.sql",
@@ -519,7 +519,7 @@
     "Posicion": "01.02.10",
     "Nombre": "10 - EvoData - Emp_HorasExtras.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\11 - EvoData - Emp_Incapacidades.sql",
@@ -528,7 +528,7 @@
     "Posicion": "01.02.11",
     "Nombre": "11 - EvoData - Emp_Incapacidades.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\12 - EvoData - Emp_InfoSalario.sql",
@@ -537,7 +537,7 @@
     "Posicion": "01.02.12",
     "Nombre": "12 - EvoData - Emp_InfoSalario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\13 - EvoData - Emp_InfoSalario_Ajustes.sql",
@@ -546,7 +546,7 @@
     "Posicion": "01.02.13",
     "Nombre": "13 - EvoData - Emp_InfoSalario_Ajustes.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\14 - EvoData - Emp_InfoSalario_Vacaciones.sql",
@@ -555,7 +555,7 @@
     "Posicion": "01.02.14",
     "Nombre": "14 - EvoData - Emp_InfoSalario_Vacaciones.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\15 - EvoData - Emp_OtrosDescuentos.sql",
@@ -564,7 +564,7 @@
     "Posicion": "01.02.15",
     "Nombre": "15 - EvoData - Emp_OtrosDescuentos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\16 - EvoData - Emp_OtrosDescuentos_AplicaLegal.sql",
@@ -573,7 +573,7 @@
     "Posicion": "01.02.16",
     "Nombre": "16 - EvoData - Emp_OtrosDescuentos_AplicaLegal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\17 - EvoData - Emp_OtrosIngresos.sql",
@@ -582,7 +582,7 @@
     "Posicion": "01.02.17",
     "Nombre": "17 - EvoData - Emp_OtrosIngresos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\18 - EvoData - Emp_TmpNoTrabajado.sql",
@@ -591,7 +591,7 @@
     "Posicion": "01.02.18",
     "Nombre": "18 - EvoData - Emp_TmpNoTrabajado.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\19 - EvoData - Emp_TNT.sql",
@@ -600,7 +600,7 @@
     "Posicion": "01.02.19",
     "Nombre": "19 - EvoData - Emp_TNT.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\20 - EvoData - Emp_TNT2.sql",
@@ -609,7 +609,7 @@
     "Posicion": "01.02.20",
     "Nombre": "20 - EvoData - Emp_TNT2.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\21 - EvoData - Emp_TNT3.sql",
@@ -618,7 +618,7 @@
     "Posicion": "01.02.21",
     "Nombre": "21 - EvoData - Emp_TNT3.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\22 - EvoData - ExcesoXIII.sql",
@@ -627,7 +627,7 @@
     "Posicion": "01.02.22",
     "Nombre": "22 - EvoData - ExcesoXIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\23 - EvoData - ExcesoXIII_GR.sql",
@@ -636,7 +636,7 @@
     "Posicion": "01.02.23",
     "Nombre": "23 - EvoData - ExcesoXIII_GR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\24 - EvoData - GastoRepImpar.sql",
@@ -645,7 +645,7 @@
     "Posicion": "01.02.24",
     "Nombre": "24 - EvoData - GastoRepImpar.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\25 - EvoData - GastoRepNuevoIngreso.sql",
@@ -654,7 +654,7 @@
     "Posicion": "01.02.25",
     "Nombre": "25 - EvoData - GastoRepNuevoIngreso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\26 - EvoData - IngresosEstaPlanilla.sql",
@@ -663,7 +663,7 @@
     "Posicion": "01.02.26",
     "Nombre": "26 - EvoData - IngresosEstaPlanilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\27 - EvoData - ISR_GastoRep.sql",
@@ -672,7 +672,7 @@
     "Posicion": "01.02.27",
     "Nombre": "27 - EvoData - ISR_GastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\28 - EvoData - ISR_Salario.sql",
@@ -681,7 +681,7 @@
     "Posicion": "01.02.28",
     "Nombre": "28 - EvoData - ISR_Salario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\29 - EvoData - MontosPagoVacacion.sql",
@@ -690,7 +690,7 @@
     "Posicion": "01.02.29",
     "Nombre": "29 - EvoData - MontosPagoVacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\30 - EvoData - PagoProporcionalIncremento.sql",
@@ -699,7 +699,7 @@
     "Posicion": "01.02.30",
     "Nombre": "30 - EvoData - PagoProporcionalIncremento.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\31 - EvoData - pagos_vacacion_estaquincena.sql",
@@ -708,7 +708,7 @@
     "Posicion": "01.02.31",
     "Nombre": "31 - EvoData - pagos_vacacion_estaquincena.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\32 - EvoData - ParametrosCuotaISSS.sql",
@@ -717,7 +717,7 @@
     "Posicion": "01.02.32",
     "Nombre": "32 - EvoData - ParametrosCuotaISSS.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\33 - EvoData - ParametrosSeguroEducativo.sql",
@@ -726,7 +726,7 @@
     "Posicion": "01.02.33",
     "Nombre": "33 - EvoData - ParametrosSeguroEducativo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\34 - EvoData - PermisosSinGoceSueldo.sql",
@@ -735,7 +735,7 @@
     "Posicion": "01.02.34",
     "Nombre": "34 - EvoData - PermisosSinGoceSueldo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\35 - EvoData - Pla_Periodo.sql",
@@ -744,7 +744,7 @@
     "Posicion": "01.02.35",
     "Nombre": "35 - EvoData - Pla_Periodo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\36 - EvoData - PromedioSalarioParaVacaciones.sql",
@@ -753,7 +753,7 @@
     "Posicion": "01.02.36",
     "Nombre": "36 - EvoData - PromedioSalarioParaVacaciones.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\37 - EvoData - PromedioSalarioXIII.sql",
@@ -762,7 +762,7 @@
     "Posicion": "01.02.37",
     "Nombre": "37 - EvoData - PromedioSalarioXIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\38 - EvoData - RentaAdelantoXIII.sql",
@@ -771,7 +771,7 @@
     "Posicion": "01.02.38",
     "Nombre": "38 - EvoData - RentaAdelantoXIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\39 - EvoData - RentaAdelantoXIIIGR.sql",
@@ -780,7 +780,7 @@
     "Posicion": "01.02.39",
     "Nombre": "39 - EvoData - RentaAdelantoXIIIGR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\40 - EvoData - RentaFija.sql",
@@ -789,7 +789,7 @@
     "Posicion": "01.02.40",
     "Nombre": "40 - EvoData - RentaFija.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\41 - EvoData - ReservasEstaPlanilla.sql",
@@ -798,7 +798,7 @@
     "Posicion": "01.02.41",
     "Nombre": "41 - EvoData - ReservasEstaPlanilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\42 - EvoData - RetroactivoSalario.sql",
@@ -807,7 +807,7 @@
     "Posicion": "01.02.42",
     "Nombre": "42 - EvoData - RetroactivoSalario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\43 - EvoData - RetroGastoRep.sql",
@@ -816,7 +816,7 @@
     "Posicion": "01.02.43",
     "Nombre": "43 - EvoData - RetroGastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\44 - EvoData - SalarioImpar.sql",
@@ -825,7 +825,7 @@
     "Posicion": "01.02.44",
     "Nombre": "44 - EvoData - SalarioImpar.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\45 - EvoData - SalarioNuevoIngreso.sql",
@@ -834,7 +834,7 @@
     "Posicion": "01.02.45",
     "Nombre": "45 - EvoData - SalarioNuevoIngreso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\46 - EvoData - TablaISR.sql",
@@ -843,7 +843,7 @@
     "Posicion": "01.02.46",
     "Nombre": "46 - EvoData - TablaISR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\47 - EvoData - TablaISR_GRep.sql",
@@ -852,7 +852,7 @@
     "Posicion": "01.02.47",
     "Nombre": "47 - EvoData - TablaISR_GRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\48 - EvoData - TNT_Extenso.sql",
@@ -861,7 +861,7 @@
     "Posicion": "01.02.48",
     "Nombre": "48 - EvoData - TNT_Extenso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\49 - EvoData - VacacionesEnCurso.sql",
@@ -870,7 +870,7 @@
     "Posicion": "01.02.49",
     "Nombre": "49 - EvoData - VacacionesEnCurso.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\50 - EvoData - VacacionesRenunciadas.sql",
@@ -879,7 +879,7 @@
     "Posicion": "01.02.50",
     "Nombre": "50 - EvoData - VacacionesRenunciadas.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\51 - EvoData - pa.proc_cur_DiasPSGS.sql",
@@ -888,7 +888,7 @@
     "Posicion": "01.02.51",
     "Nombre": "51 - EvoData - pa.proc_cur_DiasPSGS.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\02 - Cursores\\52 - EvoData - update ISR_Salario.sql",
@@ -897,7 +897,7 @@
     "Posicion": "01.02.52",
     "Nombre": "52 - EvoData - update ISR_Salario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\00 - EvoData - Formulacion Quincenal Completa (FACTORES).sql",
@@ -906,7 +906,7 @@
     "Posicion": "01.03.00",
     "Nombre": "00 - EvoData - Formulacion Quincenal Completa (FACTORES).sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\01 - EvoData - EmpleadoParticipa.sql",
@@ -915,7 +915,7 @@
     "Posicion": "01.03.01",
     "Nombre": "01 - EvoData - EmpleadoParticipa.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\02 - EvoData - DiasQuincena.sql",
@@ -924,7 +924,7 @@
     "Posicion": "01.03.02",
     "Nombre": "02 - EvoData - DiasQuincena.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\03 - EvoData - HorasTrabajadas.sql",
@@ -933,7 +933,7 @@
     "Posicion": "01.03.03",
     "Nombre": "03 - EvoData - HorasTrabajadas.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\04 - EvoData - DiasTrabajados.sql",
@@ -942,7 +942,7 @@
     "Posicion": "01.03.04",
     "Nombre": "04 - EvoData - DiasTrabajados.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\05 - EvoData - SalarioActual.sql",
@@ -951,7 +951,7 @@
     "Posicion": "01.03.05",
     "Nombre": "05 - EvoData - SalarioActual.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\06 - EvoData - SueldoQuincenal.sql",
@@ -960,7 +960,7 @@
     "Posicion": "01.03.06",
     "Nombre": "06 - EvoData - SueldoQuincenal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\07 - EvoData - GastoRepresentacion.sql",
@@ -969,7 +969,7 @@
     "Posicion": "01.03.07",
     "Nombre": "07 - EvoData - GastoRepresentacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\08 - EvoData - Retroactivo.sql",
@@ -978,7 +978,7 @@
     "Posicion": "01.03.08",
     "Nombre": "08 - EvoData - Retroactivo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\09 - EvoData - RetroactivoGastoRep.sql",
@@ -987,7 +987,7 @@
     "Posicion": "01.03.09",
     "Nombre": "09 - EvoData - RetroactivoGastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\10 - EvoData - DiasIncapacidad.sql",
@@ -996,7 +996,7 @@
     "Posicion": "01.03.10",
     "Nombre": "10 - EvoData - DiasIncapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\11 - EvoData - DiasDescuentoIncap.sql",
@@ -1005,7 +1005,7 @@
     "Posicion": "01.03.11",
     "Nombre": "11 - EvoData - DiasDescuentoIncap.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\12 - EvoData - DescuentoIncapacidad.sql",
@@ -1014,7 +1014,7 @@
     "Posicion": "01.03.12",
     "Nombre": "12 - EvoData - DescuentoIncapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\13 - EvoData - IngresoIncapacidad.sql",
@@ -1023,7 +1023,7 @@
     "Posicion": "01.03.13",
     "Nombre": "13 - EvoData - IngresoIncapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\14 - EvoData - HorasTNT.sql",
@@ -1032,7 +1032,7 @@
     "Posicion": "01.03.14",
     "Nombre": "14 - EvoData - HorasTNT.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\15 - EvoData - DescuentoTNT.sql",
@@ -1041,7 +1041,7 @@
     "Posicion": "01.03.15",
     "Nombre": "15 - EvoData - DescuentoTNT.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\16 - EvoData - OtrosIngresos.sql",
@@ -1050,7 +1050,7 @@
     "Posicion": "01.03.16",
     "Nombre": "16 - EvoData - OtrosIngresos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\17 - EvoData - DevRenta.sql",
@@ -1059,7 +1059,7 @@
     "Posicion": "01.03.17",
     "Nombre": "17 - EvoData - DevRenta.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\18 - EvoData - IngCiclicos.sql",
@@ -1068,7 +1068,7 @@
     "Posicion": "01.03.18",
     "Nombre": "18 - EvoData - IngCiclicos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\19 - EvoData - Extraordinario.sql",
@@ -1077,7 +1077,7 @@
     "Posicion": "01.03.19",
     "Nombre": "19 - EvoData - Extraordinario.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\20 - EvoData - SalarioBruto.sql",
@@ -1086,7 +1086,7 @@
     "Posicion": "01.03.20",
     "Nombre": "20 - EvoData - SalarioBruto.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\21 - EvoData - OtrosDescAplicaLegal.sql",
@@ -1095,7 +1095,7 @@
     "Posicion": "01.03.21",
     "Nombre": "21 - EvoData - OtrosDescAplicaLegal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\22 - EvoData - GrabaHistoriales.sql",
@@ -1104,7 +1104,7 @@
     "Posicion": "01.03.22",
     "Nombre": "22 - EvoData - GrabaHistoriales.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\23 - EvoData - SSBaseCalculo.sql",
@@ -1113,7 +1113,7 @@
     "Posicion": "01.03.23",
     "Nombre": "23 - EvoData - SSBaseCalculo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\24 - EvoData - SeguroSocialPatrono.sql",
@@ -1122,7 +1122,7 @@
     "Posicion": "01.03.24",
     "Nombre": "24 - EvoData - SeguroSocialPatrono.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\25 - EvoData - SeguroSocial.sql",
@@ -1131,7 +1131,7 @@
     "Posicion": "01.03.25",
     "Nombre": "25 - EvoData - SeguroSocial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\26 - EvoData - SegEducativoBase.sql",
@@ -1140,7 +1140,7 @@
     "Posicion": "01.03.26",
     "Nombre": "26 - EvoData - SegEducativoBase.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\27 - EvoData - SegEducativoPatronal.sql",
@@ -1149,7 +1149,7 @@
     "Posicion": "01.03.27",
     "Nombre": "27 - EvoData - SegEducativoPatronal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\28 - EvoData - SegEducativo.sql",
@@ -1158,7 +1158,7 @@
     "Posicion": "01.03.28",
     "Nombre": "28 - EvoData - SegEducativo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\29 - EvoData - ISRBaseCalculo.sql",
@@ -1167,7 +1167,7 @@
     "Posicion": "01.03.29",
     "Nombre": "29 - EvoData - ISRBaseCalculo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\30 - EvoData - ISRBaseCalculoGRep.sql",
@@ -1176,7 +1176,7 @@
     "Posicion": "01.03.30",
     "Nombre": "30 - EvoData - ISRBaseCalculoGRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\31 - EvoData - DevolucionDescRenta.sql",
@@ -1185,7 +1185,7 @@
     "Posicion": "01.03.31",
     "Nombre": "31 - EvoData - DevolucionDescRenta.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\32 - EvoData - CreditoISRGastoRep.sql",
@@ -1194,7 +1194,7 @@
     "Posicion": "01.03.32",
     "Nombre": "32 - EvoData - CreditoISRGastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\33 - EvoData - ISR.sql",
@@ -1203,7 +1203,7 @@
     "Posicion": "01.03.33",
     "Nombre": "33 - EvoData - ISR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\34 - EvoData - ISR_GASTO_REP.sql",
@@ -1212,7 +1212,7 @@
     "Posicion": "01.03.34",
     "Nombre": "34 - EvoData - ISR_GASTO_REP.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\35 - EvoData - PatronalProfuturoPA.sql",
@@ -1221,7 +1221,7 @@
     "Posicion": "01.03.35",
     "Nombre": "35 - EvoData - PatronalProfuturoPA.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\36 - EvoData - PatronalProfuturoIDM.sql",
@@ -1230,7 +1230,7 @@
     "Posicion": "01.03.36",
     "Nombre": "36 - EvoData - PatronalProfuturoIDM.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\37 - EvoData - OtrosDescuentos.sql",
@@ -1239,7 +1239,7 @@
     "Posicion": "01.03.37",
     "Nombre": "37 - EvoData - OtrosDescuentos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\38 - EvoData - DescCiclicos.sql",
@@ -1248,7 +1248,7 @@
     "Posicion": "01.03.38",
     "Nombre": "38 - EvoData - DescCiclicos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\01 - Planilla Quincenal\\03 - Factores\\39 - EvoData - SalarioNeto.sql",
@@ -1257,7 +1257,7 @@
     "Posicion": "01.03.39",
     "Nombre": "39 - EvoData - SalarioNeto.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\01 - Base de datos\\01 - EvoData - pa.tbl_aju_ajustes.sql",
@@ -1266,7 +1266,7 @@
     "Posicion": "02.01.01",
     "Nombre": "01 - EvoData - pa.tbl_aju_ajustes.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\00 - EvoData - Todos los factores de planilla Intermedia y configuracion de planilla.sql",
@@ -1275,7 +1275,7 @@
     "Posicion": "02.02.00",
     "Nombre": "00 - EvoData - Todos los factores de planilla Intermedia y configuracion de planilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\01 - EvoData - aju_EmpleadoParticipa.sql",
@@ -1284,7 +1284,7 @@
     "Posicion": "02.02.01",
     "Nombre": "01 - EvoData - aju_EmpleadoParticipa.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\02 - EvoData - OtrosIngresos_aju.sql",
@@ -1293,7 +1293,7 @@
     "Posicion": "02.02.02",
     "Nombre": "02 - EvoData - OtrosIngresos_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\03 - EvoData - Extraordinario_aju.sql",
@@ -1302,7 +1302,7 @@
     "Posicion": "02.02.03",
     "Nombre": "03 - EvoData - Extraordinario_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\04 - EvoData - aju_SalarioBruto.sql",
@@ -1311,7 +1311,7 @@
     "Posicion": "02.02.04",
     "Nombre": "04 - EvoData - aju_SalarioBruto.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\05 - EvoData - SSBaseCalculo_aju.sql",
@@ -1320,7 +1320,7 @@
     "Posicion": "02.02.05",
     "Nombre": "05 - EvoData - SSBaseCalculo_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\06 - EvoData - SeguroSocial_aju.sql",
@@ -1329,7 +1329,7 @@
     "Posicion": "02.02.06",
     "Nombre": "06 - EvoData - SeguroSocial_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\07 - EvoData - SegEducativoBase_aju.sql",
@@ -1338,7 +1338,7 @@
     "Posicion": "02.02.07",
     "Nombre": "07 - EvoData - SegEducativoBase_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\08 - EvoData - SegEducativo_aju.sql",
@@ -1347,7 +1347,7 @@
     "Posicion": "02.02.08",
     "Nombre": "08 - EvoData - SegEducativo_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\09 - EvoData - ISRBaseCalculo_aju.sql",
@@ -1356,7 +1356,7 @@
     "Posicion": "02.02.09",
     "Nombre": "09 - EvoData - ISRBaseCalculo_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\10 - EvoData - aju_ISR.sql",
@@ -1365,7 +1365,7 @@
     "Posicion": "02.02.10",
     "Nombre": "10 - EvoData - aju_ISR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\11 - EvoData - ISRBaseCalculoGRep_aju.sql",
@@ -1374,7 +1374,7 @@
     "Posicion": "02.02.11",
     "Nombre": "11 - EvoData - ISRBaseCalculoGRep_aju.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\12 - EvoData - aju_ISR_GR.sql",
@@ -1383,7 +1383,7 @@
     "Posicion": "02.02.12",
     "Nombre": "12 - EvoData - aju_ISR_GR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\13 - EvoData - aju_OtrosDescuentos.sql",
@@ -1392,7 +1392,7 @@
     "Posicion": "02.02.13",
     "Nombre": "13 - EvoData - aju_OtrosDescuentos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\02 - Planilla Intermedia\\02 - Factores\\14 - EvoData - aju_SalarioNeto.sql",
@@ -1401,7 +1401,7 @@
     "Posicion": "02.02.14",
     "Nombre": "14 - EvoData - aju_SalarioNeto.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\01 - EvoData - pa.vac_vacacion.sql",
@@ -1410,7 +1410,7 @@
     "Posicion": "03.01.01",
     "Nombre": "01 - EvoData - pa.vac_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\02 - EvoData - pa.tbl_mpv_montos_pago_vacacion.sql",
@@ -1419,7 +1419,7 @@
     "Posicion": "03.01.02",
     "Nombre": "02 - EvoData - pa.tbl_mpv_montos_pago_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\03 - EvoData - pa.tbl_ipv_inicio_promedio_vacacion.sql",
@@ -1428,7 +1428,7 @@
     "Posicion": "03.01.03",
     "Nombre": "03 - EvoData - pa.tbl_ipv_inicio_promedio_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\04 - EvoData - pa.fn_get_inicio_promedio_vacacion.sql",
@@ -1437,7 +1437,7 @@
     "Posicion": "03.01.04",
     "Nombre": "04 - EvoData - pa.fn_get_inicio_promedio_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\05 - EvoData - pa.proc_genera_montos_pago_vacacion.sql",
@@ -1446,7 +1446,7 @@
     "Posicion": "03.01.05",
     "Nombre": "05 - EvoData - pa.proc_genera_montos_pago_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\06 - EvoData - pa.GenPla_Inicializacion_vac.sql",
@@ -1455,7 +1455,7 @@
     "Posicion": "03.01.06",
     "Nombre": "06 - EvoData - pa.GenPla_Inicializacion_vac.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\07 - EvoData - pa.dpv_dias_pago_vacacion.sql",
@@ -1464,7 +1464,7 @@
     "Posicion": "03.01.07",
     "Nombre": "07 - EvoData - pa.dpv_dias_pago_vacacion.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\08 - EvoData - pa.GenPla_Genera_Fondo_Incapacidad.sql",
@@ -1473,7 +1473,7 @@
     "Posicion": "03.01.08",
     "Nombre": "08 - EvoData - pa.GenPla_Genera_Fondo_Incapacidad.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\01 - Base de datos\\09 - EvoData - pa.aupla_autoriza_planilla_vac.sql",
@@ -1482,7 +1482,7 @@
     "Posicion": "03.01.09",
     "Nombre": "09 - EvoData - pa.aupla_autoriza_planilla_vac.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\00 - EvoData - Todos factores y configuraciones de planilla de vacaciones.sql",
@@ -1491,7 +1491,7 @@
     "Posicion": "03.02.00",
     "Nombre": "00 - EvoData - Todos factores y configuraciones de planilla de vacaciones.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\01 - EvoData - EmpleadoParticipa_v.sql",
@@ -1500,7 +1500,7 @@
     "Posicion": "03.02.01",
     "Nombre": "01 - EvoData - EmpleadoParticipa_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\02 - EvoData - DiasQuincena_v.sql",
@@ -1509,7 +1509,7 @@
     "Posicion": "03.02.02",
     "Nombre": "02 - EvoData - DiasQuincena_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\03 - EvoData - DiasTrabajados_v.sql",
@@ -1518,7 +1518,7 @@
     "Posicion": "03.02.03",
     "Nombre": "03 - EvoData - DiasTrabajados_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\04 - EvoData - SalarioActual_v.sql",
@@ -1527,7 +1527,7 @@
     "Posicion": "03.02.04",
     "Nombre": "04 - EvoData - SalarioActual_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\05 - EvoData - SueldoQuincenal_v.sql",
@@ -1536,7 +1536,7 @@
     "Posicion": "03.02.05",
     "Nombre": "05 - EvoData - SueldoQuincenal_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\06 - EvoData - GastoRepresentacion_v.sql",
@@ -1545,7 +1545,7 @@
     "Posicion": "03.02.06",
     "Nombre": "06 - EvoData - GastoRepresentacion_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\07 - EvoData - OtrosIngresos_v.sql",
@@ -1554,7 +1554,7 @@
     "Posicion": "03.02.07",
     "Nombre": "07 - EvoData - OtrosIngresos_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\08 - EvoData - SalarioBruto_v.sql",
@@ -1563,7 +1563,7 @@
     "Posicion": "03.02.08",
     "Nombre": "08 - EvoData - SalarioBruto_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\09 - EvoData - SSBaseCalculo_v.sql",
@@ -1572,7 +1572,7 @@
     "Posicion": "03.02.09",
     "Nombre": "09 - EvoData - SSBaseCalculo_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\10 - EvoData - SeguroSocialPatrono_v.sql",
@@ -1581,7 +1581,7 @@
     "Posicion": "03.02.10",
     "Nombre": "10 - EvoData - SeguroSocialPatrono_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\11 - EvoData - SeguroSocial_v.sql",
@@ -1590,7 +1590,7 @@
     "Posicion": "03.02.11",
     "Nombre": "11 - EvoData - SeguroSocial_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\12 - EvoData - SegEducativoBase_v.sql",
@@ -1599,7 +1599,7 @@
     "Posicion": "03.02.12",
     "Nombre": "12 - EvoData - SegEducativoBase_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\13 - EvoData - SegEducativoPatronal_v.sql",
@@ -1608,7 +1608,7 @@
     "Posicion": "03.02.13",
     "Nombre": "13 - EvoData - SegEducativoPatronal_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\14 - EvoData - SegEducativo_v.sql",
@@ -1617,7 +1617,7 @@
     "Posicion": "03.02.14",
     "Nombre": "14 - EvoData - SegEducativo_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\15 - EvoData - ISRBaseCalculo_v.sql",
@@ -1626,7 +1626,7 @@
     "Posicion": "03.02.15",
     "Nombre": "15 - EvoData - ISRBaseCalculo_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\16 - EvoData - ISRBaseCalculoGRep_v.sql",
@@ -1635,7 +1635,7 @@
     "Posicion": "03.02.16",
     "Nombre": "16 - EvoData - ISRBaseCalculoGRep_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\17 - EvoData - DevolucionDescRenta_v.sql",
@@ -1644,7 +1644,7 @@
     "Posicion": "03.02.17",
     "Nombre": "17 - EvoData - DevolucionDescRenta_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\18 - EvoData - CreditoISRGastoRep_v.sql",
@@ -1653,7 +1653,7 @@
     "Posicion": "03.02.18",
     "Nombre": "18 - EvoData - CreditoISRGastoRep_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\19 - EvoData - ISR_v.sql",
@@ -1662,7 +1662,7 @@
     "Posicion": "03.02.19",
     "Nombre": "19 - EvoData - ISR_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\20 - EvoData - ISR_GASTO_REP_v.sql",
@@ -1671,7 +1671,7 @@
     "Posicion": "03.02.20",
     "Nombre": "20 - EvoData - ISR_GASTO_REP_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\21 - EvoData - OtrosDescuentos_v.sql",
@@ -1680,7 +1680,7 @@
     "Posicion": "03.02.21",
     "Nombre": "21 - EvoData - OtrosDescuentos_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\22 - EvoData - DescCiclicos_v.sql",
@@ -1689,7 +1689,7 @@
     "Posicion": "03.02.22",
     "Nombre": "22 - EvoData - DescCiclicos_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\03 - Planilla Vacacion\\02 - Factores\\23 - EvoData - SalarioNeto_v.sql",
@@ -1698,7 +1698,7 @@
     "Posicion": "03.02.23",
     "Nombre": "23 - EvoData - SalarioNeto_v.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\00 - EvoData - pa.GenPla_Inicializacion_XIII.sql",
@@ -1707,7 +1707,7 @@
     "Posicion": "04.01.00",
     "Nombre": "00 - EvoData - pa.GenPla_Inicializacion_XIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\01 - EvoData - pa.tbl_dpx_datos_prom_xiii.sql",
@@ -1716,7 +1716,7 @@
     "Posicion": "04.01.01",
     "Nombre": "01 - EvoData - pa.tbl_dpx_datos_prom_xiii.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\02 - EvoData - sal.fn_ingresos_acumulados_xiii.sql",
@@ -1725,7 +1725,7 @@
     "Posicion": "04.01.02",
     "Nombre": "02 - EvoData - sal.fn_ingresos_acumulados_xiii.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\03 - EvoData - pa.GenPla_Finalizacion_XIII.sql",
@@ -1734,7 +1734,7 @@
     "Posicion": "04.01.03",
     "Nombre": "03 - EvoData - pa.GenPla_Finalizacion_XIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\04 - EvoData - pa.dco_datos_contables.sql",
@@ -1743,7 +1743,7 @@
     "Posicion": "04.01.04",
     "Nombre": "04 - EvoData - pa.dco_datos_contables.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\05 - EvoData - pa.GenPla_Poliza_Contable.sql",
@@ -1752,7 +1752,7 @@
     "Posicion": "04.01.05",
     "Nombre": "05 - EvoData - pa.GenPla_Poliza_Contable.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\01 - Base de Datos\\06 - EvoData - pa.ter_decimo.sql",
@@ -1761,7 +1761,7 @@
     "Posicion": "04.01.06",
     "Nombre": "06 - EvoData - pa.ter_decimo.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\00 - EvoData - Todos Factores XIII Mes y configuracion de planilla.sql",
@@ -1770,7 +1770,7 @@
     "Posicion": "04.02.00",
     "Nombre": "00 - EvoData - Todos Factores XIII Mes y configuracion de planilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\01 - EvoData - EmpleadoParticipa_d.sql",
@@ -1779,7 +1779,7 @@
     "Posicion": "04.02.01",
     "Nombre": "01 - EvoData - EmpleadoParticipa_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\02 - EvoData - DiasQuincena_d.sql",
@@ -1788,7 +1788,7 @@
     "Posicion": "04.02.02",
     "Nombre": "02 - EvoData - DiasQuincena_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\03 - EvoData - DiasTrabajados_d.sql",
@@ -1797,7 +1797,7 @@
     "Posicion": "04.02.03",
     "Nombre": "03 - EvoData - DiasTrabajados_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\04 - EvoData - DescAnticipoXIII_GR.sql",
@@ -1806,7 +1806,7 @@
     "Posicion": "04.02.04",
     "Nombre": "04 - EvoData - DescAnticipoXIII_GR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\05 - EvoData - DescAnticipoXIII.sql",
@@ -1815,7 +1815,7 @@
     "Posicion": "04.02.05",
     "Nombre": "05 - EvoData - DescAnticipoXIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\06 - EvoData - Decimo_Tercero_GRep.sql",
@@ -1824,7 +1824,7 @@
     "Posicion": "04.02.06",
     "Nombre": "06 - EvoData - Decimo_Tercero_GRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\07 - EvoData - DecimoTercero.sql",
@@ -1833,7 +1833,7 @@
     "Posicion": "04.02.07",
     "Nombre": "07 - EvoData - DecimoTercero.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\08 - EvoData - OtrosIngresos_d.sql",
@@ -1842,7 +1842,7 @@
     "Posicion": "04.02.08",
     "Nombre": "08 - EvoData - OtrosIngresos_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\09 - EvoData - OtrosDescuentos_d.sql",
@@ -1851,7 +1851,7 @@
     "Posicion": "04.02.09",
     "Nombre": "09 - EvoData - OtrosDescuentos_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\10 - EvoData - DescExcesoXIII_GR.sql",
@@ -1860,7 +1860,7 @@
     "Posicion": "04.02.10",
     "Nombre": "10 - EvoData - DescExcesoXIII_GR.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\11 - EvoData - DescExcesoXIII.sql",
@@ -1869,7 +1869,7 @@
     "Posicion": "04.02.11",
     "Nombre": "11 - EvoData - DescExcesoXIII.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\12 - EvoData - SegSocialGR_BaseCalc.sql",
@@ -1878,7 +1878,7 @@
     "Posicion": "04.02.12",
     "Nombre": "12 - EvoData - SegSocialGR_BaseCalc.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\13 - EvoData - SSBaseCalculo_d.sql",
@@ -1887,7 +1887,7 @@
     "Posicion": "04.02.13",
     "Nombre": "13 - EvoData - SSBaseCalculo_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\14 - EvoData - ISRBaseCalculo_d.sql",
@@ -1896,7 +1896,7 @@
     "Posicion": "04.02.14",
     "Nombre": "14 - EvoData - ISRBaseCalculo_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\15 - EvoData - ISRBaseCalculoGRep_d.sql",
@@ -1905,7 +1905,7 @@
     "Posicion": "04.02.15",
     "Nombre": "15 - EvoData - ISRBaseCalculoGRep_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\16 - EvoData - ISR_d.sql",
@@ -1914,7 +1914,7 @@
     "Posicion": "04.02.16",
     "Nombre": "16 - EvoData - ISR_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\17 - EvoData - ISR_GASTO_REP_d.sql",
@@ -1923,7 +1923,7 @@
     "Posicion": "04.02.17",
     "Nombre": "17 - EvoData - ISR_GASTO_REP_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\18 - EvoData - SeguroSocialPatrono_d.sql",
@@ -1932,7 +1932,7 @@
     "Posicion": "04.02.18",
     "Nombre": "18 - EvoData - SeguroSocialPatrono_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\19 - EvoData - SSPatronalEspecial.sql",
@@ -1941,7 +1941,7 @@
     "Posicion": "04.02.19",
     "Nombre": "19 - EvoData - SSPatronalEspecial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\20 - EvoData - SeguroSocial_d.sql",
@@ -1950,7 +1950,7 @@
     "Posicion": "04.02.20",
     "Nombre": "20 - EvoData - SeguroSocial_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\21 - EvoData - SegSocGastoRep.sql",
@@ -1959,7 +1959,7 @@
     "Posicion": "04.02.21",
     "Nombre": "21 - EvoData - SegSocGastoRep.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\22 - EvoData - SegSocGRPatronal.sql",
@@ -1968,7 +1968,7 @@
     "Posicion": "04.02.22",
     "Nombre": "22 - EvoData - SegSocGRPatronal.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\23 - EvoData - SalarioNeto_d.sql",
@@ -1977,7 +1977,7 @@
     "Posicion": "04.02.23",
     "Nombre": "23 - EvoData - SalarioNeto_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\24 - EvoData - Factores_por_tipo_de_planilla.sql",
@@ -1986,7 +1986,7 @@
     "Posicion": "04.02.24",
     "Nombre": "24 - EvoData - Factores_por_tipo_de_planilla.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\04 - Planilla XIII Mes\\02 - Factores\\25 - EvoData - updateFactorISR_d.sql",
@@ -1995,7 +1995,7 @@
     "Posicion": "04.02.25",
     "Nombre": "25 - EvoData - updateFactorISR_d.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\05 - Vistas\\01 - EvoData - DCC_Descuentos_Ciclicos_V.sql",
@@ -2004,7 +2004,7 @@
     "Posicion": "05.01",
     "Nombre": "01 - EvoData - DCC_Descuentos_Ciclicos_V.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\06 - Parametros\\01 - EvoData - parametros_fix.sql",
@@ -2013,7 +2013,7 @@
     "Posicion": "06.01",
     "Nombre": "01 - EvoData - parametros_fix.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\06 - Parametros\\02 - EvoData - parametro.TablaRentaMensual.sql",
@@ -2022,7 +2022,7 @@
     "Posicion": "06.02",
     "Nombre": "02 - EvoData - parametro.TablaRentaMensual.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\06 - Parametros\\03 - EvoData - tipo_documento_panama.sql",
@@ -2031,7 +2031,7 @@
     "Posicion": "06.03",
     "Nombre": "03 - EvoData - tipo_documento_panama.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\01 - EvoData - pa.rep_planilla.StoredProcedure.sql",
@@ -2040,7 +2040,7 @@
     "Posicion": "07.01",
     "Nombre": "01 - EvoData - pa.rep_planilla.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\02 - EvoData - pa.rep_recibo_pago.StoredProcedure.sql",
@@ -2049,7 +2049,7 @@
     "Posicion": "07.02",
     "Nombre": "02 - EvoData - pa.rep_recibo_pago.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\03 - EvoData - pa.rep_recibo_pago_endelis.StoredProcedure.sql",
@@ -2058,7 +2058,7 @@
     "Posicion": "07.03",
     "Nombre": "03 - EvoData - pa.rep_recibo_pago_endelis.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\04 - EvoData - pa.rpe_ach_bac.StoredProcedure.sql",
@@ -2067,7 +2067,7 @@
     "Posicion": "07.04",
     "Nombre": "04 - EvoData - pa.rpe_ach_bac.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\05 - EvoData - pa.rpe_ach_bac_1ctv.StoredProcedure.sql",
@@ -2076,7 +2076,7 @@
     "Posicion": "07.05",
     "Nombre": "05 - EvoData - pa.rpe_ach_bac_1ctv.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\06 - EvoData - pa.rpe_ach_banco_general.StoredProcedure.sql",
@@ -2085,7 +2085,7 @@
     "Posicion": "07.06",
     "Nombre": "06 - EvoData - pa.rpe_ach_banco_general.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\07 - EvoData - pa.rpe_ach_banco_general_1ctvo.StoredProcedure.sql",
@@ -2094,7 +2094,7 @@
     "Posicion": "07.07",
     "Nombre": "07 - EvoData - pa.rpe_ach_banco_general_1ctvo.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\08 - EvoData - pa.rpe_ach_banco_general_acreedores.StoredProcedure.sql",
@@ -2103,7 +2103,7 @@
     "Posicion": "07.08",
     "Nombre": "08 - EvoData - pa.rpe_ach_banco_general_acreedores.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\09 - EvoData - pa.rpe_anexo03.StoredProcedure.sql",
@@ -2112,7 +2112,7 @@
     "Posicion": "07.09",
     "Nombre": "09 - EvoData - pa.rpe_anexo03.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\10 - EvoData - pa.rpe_archivo_anexo03.StoredProcedure.sql",
@@ -2121,7 +2121,7 @@
     "Posicion": "07.10",
     "Nombre": "10 - EvoData - pa.rpe_archivo_anexo03.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\11 - EvoData - pa.rpe_archivo_contable_sap.StoredProcedure.sql",
@@ -2130,7 +2130,7 @@
     "Posicion": "07.11",
     "Nombre": "11 - EvoData - pa.rpe_archivo_contable_sap.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\12 - EvoData - pa.rpe_archivo_sipe.StoredProcedure.sql",
@@ -2139,7 +2139,7 @@
     "Posicion": "07.12",
     "Nombre": "12 - EvoData - pa.rpe_archivo_sipe.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\13 - EvoData - pa.rpe_cne.StoredProcedure.sql",
@@ -2148,7 +2148,7 @@
     "Posicion": "07.13",
     "Nombre": "13 - EvoData - pa.rpe_cne.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\14 - EvoData - pa.rpe_constancia_trabajo_con_ciclicos.StoredProcedure.sql",
@@ -2157,7 +2157,7 @@
     "Posicion": "07.14",
     "Nombre": "14 - EvoData - pa.rpe_constancia_trabajo_con_ciclicos.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\15 - EvoData - pa.rpe_escenario_ingresos_promedio_vacacion.StoredProcedure.sql",
@@ -2166,7 +2166,7 @@
     "Posicion": "07.15",
     "Nombre": "15 - EvoData - pa.rpe_escenario_ingresos_promedio_vacacion.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\16 - EvoData - pa.rpe_fondo_cesantia.StoredProcedure.sql",
@@ -2175,7 +2175,7 @@
     "Posicion": "07.16",
     "Nombre": "16 - EvoData - pa.rpe_fondo_cesantia.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\17 - EvoData - pa.rpe_fondo_cesantia_previo.StoredProcedure.sql",
@@ -2184,7 +2184,7 @@
     "Posicion": "07.17",
     "Nombre": "17 - EvoData - pa.rpe_fondo_cesantia_previo.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\18 - EvoData - pa.rpe_informe_pago_ach.StoredProcedure.sql",
@@ -2193,7 +2193,7 @@
     "Posicion": "07.18",
     "Nombre": "18 - EvoData - pa.rpe_informe_pago_ach.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\19 - EvoData - pa.rpe_informe_pago_acreedor.StoredProcedure.sql",
@@ -2202,7 +2202,7 @@
     "Posicion": "07.19",
     "Nombre": "19 - EvoData - pa.rpe_informe_pago_acreedor.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\20 - EvoData - pa.rpe_informe_pago_cheque.StoredProcedure.sql",
@@ -2211,7 +2211,7 @@
     "Posicion": "07.20",
     "Nombre": "20 - EvoData - pa.rpe_informe_pago_cheque.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\21 - EvoData - pa.rpe_ingresos_acumulados_xiii.StoredProcedure.sql",
@@ -2220,7 +2220,7 @@
     "Posicion": "07.21",
     "Nombre": "21 - EvoData - pa.rpe_ingresos_acumulados_xiii.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\22 - EvoData - pa.rpe_ingresos_promedio_vacacion.StoredProcedure.sql",
@@ -2229,7 +2229,7 @@
     "Posicion": "07.22",
     "Nombre": "22 - EvoData - pa.rpe_ingresos_promedio_vacacion.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\23 - EvoData - pa.rpe_issp_reporte.StoredProcedure.sql",
@@ -2238,7 +2238,7 @@
     "Posicion": "07.23",
     "Nombre": "23 - EvoData - pa.rpe_issp_reporte.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\07 - Reportes\\24 - EvoData - pa.rpe_issp_sipe.StoredProcedure.sql",
@@ -2247,7 +2247,7 @@
     "Posicion": "07.24",
     "Nombre": "24 - EvoData - pa.rpe_issp_sipe.StoredProcedure.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\01 - EvoData - fj1puestos.sql",
@@ -2256,7 +2256,7 @@
     "Posicion": "08.01",
     "Nombre": "01 - EvoData - fj1puestos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\02 - EvoData - fj1jornada.sql",
@@ -2265,7 +2265,7 @@
     "Posicion": "08.02",
     "Nombre": "02 - EvoData - fj1jornada.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\03 - EvoData - fj1expedientes.sql",
@@ -2274,7 +2274,7 @@
     "Posicion": "08.03",
     "Nombre": "03 - EvoData - fj1expedientes.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\04 - EvoData - fj1empleos.sql",
@@ -2283,7 +2283,7 @@
     "Posicion": "08.04",
     "Nombre": "04 - EvoData - fj1empleos.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\05 - EvoData - Fill Estructura salarial.sql",
@@ -2292,7 +2292,7 @@
     "Posicion": "08.05",
     "Nombre": "05 - EvoData - Fill Estructura salarial.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   },
   {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\08 - FillJustOnePanama\\06 - EvoData - updateCompania1.sql",
@@ -2301,6 +2301,6 @@
     "Posicion": "08.06",
     "Nombre": "06 - EvoData - updateCompania1.sql",
     "DataBase": "EvoData",
-    "Ejecutado": "1"
+    "Ejecutado": "0"
   }
 ]
