@@ -1,1 +1,0 @@
-update eor.cia_companias set cia_codpai = 'pa' where cia_codigo = 1

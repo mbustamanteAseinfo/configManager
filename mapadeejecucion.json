@@ -1,5 +1,14 @@
 [
   {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\01 - EvoData - New One.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "00.01",
+    "Nombre": "01 - EvoData - New One.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
     "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Eva Version 1\\00 - General\\01 - EvoData - Tipo de planilla.sql",
     "Paso": "01",
     "Necesario": "1",

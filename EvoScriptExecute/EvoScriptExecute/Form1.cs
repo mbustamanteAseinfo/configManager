@@ -21,6 +21,7 @@ namespace EvoScriptExecute
         string _evoData = "";
         string _evoTemp = "";
         string directorio = "";
+        List<Item> scriptsList;
         public Form1()
         {
             InitializeComponent();
@@ -259,6 +260,60 @@ namespace EvoScriptExecute
             string directorio = "";
             button3.Text = "Ejecutar";
             button3.Enabled = true;
+        }
+
+        private void populateCheckBoxList() {
+            string jsonConfig = _directory + "\\mapadeejecucion.json";
+            string json = File.ReadAllText(jsonConfig);
+            scriptsList = JsonConvert.DeserializeObject<List<Item>>(json);
+
+            foreach (Item i in scriptsList)
+            {
+                checkedListBox1.Items.Add(i, i.Ejecutado == "0" ? false : true);
+            }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 2) {
+                if (_directory != "")
+                {
+
+                    populateCheckBoxList();
+                }
+            }   
+        }
+
+        private void btnFolderScripts_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                _directory = folderBrowserDialog.SelectedPath;
+                if (!File.Exists(_directory + "\\mapadeejecucion.json"))
+                {
+                    MessageBox.Show("El directorio no contiene el mapa de ejecución(mapadeejecución.json)");
+                    _directory = "";
+                }
+                else {
+                    populateCheckBoxList();
+                }
+            }
+        }
+
+        private void checkedListBox1_Click(object sender, EventArgs e)
+        {
+            Item i = (Item)checkedListBox1.SelectedItem;
+            checkedListBox1.SetItemChecked(checkedListBox1.SelectedIndex, checkedListBox1.GetItemCheckState(checkedListBox1.SelectedIndex) == CheckState.Checked ? false : true);
+            MessageBox.Show(i.Nombre);
+            
+        }
+
+        private void btnUncheck_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -106,5 +106,10 @@ namespace EvoScriptExecute
                 ejecutado = value;
             }
         }
+
+        public override string ToString()
+        {
+            return this.posicion + " - " + this.nombre.Split('-')[1].Trim() + " - " + this.nombre.Split('-')[2];
+        }
     }
 }
