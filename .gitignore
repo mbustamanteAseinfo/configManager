@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Generador de Mapa de Ejecución/Generador de Mapa de Ejecución/bin/Debug/mapadeejecucion.json
