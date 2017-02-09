@@ -1,14 +1,9 @@
-
-declare @coddep int
-if exists (select 1 from gen.dep_departamentos where dep_codpai = 'pa')
-	begin
-		delete from gen.mun_municipios where mun_coddep in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa')
-		delete from gen.dep_departamentos where dep_codpai = 'pa'
-	end
-	
+declare @coddep int,
+		@firstValid int
 
 INSERT gen.dep_departamentos ( dep_codpai, dep_descripcion, dep_abreviatura, dep_property_bag_data, dep_usuario_grabacion, dep_fecha_grabacion, dep_usuario_modificacion, dep_fecha_modificacion) VALUES ('pa', 'PANAMA', NULL, NULL, NULL, NULL, NULL, NULL)
 Set @coddep = @@IDENTITY
+set @firstValid = @coddep
 if exists(select 1 from gen.mun_municipios where mun_coddep = @coddep)
 	delete from gen.mun_municipios where mun_coddep = @coddep
 INSERT gen.mun_municipios (mun_coddep, mun_descripcion, mun_abreviatura, mun_property_bag_data, mun_usuario_grabacion, mun_fecha_grabacion, mun_usuario_modificacion, mun_fecha_modificacion) VALUES (@coddep, 'PANAMA', NULL, NULL, NULL, NULL, NULL, NULL)
@@ -127,4 +122,15 @@ if exists(select 1 from gen.mun_municipios where mun_coddep = @coddep)
 	delete from gen.mun_municipios where mun_coddep = @coddep
 INSERT gen.mun_municipios ( mun_coddep, mun_descripcion, mun_abreviatura, mun_property_bag_data, mun_usuario_grabacion, mun_fecha_grabacion, mun_usuario_modificacion, mun_fecha_modificacion) VALUES (@coddep, 'SAN BLAS', NULL, NULL, NULL, NULL, NULL, NULL)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PRINT 'Inserting values into mun_municipios'
+
+update eor.cdt_centros_de_trabajo set cdt_codmun = (select top 1 mun_codigo from gen.mun_municipios where mun_descripcion like concat('%', (select mun_descripcion from gen.mun_municipios where mun_codigo = cdt_codmun),'%') and mun_coddep >= @firstValid) where cdt_codmun in (select mun_codigo from gen.mun_municipios where mun_coddep in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa'))
+update exp.exp_expedientes set exp_coddep_nac = (select top 1 dep_codigo from gen.dep_departamentos where dep_descripcion like concat('%',(select top 1 dep_codigo from gen.dep_departamentos where dep_codigo = exp_coddep_nac), '%') and dep_codigo >= @firstValid),
+								exp_codmun_nac = (select top 1 mun_codigo from gen.mun_municipios where mun_descripcion like concat('%', (select mun_descripcion from gen.mun_municipios where mun_codigo = exp_codmun_nac),'%') and mun_coddep >= @firstValid)
+ where exp_coddep_nac in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa') or exp_codmun_nac in (select mun_codigo from gen.mun_municipios where mun_coddep in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa'))
+ update gen.lug_lugares set lug_codmun = (select top 1 mun_codigo from gen.mun_municipios where mun_descripcion like concat('%', (select mun_descripcion from gen.mun_municipios where mun_codigo = lug_codmun),'%') and mun_coddep >= @firstValid) where lug_codmun in (select mun_codigo from gen.mun_municipios where mun_coddep in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa'))
+
+if exists (select 1 from gen.dep_departamentos where dep_codpai = 'pa')
+	begin
+		delete from gen.mun_municipios where mun_coddep in (select dep_codigo from gen.dep_departamentos where dep_codpai = 'pa' and dep_codigo < @firstValid)
+		delete from gen.dep_departamentos where dep_codpai = 'pa' and dep_codigo < @firstValid
+	end

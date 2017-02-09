@@ -106,8 +106,8 @@ BEGIN
 			ON tpl_codigo = net_codtpl
 			JOIN sal.trs_tipos_reserva
 			ON trs_codcia = tpl_codcia
-			AND trs_codigo = 1 -- Ingreso Neto
-			AND tpl_codigo NOT IN (3) -- Vacaciones
+			AND trs_codigo = (select trs_codigo from sal.trs_tipos_reserva where trs_abreviatura = '1_PA') -- Ingreso Neto
+			AND tpl_codigo NOT IN (select tpl_codigo from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Vacaciones' and tpl_codmon = 'PAB') -- Vacaciones
 			WHERE net_codppl = @codppl_proceso
 			UNION
 			SELECT 'G' AS tipo_partida, net_codppl, net_codemp, trs_descripcion descripcion, trs_cuenta cuenta, 0.00 AS debito, net_valor AS credito
@@ -116,8 +116,8 @@ BEGIN
 			ON tpl_codigo = net_codtpl
 			JOIN sal.trs_tipos_reserva
 			ON trs_codcia = tpl_codcia
-			AND trs_codigo = 2 -- Provision vacaciones
-			AND tpl_codigo IN (3) -- Vacaciones
+			AND trs_codigo = (select trs_codigo from sal.trs_tipos_reserva where trs_abreviatura = 'PROV_VAC_PA') -- Provision vacaciones
+			AND tpl_codigo IN (select tpl_codigo from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Vacaciones' and tpl_codmon = 'PAB') -- Vacaciones
 			WHERE net_codppl = @codppl_proceso
 			UNION
 			SELECT 'P' AS tipo_partida, res_codppl, res_codemp, trs_descripcion descripcion, trs_cuenta cuenta, SUM(res_valor) AS debito, 0.00 AS credito

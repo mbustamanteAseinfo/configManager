@@ -569,7 +569,7 @@ where exists
 ','emp_codigo','NingunoIncluyendo',1,0);
 
 --Planilla Vacaciones
-insert into [sal].[tpc_tipos_planilla_cursor] ([tpc_codfcu],[tpc_codtpl]) select [fcu_codigo],3 from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_nombre] = 'Emp_InfoSalario_Vacaciones';
+insert into [sal].[tpc_tipos_planilla_cursor] ([tpc_codfcu],[tpc_codtpl]) select [fcu_codigo], (select tpl_codigo from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Vacaciones' and tpl_codmon = 'PAB') from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_nombre] = 'Emp_InfoSalario_Vacaciones';
 
 commit transaction;
 

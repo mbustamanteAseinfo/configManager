@@ -1,7 +1,7 @@
 
 IF EXISTS ( SELECT  *
             FROM    sys.objects
-            WHERE   object_id = OBJECT_ID(N'exe.fn_get_datos_rubro_salarial')
+            WHERE   object_id = OBJECT_ID(N'exp.fn_get_datos_rubro_salarial')
                     AND type IN ( N'TF', N'FN', N'IF' ) ) 
 /****** Object:  UserDefinedFunction [exp].[fn_get_datos_rubro_salarial]    Script Date: 16-01-2017 9:33:53 AM ******/
 DROP FUNCTION [exp].[fn_get_datos_rubro_salarial]

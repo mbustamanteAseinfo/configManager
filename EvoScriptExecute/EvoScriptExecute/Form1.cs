@@ -93,7 +93,8 @@ namespace EvoScriptExecute
                             {
                                 textBox1.Text += "Ejecutando el script " + i.Nombre + "\r\n";
                                 var fileInfo = new FileInfo(i.Ruta);
-                                string script = fileInfo.OpenText().ReadToEnd();
+                                string script = File.ReadAllText(fileInfo.FullName, Encoding.GetEncoding("iso-8859-1"));
+                                string scriptutf8 = File.ReadAllText(fileInfo.FullName, Encoding.UTF8);
                                 try
                                 {
                                     if (i.DataBase == "EvoData")
@@ -123,7 +124,14 @@ namespace EvoScriptExecute
                                             }
                                         }
                                     }
-                                    sqlConnectionHelper.ExecuteScript(script);
+                                    if (script.Contains("Ã"))
+                                    {
+                                        sqlConnectionHelper.ExecuteScript(scriptutf8);
+                                    }
+                                    else {
+                                        sqlConnectionHelper.ExecuteScript(script);
+
+                                    }
                                     i.Ejecutado = "1";
                                 }
                                 catch (Exception ex)
@@ -136,7 +144,7 @@ namespace EvoScriptExecute
                         }
                     }
                     string nJson = JsonConvert.SerializeObject(ordered, Formatting.Indented);
-                    string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
+                    string fileToSave = directorio + @"\mapadeejecucion.json";
                     if (File.Exists(fileToSave))
                     {
                         File.Delete(fileToSave);
@@ -188,15 +196,17 @@ namespace EvoScriptExecute
             {
                 foreach (FileInfo f in fileEntries)
                 {
-                    Item nItem = new Item();
-                    nItem.Ruta = f.FullName;
-                    nItem.Posicion = dadStep.Replace(' ', '.') + f.Name.Split('-')[0].Trim().ToString();
-                    nItem.Paso = f.Name.Split('-')[0].Trim().ToString();
-                    nItem.Necesario = "1";
-                    nItem.Nombre = f.Name;
-                    nItem.DataBase = f.Name.Split('-')[1].Trim().ToString();
-                    nItem.Ejecutado = "0";
-                    iList.Add(nItem);
+                    if (f.Extension == ".sql") {
+                        Item nItem = new Item();
+                        nItem.Ruta = f.FullName;
+                        nItem.Posicion = dadStep.Replace(' ', '.') + f.Name.Split('-')[0].Trim().ToString();
+                        nItem.Paso = f.Name.Split('-')[0].Trim().ToString();
+                        nItem.Necesario = "1";
+                        nItem.Nombre = f.Name;
+                        nItem.DataBase = f.Name.Split('-')[1].Trim().ToString();
+                        nItem.Ejecutado = "0";
+                        iList.Add(nItem);
+                    }
                 }
             }
             if (directoryEntries.Length > 0)
@@ -232,7 +242,7 @@ namespace EvoScriptExecute
                 List<Item> iList = new List<Item>();
                 ProcessDirectory(directorio, "0", iList);
                 string json = JsonConvert.SerializeObject(iList, Formatting.Indented);
-                string fileToSave = @"C:\Users\mbustamante\Source\Repos\configManager\mapadeejecucion.json";
+                string fileToSave = directorio + "\\mapadeejecucion.json";
                 if (File.Exists(fileToSave))
                 {
                     File.Delete(fileToSave);
@@ -252,14 +262,16 @@ namespace EvoScriptExecute
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            string _conString = "";
-            string _directory = "";
-            string _evoConfig = "";
-            string _evoData = "";
-            string _evoTemp = "";
-            string directorio = "";
+            _conString = "";
+            _directory = "";
+            _evoConfig = "";
+            _evoData = "";
+            _evoTemp = "";
+            directorio = "";
             button3.Text = "Ejecutar";
             button3.Enabled = true;
+            textBox1.Text = "";
+            textBox2.Text = "";
         }
 
         private void populateCheckBoxList() {

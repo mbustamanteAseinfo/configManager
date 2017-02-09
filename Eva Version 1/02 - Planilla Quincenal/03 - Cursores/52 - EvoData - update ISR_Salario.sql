@@ -31,7 +31,7 @@ select codemp,
 	   rap_proyectado, 
 	   rap_desc_legal, 
 	   rap_periodos_restantes
-from gen.get_valor_rango_parametro(''TablaRentaMensual'', @codpai, null, null, null, null),
+from gen.get_valor_rango_parametro(''PA_TablaRentaMensual'', @codpai, null, null, null, null),
 	(select rap_codemp codemp, 
 			convert(numeric(12,2), rap_acumulado + rap_proyectado + convert(numeric(12,2), ese_valor / 2.00) * (case @codtpl when @codtpl_ordinario then isnull(dva_dias / 15, 1) else 0 end) - rap_desc_legal) salario_anual, 
 			convert(numeric(12,2), ese_valor / 2.00) salario_quincenal, rap_retenido, rap_periodos_restantes

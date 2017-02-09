@@ -16,7 +16,7 @@ from eor.cia_companias
 where cia_codigo = @codcia
 
 select inicio isr_desde, fin isr_hasta, porcentaje isr_pct, excedente isr_excedente, valor isr_valor
-from gen.get_valor_rango_parametro(''TablaRentaMensualGastoRep'', @codpai, null, null, null, null)
+from gen.get_valor_rango_parametro(''PA_TablaRentaMensualGastoRep'', @codpai, null, null, null, null)
 ','TodosExcluyendo',0,0);
 
 

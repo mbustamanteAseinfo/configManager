@@ -40,7 +40,6 @@ C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecut
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Dmf.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.xml
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.csprojResolveAssemblyReference.cache
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Form1.resources
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Properties.Resources.resources
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.csproj.GenerateResource.Cache

@@ -1,12 +1,9 @@
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
-
 begin transaction
 
 delete from [sal].[fat_factores_tipo_planilla] where [fat_codtpl] = (select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB');
 delete from [sal].[ftp_formulacion_tipos_planilla] where [ftp_codtpl] = (select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB');
 
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '1a6f3ab6-13a3-47a4-96d5-16a695850a05' and fac_codpai = 'pa';
 
@@ -20,7 +17,6 @@ EmpleadoParticipa_d = b
 
 End Function','boolean','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'c2da53a4-827e-4fbf-bb42-6c075bd9e2bc' and fac_codpai = 'pa';
 
@@ -30,8 +26,6 @@ DiasQuincena_d = 120
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
-
 delete from [sal].[fac_factores] where [fac_codigo] = '3d8f0d05-5f7c-4783-8f26-e8516fcf7202' and fac_codpai = 'pa';
 
 insert into [sal].[fac_factores] ([fac_codigo],[fac_id],[fac_descripcion],[fac_vbscript],[fac_codfld],[fac_codpai],[fac_size]) values ('3d8f0d05-5f7c-4783-8f26-e8516fcf7202','DiasTrabajados_d','Almacena la cantidad de días trabajados por el empleado en el período','Function DiasTrabajados_d()
@@ -40,7 +34,6 @@ DiasTrabajados_d = 0
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'f44f064e-c4e1-48b0-bd59-2da1848a6d30' and fac_codpai = 'pa';
 
@@ -50,7 +43,6 @@ DescAnticipoXIII_GR = 0.00
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '005636ba-b9c4-4f2a-b41b-bca88c984435' and fac_codpai = 'pa';
 
@@ -70,7 +62,6 @@ DescAnticipoXIII = anticipoXIII
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'b7ecbdb0-a784-44fc-b2df-d78a39ac538a' and fac_codpai = 'pa';
 
@@ -80,7 +71,6 @@ Decimo_Tercero_GRep = 0.00
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'a2274c4d-3258-439a-b961-048614b51277' and fac_codpai = 'pa';
 
@@ -148,7 +138,6 @@ DecimoTercero = bonoSalario
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '39db6b8c-ff50-46d2-92c3-2ae5423f5bca' and fac_codpai = 'pa';
 
@@ -180,7 +169,7 @@ OtrosIngresos_d = o
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
+
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'b9bd0f33-6d74-438e-a000-b3c615c1ef90' and fac_codpai = 'pa';
 
@@ -190,7 +179,6 @@ DescExcesoXIII_GR = 0.00
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'f7b1bd19-2697-4d79-a121-d1b43fffe130' and fac_codpai = 'pa';
 
@@ -251,7 +239,6 @@ DescExcesoXIII = Exceso
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '6dc55c1a-e329-4401-b168-4f9bd221584a' and fac_codpai = 'pa';
 
@@ -261,7 +248,6 @@ SegSocialGR_BaseCalc = Agrupadores("XIIIMesGR").Value ''Factores("Decimo_Tercero
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '597292e5-30a0-4669-bacc-a15bf419e6f8' and fac_codpai = 'pa';
 
@@ -271,7 +257,7 @@ SSBaseCalculo_d = Agrupadores("BaseCalculoSeguroSocial").Value
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
+
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'cb666c61-9488-4263-9109-97647d4435d9' and fac_codpai = 'pa';
 
@@ -302,7 +288,7 @@ ISRBaseCalculo_d = base
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
+
 
 delete from [sal].[fac_factores] where [fac_codigo] = '9db7d3f0-52a2-447e-b64d-f4d4fd2c3c13' and fac_codpai = 'pa';
 
@@ -332,7 +318,7 @@ ISRBaseCalculoGRep_d = base
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
+
 
 delete from [sal].[fac_factores] where [fac_codigo] = '6d957e26-744a-4259-8abf-6f60cd44b15a' and fac_codpai = 'pa';
 
@@ -400,7 +386,6 @@ TablaISR.MoveFirst
 ISR_d = valor
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '15148a7e-87ac-4ab3-8288-087f367fe82c' and fac_codpai = 'pa';
 
@@ -472,7 +457,6 @@ TablaISR_GRep.MoveFirst
 ISR_GASTO_REP_d = valor
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '3e4ea582-1b4b-4baa-83a4-d7949d452642' and fac_codpai = 'pa';
 
@@ -482,8 +466,6 @@ SeguroSocialPatrono_d = 0
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
-
 delete from [sal].[fac_factores] where [fac_codigo] = 'da82728a-120a-499b-9398-81d7ea990811' and fac_codpai = 'pa';
 
 insert into [sal].[fac_factores] ([fac_codigo],[fac_id],[fac_descripcion],[fac_vbscript],[fac_codfld],[fac_codpai],[fac_size]) values ('da82728a-120a-499b-9398-81d7ea990811','SSPatronalEspecial','Aporte patronal especial del seguro social','Function SSPatronalEspecial()
@@ -492,7 +474,6 @@ SSPatronalEspecial = 0
 
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'f5949487-5943-449b-ac95-907bca42829e' and fac_codpai = 'pa';
 
@@ -571,7 +552,6 @@ end if
 SeguroSocial_d = cuota
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'f3da6f34-74ef-4311-9002-002ab7099e02' and fac_codpai = 'pa';
 
@@ -626,7 +606,6 @@ end if
 SegSocGastoRep = isss_gr
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = '1da69547-e0e1-450f-aea7-901248e76a99' and fac_codpai = 'pa';
 
@@ -652,7 +631,7 @@ end if
 SegSocGRPatronal = isss_gr_patronal
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
+
 
 delete from [sal].[fac_factores] where [fac_codigo] = '6f18ba36-afc3-4034-b6eb-6d01eb800380' and fac_codpai = 'pa';
 
@@ -687,7 +666,6 @@ if Factores("SSBaseCalculo_d").Value < 0 then msgbox "Es Menor que cero"
 SalarioNeto_d = liquido
 End Function','double','pa',0);
 
-/* Script Generado por Evolution - Editor de Formulación de Planillas. 16-01-2017 3:06 PM */
 
 delete from [sal].[fac_factores] where [fac_codigo] = 'd9bab822-bee7-4029-98c7-eb2b96516c83' and fac_codpai = 'pa';
 
@@ -726,29 +704,29 @@ End Function','double','pa',0);
 
 
 insert into [sal].[ftp_formulacion_tipos_planilla] ([ftp_codtpl],[ftp_prefijo],[ftp_table_name],[ftp_codfac_filtro],[ftp_codfcu_loop],[ftp_sp_inicializacion],[ftp_sp_finalizacion],[ftp_sp_autorizacion]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'ter','pa.ter_decimo','1a6f3ab6-13a3-47a4-96d5-16a695850a05',(select fcu_codigo from (select RowNum = row_number() OVER ( order by fcu_codigo ), fcu_codigo from sal.fcu_formulacion_cursores where fcu_codpai = 'pa' and fcu_proceso = 'Planilla') tcr where tcr.RowNum = 12),'pa.GenPla_Inicializacion_XIII','pa.GenPla_Finalizacion_XIII','pa.aupla_autoriza_planilla');
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'1a6f3ab6-13a3-47a4-96d5-16a695850a05',1,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'c2da53a4-827e-4fbf-bb42-6c075bd9e2bc',2,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'3d8f0d05-5f7c-4783-8f26-e8516fcf7202',3,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f44f064e-c4e1-48b0-bd59-2da1848a6d30',4,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'005636ba-b9c4-4f2a-b41b-bca88c984435',5,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'b7ecbdb0-a784-44fc-b2df-d78a39ac538a',6,4,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'a2274c4d-3258-439a-b961-048614b51277',7,3,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'39db6b8c-ff50-46d2-92c3-2ae5423f5bca',8,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'b9bd0f33-6d74-438e-a000-b3c615c1ef90',10,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f7b1bd19-2697-4d79-a121-d1b43fffe130',11,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6dc55c1a-e329-4401-b168-4f9bd221584a',12,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'597292e5-30a0-4669-bacc-a15bf419e6f8',13,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'cb666c61-9488-4263-9109-97647d4435d9',14,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'9db7d3f0-52a2-447e-b64d-f4d4fd2c3c13',15,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6d957e26-744a-4259-8abf-6f60cd44b15a',16,NULL,3,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'15148a7e-87ac-4ab3-8288-087f367fe82c',17,NULL,4,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'3e4ea582-1b4b-4baa-83a4-d7949d452642',18,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'da82728a-120a-499b-9398-81d7ea990811',19,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f5949487-5943-449b-ac95-907bca42829e',20,NULL,1,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f3da6f34-74ef-4311-9002-002ab7099e02',21,NULL,1,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'1da69547-e0e1-450f-aea7-901248e76a99',22,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6f18ba36-afc3-4034-b6eb-6d01eb800380',23,NULL,NULL,NULL,1);
-insert into [sal].[fat_factores_tipo_planilla] ([fat_codigo],[fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'d9bab822-bee7-4029-98c7-eb2b96516c83',9,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'1a6f3ab6-13a3-47a4-96d5-16a695850a05',1,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'c2da53a4-827e-4fbf-bb42-6c075bd9e2bc',2,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'3d8f0d05-5f7c-4783-8f26-e8516fcf7202',3,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f44f064e-c4e1-48b0-bd59-2da1848a6d30',4,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'005636ba-b9c4-4f2a-b41b-bca88c984435',5,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'b7ecbdb0-a784-44fc-b2df-d78a39ac538a',6,4,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'a2274c4d-3258-439a-b961-048614b51277',7,3,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'39db6b8c-ff50-46d2-92c3-2ae5423f5bca',8,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'b9bd0f33-6d74-438e-a000-b3c615c1ef90',10,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f7b1bd19-2697-4d79-a121-d1b43fffe130',11,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6dc55c1a-e329-4401-b168-4f9bd221584a',12,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'597292e5-30a0-4669-bacc-a15bf419e6f8',13,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'cb666c61-9488-4263-9109-97647d4435d9',14,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'9db7d3f0-52a2-447e-b64d-f4d4fd2c3c13',15,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6d957e26-744a-4259-8abf-6f60cd44b15a',16,NULL,3,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'15148a7e-87ac-4ab3-8288-087f367fe82c',17,NULL,4,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'3e4ea582-1b4b-4baa-83a4-d7949d452642',18,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'da82728a-120a-499b-9398-81d7ea990811',19,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f5949487-5943-449b-ac95-907bca42829e',20,NULL,1,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'f3da6f34-74ef-4311-9002-002ab7099e02',21,NULL,1,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'1da69547-e0e1-450f-aea7-901248e76a99',22,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'6f18ba36-afc3-4034-b6eb-6d01eb800380',23,NULL,NULL,NULL,1);
+insert into [sal].[fat_factores_tipo_planilla] ([fat_codtpl],[fat_codfac],[fat_precedencia],[fat_codtig],[fat_codtdc],[fat_codtrs],[fat_salva_en_tabla]) values ((select MAX(tpl_codigo) from sal.tpl_tipo_planilla where tpl_descripcion = 'Planilla Décimo III mes' and tpl_codmon = 'PAB'),'d9bab822-bee7-4029-98c7-eb2b96516c83',9,NULL,NULL,NULL,1);
 
 
 commit transaction;
