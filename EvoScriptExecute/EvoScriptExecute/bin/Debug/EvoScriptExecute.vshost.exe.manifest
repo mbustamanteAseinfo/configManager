@@ -43,22 +43,17 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.SqlServer.Diagnostics.STrace" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.SqlServer.Diagnostics.STrace" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.SqlServer.Management.SmoMetadataProvider" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.SqlServer.Management.SmoMetadataProvider" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.SqlServer.Management.SqlParser" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.SqlServer.SqlClrProvider" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.SqlServer.SqlClrProvider" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -69,7 +64,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Cw4NFVg9xcASScRxLMkQ5Gj0jKW5MrKwjax1eHna2kk=</dsig:DigestValue>
+        <dsig:DigestValue>AtufB8dSNILDcPBgs1paG3Ag51xiazV/HfPDPwZoEvA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,74 +93,74 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.ConnectionInfo.dll" size="161472">
-      <assemblyIdentity name="Microsoft.SqlServer.ConnectionInfo" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.ConnectionInfo.dll" size="171504">
+      <assemblyIdentity name="Microsoft.SqlServer.ConnectionInfo" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8eoe4/QSdEb1DjstxeWu40czijvv+ILbwwqqBmx4zRk=</dsig:DigestValue>
+        <dsig:DigestValue>8UvZrMgLOAFmFuRMPjclYHE69JvsjC9xqwayQop2LII=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Dmf.dll" size="364224">
-      <assemblyIdentity name="Microsoft.SqlServer.Dmf" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Dmf.dll" size="364016">
+      <assemblyIdentity name="Microsoft.SqlServer.Dmf" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3foStprhQtjxzuured0QTK2aAQY2/5ctHJ7Rtzbq+E8=</dsig:DigestValue>
+        <dsig:DigestValue>l0H2YmO2SYoGNTqzcphkSHYJceKch20SswaPnbuZ5tI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Management.Sdk.Sfc.dll" size="499392">
-      <assemblyIdentity name="Microsoft.SqlServer.Management.Sdk.Sfc" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Management.Sdk.Sfc.dll" size="507376">
+      <assemblyIdentity name="Microsoft.SqlServer.Management.Sdk.Sfc" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2MJLOX7Mv4vKj2PXjVzDu8WkVtHFqtJs5VxZl0E7KoY=</dsig:DigestValue>
+        <dsig:DigestValue>qFnU4zFXyxXWpuGrvgXISlauD8COysbEp+IUeR90ZiA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.ServiceBrokerEnum.dll" size="57024">
-      <assemblyIdentity name="Microsoft.SqlServer.ServiceBrokerEnum" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.ServiceBrokerEnum.dll" size="56408">
+      <assemblyIdentity name="Microsoft.SqlServer.ServiceBrokerEnum" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+/91Z870/DAFeupB8oENY7bbLpdaIlhoYfmpE9B3VuQ=</dsig:DigestValue>
+        <dsig:DigestValue>WPCbwj+L8lmeEWm6uuptgMqHF2DgaSyCSg0xBFWvp6w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Smo.dll" size="3720896">
-      <assemblyIdentity name="Microsoft.SqlServer.Smo" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.Smo.dll" size="3644928">
+      <assemblyIdentity name="Microsoft.SqlServer.Smo" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LjRDv9OLznHclZBm7JJzRbEYR7ZT5J7sNYgy2xkQyJ4=</dsig:DigestValue>
+        <dsig:DigestValue>HFZ2nlo33yqUmNIHgoDDKemFWyGQlQNlpNnOpoEehJs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.SqlEnum.dll" size="1355456">
-      <assemblyIdentity name="Microsoft.SqlServer.SqlEnum" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.SqlServer.SqlEnum.dll" size="1334784">
+      <assemblyIdentity name="Microsoft.SqlServer.SqlEnum" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>boBoy3IovI/7WhthdcVZB6TSQ2hB2z37Bc150rZlpvs=</dsig:DigestValue>
+        <dsig:DigestValue>puqy57UzwNyEyTw9IFReZZ1sbqs00IEZ6B3eIZNqiZY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

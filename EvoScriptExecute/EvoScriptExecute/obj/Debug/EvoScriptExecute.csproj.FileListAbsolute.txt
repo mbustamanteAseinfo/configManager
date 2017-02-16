@@ -20,12 +20,10 @@ C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoS
 C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.application
 C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe.manifest
 C:\Users\mbustamante\documents\visual studio 2015\Projects\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.application
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
 C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
 C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
 C:\Users\Miguel\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.config
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe.manifest
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.application
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\EvoScriptExecute.exe
@@ -33,15 +31,18 @@ C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecut
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Smo.dll
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.dll
-C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Dmf.dll
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.dll
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Form1.resources
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.Properties.Resources.resources
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.csproj.GenerateResource.Cache
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe.manifest
 C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.application
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.exe
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.pdb
+C:\Users\mbustamante\Source\Repos\configManager\EvoScriptExecute\EvoScriptExecute\obj\Debug\EvoScriptExecute.csprojResolveAssemblyReference.cache

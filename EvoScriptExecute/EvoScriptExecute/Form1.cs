@@ -1,12 +1,9 @@
 ﻿using Microsoft.Data.ConnectionUI;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
@@ -144,7 +141,7 @@ namespace EvoScriptExecute
                         }
                     }
                     string nJson = JsonConvert.SerializeObject(ordered, Formatting.Indented);
-                    string fileToSave = directorio + @"\mapadeejecucion.json";
+                    string fileToSave = _directory + @"\mapadeejecucion.json";
                     if (File.Exists(fileToSave))
                     {
                         File.Delete(fileToSave);
@@ -180,7 +177,7 @@ namespace EvoScriptExecute
 
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = "Ruta: " + folderBrowserDialog.SelectedPath;
+                textBox3.Text = "Ruta: " + folderBrowserDialog.SelectedPath;
                 directorio = folderBrowserDialog.SelectedPath;
             }
         }
