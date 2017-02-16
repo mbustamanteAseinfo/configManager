@@ -323,138 +323,198 @@ End Function','double','pa',0);
 delete from [sal].[fac_factores] where [fac_codigo] = '6d957e26-744a-4259-8abf-6f60cd44b15a' and fac_codpai = 'pa';
 
 insert into [sal].[fac_factores] ([fac_codigo],[fac_id],[fac_descripcion],[fac_vbscript],[fac_codfld],[fac_codpai],[fac_size]) values ('6d957e26-744a-4259-8abf-6f60cd44b15a','ISR_d','Cálculo del impuesto sobre la renta','Function ISR_d()
-''Si especifica que no paga renta, no ejecuta este factor
-valor = 0.00
-if Emp_InfoSalario.Fields("dpl_renta").Value = "N" or Factores("ISRBaseCalculo_d").Value = 0 or Datos_Renta.EOF or Datos_Renta.BOF or Factores("DecimoTercero").Value <= 0 then
-   ISR = valor
-   Exit Function
+''RENTA PLANILLA DECIMO TERCERO
+
+ingreso_planilla = 0.00
+ingreso_planilla = CDbl(Factores("ISRBaseCalculo_d").Value)
+
+if not Datos_Renta.EOF and not Datos_Renta.BOF then
+   Datos_Renta.Fields("RAP_INGRESO_PLANILLA").Value = ingreso_planilla
 end if
 
-Neto = 0.00
-Anual = 0.00
-Restante = 0.00
+''Si especifica que no paga renta, no ejecuta este factor
+valor = 0
+if Emp_InfoSalario.Fields("dpl_renta").Value = "N" or Factores("ISRBaseCalculo_d").Value = 0 or Datos_Renta.EOF or Datos_Renta.BOF then
+  ISR = valor
+  Exit Function
+end if
 
-Datos_Renta.Fields("RAP_INGRESO_PLANILLA").Value = Factores("ISRBaseCalculo_d").Value
-Datos_Renta.Fields("RAP_PROYECTADO").Value = Datos_Renta.Fields("RAP_PROYECTADO").Value - Factores("ISRBaseCalculo_d").Value
+acumulado = 0.00
+proyectado = 0.00
+desc_legal = 0.00
+ingreso_anual_planilla = 0.00
+isr_anual = 0.00
+isr_anual_planilla = 0.00
+salario_quincenal = 0.00
+decimo_regular = 0.00
 
-''Neto = Factores("ISRBaseCalculo").Value * 1.50 + Datos_Renta.Fields("RAP_ACUMULADO").Value + Datos_Renta.Fields("RAP_PROYECTADO").Value 
-Neto = Factores("ISRBaseCalculo_d").Value + Datos_Renta.Fields("RAP_ACUMULADO").Value + Datos_Renta.Fields("RAP_PROYECTADO").Value 
-Neto = Neto - Datos_Renta.Fields("RAP_DESC_LEGAL").Value 
+continuar = 1
 
-TablaISR.MoveFirst
+if not ISR_Salario.EOF and not ISR_Salario.BOF then
+  decimo_regular = round(CDbl(ISR_Salario.Fields("salario_quincenal").Value) * 2 / 3, 2)
+  if ingreso_planilla = decimo_regular then
+    valor = round(CDbl(ISR_Salario.Fields("isr_quincenal").Value) * 2 / 3, 2)
+    continuar = 0
+  else
+    if ingreso_planilla > decimo_regular then
+      valor = round(CDbl(ISR_Salario.Fields("isr_quincenal").Value) * 2 / 3, 2)
+    else
+       valor = round(CDbl(ISR_Salario.Fields("isr_quincenal").Value) * 2 / 3, 2) * ingreso_planilla / decimo_regular
+       continuar = 0
+    end if
+  end if
+  
+  proyectado = CDbl(ISR_Salario.Fields("rap_proyectado").Value)
+  Datos_Renta.Fields("RAP_PROYECTADO").Value = proyectado - decimo_regular 
+  
+  acumulado = CDbl(ISR_Salario.Fields("rap_acumulado").Value)
+  proyectado = proyectado - decimo_regular
+  desc_legal = CDbl(ISR_Salario.Fields("rap_desc_legal").Value)
+  isr_anual = CDbl(ISR_Salario.Fields("isr_anual").Value)
+  
+  ingreso_anual_planilla = acumulado + proyectado + ingreso_planilla - desc_legal
+  
+end if
 
- if not (TablaISR.EOF and TablaISR.BOF) then
-    do until TablaISR.EOF
-       if Neto >= TablaISR.Fields("ISR_DESDE").Value and Neto <= TablaISR.Fields("ISR_HASTA").Value then
-           Anual = ((Neto - TablaISR.Fields("ISR_EXCEDENTE").Value ) * ( TablaISR.Fields("ISR_PCT").Value /100.00)) + TablaISR.Fields("ISR_VALOR").Value 
-           Restante = Anual - Datos_Renta.Fields("RAP_RETENIDO").Value 
-           if Datos_Renta.Fields("RAP_PERIODOS_RESTANTES").Value = 0 then
-              valor = Restante
-           else
-              valor = round((Restante/ (Datos_Renta.Fields("RAP_PERIODOS_RESTANTES").Value)),2) * 2.00 / 3.00
-              valor = round(valor*100.00 + 0.100)/100
-           end if
+if valor < 0 then
+  valor = 0
+end if
 
-           if valor > 0 then
-              if not RentaAdelantoXIII.EOF then
-                 valor = valor - RentaAdelantoXIII.Fields("VALOR").Value
-                 if valor < 0 then
-                    valor = 0
-                 end if
-              end if
-           end if
+if continuar = 1 then
+  if ingreso_anual_planilla > 0 then
 
-           ''if valor > Agrupadores("XIIIMes").Value then
-           ''   valor = 0
-           ''end if
+    TablaISR.MoveFirst
+    if not (TablaISR.EOF and TablaISR.BOF) then
+      do until TablaISR.EOF
+        if ingreso_anual_planilla >= TablaISR.Fields("ISR_DESDE").Value and ingreso_anual_planilla <= TablaISR.Fields("ISR_HASTA").Value then
+          isr_anual_planilla = ((ingreso_anual_planilla - TablaISR.Fields("ISR_EXCEDENTE").Value ) * ( TablaISR.Fields("ISR_PCT").Value /100.00)) + TablaISR.Fields("ISR_VALOR").Value 
+        end if
+        TablaISR.MoveNext
+      loop
+    end if
+    
+    if isr_anual_planilla > isr_anual then
+      valor = valor + (isr_anual_planilla - isr_anual)
+    end if
+  end if
+end if
 
-           if not isnull(Factores("ISR_d").CodTipoDescuento) and valor > 0 then
-              Datos_Renta.Fields("RAP_A_DESCONTAR").Value = valor
-              
-              agrega_descuentos_historial Agrupadores, _
+if valor < 0 then
+  valor = 0
+end if
+
+if valor > 0 then
+   valor = round(valor * 100.00 + 0.100)/100
+   Datos_Renta.Fields("rap_a_descontar").Value = valor
+   agrega_descuentos_historial Agrupadores, _
                                DescuentosEstaPlanilla, _
                                Emp_InfoSalario.Fields("EMP_CODIGO").Value, _
                                Pla_Periodo.Fields("PPL_CODPPL").Value, _
                                Factores("ISR_d").CodTipoDescuento, _
-                               valor, 0, 0, "PAB", 0, "Dias"
-            end if
-       end if
-       TablaISR.MoveNext
-    loop
- end if
+                               valor, 0, 0, "PAB", 0, ""
+end if
 
 ISR_d = valor
+
 End Function','double','pa',0);
 
 
 delete from [sal].[fac_factores] where [fac_codigo] = '15148a7e-87ac-4ab3-8288-087f367fe82c' and fac_codpai = 'pa';
 
 insert into [sal].[fac_factores] ([fac_codigo],[fac_id],[fac_descripcion],[fac_vbscript],[fac_codfld],[fac_codpai],[fac_size]) values ('15148a7e-87ac-4ab3-8288-087f367fe82c','ISR_GASTO_REP_d','Cálculo del impuesto sobre la renta sobre el gasto de representación','Function ISR_GASTO_REP_d()
-valor = 0.00
+''RENTA PLANILLA DECIMO TERCERO
+
+ingreso_planilla = 0.00
+ingreso_planilla = CDbl(Factores("ISRBaseCalculoGRep_d").Value)
+
+if not Datos_Renta_Gastos_Rep.EOF and not Datos_Renta_Gastos_Rep.BOF then
+   Datos_Renta_Gastos_Rep.Fields("RAG_INGRESO_PLANILLA").Value = ingreso_planilla
+end if
+
 ''Si especifica que no paga renta, no ejecuta este factor
 valor = 0
 if Emp_InfoSalario.Fields("dpl_renta_gr").Value = "N" or Factores("ISRBaseCalculoGRep_d").Value = 0 or Datos_Renta_Gastos_Rep.EOF or Datos_Renta_Gastos_Rep.BOF then
-   ISR_GASTO_REP_d = valor
-   Exit Function
+  ISR_GASTO_REP_d = valor
+  Exit Function
 end if
 
-Neto = 0
-Anual = 0
-Restante = 0
+acumulado = 0.00
+proyectado = 0.00
+desc_legal = 0.00
+ingreso_anual_planilla = 0.00
+isr_anual = 0.00
+isr_anual_planilla = 0.00
+salario_quincenal = 0.00
+decimo_regular = 0.00
 
-Datos_Renta_Gastos_Rep.Fields("rag_ingreso_planilla").Value = Factores("ISRBaseCalculoGRep_d").Value
-''Datos_Renta_Gastos_Rep.Fields("rag_proyectado").Value = Datos_Renta_Gastos_Rep.Fields("rag_proyectado").Value - Agrupadores("IngresosRentaGRepPTY").Value
+continuar = 1
 
-''Neto = Datos_Renta_Gastos_Rep.Fields("RAP_ACUMULADO").Value + Datos_Renta_Gastos_Rep.Fields("RAP_PROYECTADO").Value 
-Neto = Factores("ISRBaseCalculoGRep_d").Value = 0 + Datos_Renta_Gastos_Rep.Fields("rag_acumulado").Value + Datos_Renta_Gastos_Rep.Fields("rag_proyectado").Value
+if not ISR_GastoRep.EOF and not ISR_GastoRep.BOF then
+  decimo_regular = round(CDbl(ISR_GastoRep.Fields("salario_quincenal").Value) * 2 / 3, 2)
+  if ingreso_planilla = decimo_regular then
+    valor = round(CDbl(ISR_GastoRep.Fields("isr_quincenal").Value) * 2 / 3, 2)
+    continuar = 0
+  else
+    if ingreso_planilla > decimo_regular then
+      valor = round(CDbl(ISR_GastoRep.Fields("isr_quincenal").Value) * 2 / 3, 2)
+    else
+       valor = round(CDbl(ISR_GastoRep.Fields("isr_quincenal").Value) * 2 / 3, 2) * ingreso_planilla / decimo_regular
+       continuar = 0
+    end if
+  end if
+  
+  proyectado = CDbl(ISR_GastoRep.Fields("rag_proyectado").Value)
+  Datos_Renta_Gastos_Rep.Fields("RAG_PROYECTADO").Value = proyectado - decimo_regular 
+  
+  acumulado = CDbl(ISR_GastoRep.Fields("rag_acumulado").Value)
+  proyectado = proyectado - decimo_regular
+  desc_legal = CDbl(ISR_GastoRep.Fields("rag_desc_legal").Value)
+  isr_anual = CDbl(ISR_GastoRep.Fields("isr_anual").Value)
+  
+  ingreso_anual_planilla = acumulado + proyectado + ingreso_planilla - desc_legal
+  
+end if
 
-Neto = Neto - Datos_Renta_Gastos_Rep.Fields("rag_desc_legal").Value 
+if valor < 0 then
+  valor = 0
+end if
 
-TablaISR_GRep.MoveFirst
+if continuar = 1 then
+  if ingreso_anual_planilla > 0 then
 
- if not (TablaISR_GRep.EOF and TablaISR_GRep.BOF) then
-    do until TablaISR_GRep.EOF
+    TablaISR_GRep.MoveFirst
+    if not (TablaISR_GRep.EOF and TablaISR_GRep.BOF) then
+      do until TablaISR_GRep.EOF
+        if ingreso_anual_planilla >= TablaISR_GRep.Fields("ISR_DESDE").Value and ingreso_anual_planilla <= TablaISR_GRep.Fields("ISR_HASTA").Value then
+          isr_anual_planilla = ((ingreso_anual_planilla - TablaISR_GRep.Fields("ISR_EXCEDENTE").Value ) * ( TablaISR_GRep.Fields("ISR_PCT").Value /100.00)) + TablaISR_GRep.Fields("ISR_VALOR").Value 
+        end if
+        TablaISR_GRep.MoveNext
+      loop
+    end if
+    
+    if isr_anual_planilla > isr_anual then
+      valor = valor + (isr_anual_planilla - isr_anual)
+    end if
+  end if
+end if
 
-       if Neto >= TablaISR_GRep.Fields("ISR_DESDE").Value and Neto <= TablaISR_GRep.Fields("ISR_HASTA").Value then
-           if TablaISR_GRep.Fields("ISR_VALOR").Value <> 0 then
-              Anual = ((Neto - TablaISR_GRep.Fields("ISR_EXCEDENTE").Value ) * ( TablaISR_GRep.Fields("ISR_PCT").Value /100.00)) + TablaISR_GRep.Fields("ISR_VALOR").Value 
-              Restante = Anual - Datos_Renta_Gastos_Rep.Fields("rag_retenido").Value 
-              if Datos_Renta_Gastos_Rep.Fields("rag_periodos_restantes").Value = 0 then
-                 valor = Restante
-              else
-                 valor = (Restante/ (Datos_Renta_Gastos_Rep.Fields("rag_periodos_restantes").Value)) * 2.00 / 3.00
-              end if
-           else
-              valor = Factores("ISRBaseCalculoGRep_d").Value * ( TablaISR_GRep.Fields("ISR_PCT").Value /100.00)
-              valor = round(valor, 2)
-           end if
-           
-           if valor > 0 then
-              if not RentaAdelantoXIIIGR.EOF then
-                 valor = valor - RentaAdelantoXIIIGR.Fields("VALOR").Value
-                 if valor < 0 then
-                    valor = 0
-                 end if
-              end if
-           end if
+if valor < 0 then
+  valor = 0
+end if
 
-           if not isnull(Factores("ISR_GASTO_REP_d").CodTipoDescuento) and valor > 0 then
-              Datos_Renta_Gastos_Rep.Fields("rag_a_descontar").Value = valor
-              
-              agrega_descuentos_historial Agrupadores, _
+if valor > 0 then
+   valor = round(valor * 100.00 + 0.100)/100
+   Datos_Renta_Gastos_Rep.Fields("rag_a_descontar").Value = valor
+   agrega_descuentos_historial Agrupadores, _
                                DescuentosEstaPlanilla, _
                                Emp_InfoSalario.Fields("EMP_CODIGO").Value, _
                                Pla_Periodo.Fields("PPL_CODPPL").Value, _
                                Factores("ISR_GASTO_REP_d").CodTipoDescuento, _
                                valor, 0, 0, "PAB", 0, ""
-            end if
-       end if
-
-    TablaISR_GRep.MoveNext
-    loop
- end if
+end if
 
 ISR_GASTO_REP_d = valor
+
 End Function','double','pa',0);
 
 

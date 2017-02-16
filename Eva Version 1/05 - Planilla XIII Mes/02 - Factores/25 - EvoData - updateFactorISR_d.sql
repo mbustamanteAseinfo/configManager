@@ -45,12 +45,16 @@ if not ISR_Salario.EOF and not ISR_Salario.BOF then
     end if
   end if
   
-  acumulado = CDbl(ISR_Salario.Fields("rap_acumulado").Value)
   proyectado = CDbl(ISR_Salario.Fields("rap_proyectado").Value)
+  Datos_Renta.Fields("RAP_PROYECTADO").Value = proyectado - decimo_regular 
+  
+  acumulado = CDbl(ISR_Salario.Fields("rap_acumulado").Value)
+  proyectado = proyectado - decimo_regular
   desc_legal = CDbl(ISR_Salario.Fields("rap_desc_legal").Value)
   isr_anual = CDbl(ISR_Salario.Fields("isr_anual").Value)
   
   ingreso_anual_planilla = acumulado + proyectado + ingreso_planilla - desc_legal
+  
 end if
 
 if valor < 0 then
@@ -94,5 +98,5 @@ end if
 ISR_d = valor
 
 End Function'
-where fac_id = 'ISR_d'
+where fac_id = 'ISR_d' and fac_codpai = 'pa'
 

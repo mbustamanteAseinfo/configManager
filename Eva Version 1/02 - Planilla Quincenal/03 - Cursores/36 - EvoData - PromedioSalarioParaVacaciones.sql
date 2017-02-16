@@ -13,8 +13,8 @@ insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_no
 
 select @codcia = $$CODCIA$$
 
-select @codtpl_quincenal = isnull(gen.get_valor_parametro_int(''PA_CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
-select @codtpl_vacacion = isnull(gen.get_valor_parametro_int(''PA_CodigoPlanillaVacacion'', null, null, @codcia, null), 1)
+select @codtpl_quincenal = isnull(gen.get_valor_parametro_int(''CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
+select @codtpl_vacacion = isnull(gen.get_valor_parametro_int(''CodigoPlanillaVacacion'', null, null, @codcia, null), 1)
 
 -- Agrupador que contiene los ingresos utilizados para calcular el promedio
 select @agr_ingresos = agr_codigo from sal.agr_agrupadores where agr_codpai = ''pa'' and agr_abreviatura = ''IngresosVacacion'' -- Agrupador ingresos calculo de vacacion

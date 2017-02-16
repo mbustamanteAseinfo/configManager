@@ -23,7 +23,7 @@ insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_no
        pie_horas,
        convert(numeric(12,2), coalesce(pie_valor_a_pagar, 0) / (case coalesce(pie_salario_hora, 0) when 0 then 1 else coalesce(pie_salario_hora, 0) end)) pie_horas_pagar,
        convert(numeric(12,2), coalesce(pie_valor_a_descontar, 0) / (case coalesce(pie_salario_hora, 0) when 0 then 1 else coalesce(pie_salario_hora, 0) end)) pie_horas_descontar,
-       convert(bit,(case when ixe_codrin = isnull(gen.get_valor_parametro_int(''PA_CodigoRiesgoMaternidad'',''pa'',null,null,null), 1) then 1 else 0 end)) ixe_es_maternidad
+       convert(bit,(case when ixe_codrin = isnull(gen.get_valor_parametro_int(''CodigoRiesgoMaternidad'',''pa'',null,null,null), 1) then 1 else 0 end)) ixe_es_maternidad
   FROM acc.ixe_incapacidades
   JOIN acc.pie_periodos_incapacidad ON ixe_codigo = pie_codixe
   JOIN acc.txi_tipos_incapacidad ON txi_codigo = ixe_codtxi
@@ -45,7 +45,7 @@ insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_no
        pie_horas,
        convert(numeric(12,2), coalesce(pie_valor_a_pagar, 0) / (case coalesce(pie_salario_hora, 0) when 0 then 1 else coalesce(pie_salario_hora, 0) end)) pie_horas_pagar,
        convert(numeric(12,2), coalesce(pie_valor_a_descontar, 0) / (case coalesce(pie_salario_hora, 0) when 0 then 1 else coalesce(pie_salario_hora, 0) end)) pie_horas_descontar,
-       convert(bit,(case when ixe_codrin = isnull(gen.get_valor_parametro_int(''PA_CodigoRiesgoMaternidad'',''pa'',null,null,null), 1) then 1 else 0 end)) ixe_es_maternidad
+       convert(bit,(case when ixe_codrin = isnull(gen.get_valor_parametro_int(''CodigoRiesgoMaternidad'',''pa'',null,null,null), 1) then 1 else 0 end)) ixe_es_maternidad
 FROM acc.ixe_incapacidades
 JOIN acc.pie_periodos_incapacidad ON ixe_codigo = pie_codixe
 JOIN acc.txi_tipos_incapacidad ON txi_codigo = ixe_codtxi

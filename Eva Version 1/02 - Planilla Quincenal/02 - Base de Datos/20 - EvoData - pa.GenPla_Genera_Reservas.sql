@@ -1,5 +1,3 @@
-USE [EvoData]
-GO
 IF EXISTS ( SELECT  *
             FROM    sys.objects
             WHERE   object_id = OBJECT_ID(N'pa.GenPla_Genera_Reservas')
@@ -89,14 +87,14 @@ select @codtrs_xiii_mes = trs_codigo from sal.trs_tipos_reserva where trs_abrevi
 select @codtrs_riesgo_prof = trs_codigo from sal.trs_tipos_reserva where trs_abreviatura='PROV_Riesgo_PA' and trs_codcia=@codcia
 
 -- Recupera los porcentajes de las provisiones
-SELECT	@isss_por_desc_pat = COALESCE(gen.get_valor_parametro_money('PA_CuotaPatronoSeguroSocial',@codpai,null,null,null), 0), --CuotaPatronoSeguroSocial
-		@isss_por_desc_pat_xiii = COALESCE(gen.get_valor_parametro_money('PA_CuotaPatronoSeguroSocialXIII',@codpai,null,null,null), 0), --CuotaPatronoSeguroSocialXIII
-		@seg_educativo_por_pat = COALESCE(gen.get_valor_parametro_money('PA_CuotaPatronoSeguroEducativo',@codpai,null,null,null), 0), --CuotaPatronoSeguroEducativo
-		@por_provision_indemnizacion = COALESCE(gen.get_valor_parametro_money('PA_ProvisionIndemnizacion',@codpai,null,null,null), 0), --ProvisionIndemnizacion
-		@por_provision_prima_antiguedad = COALESCE(gen.get_valor_parametro_money('PA_ProvisionPrimaAntiguedad',@codpai,null,null,null), 0), --ProvisionPrimaAntiguedad
-		@por_provision_vacacion = COALESCE(gen.get_valor_parametro_money('PA_ProvisionVacacion',@codpai,null,null,null), 0),--ProvisionVacacion
-		@por_provision_xiii_mes = COALESCE(gen.get_valor_parametro_money('PA_ProvisionXIIIMes',@codpai,null,null,null), 0),--ProvisionXIIIMes
-		@por_riesgo_prof = COALESCE(gen.get_valor_parametro_money('PA_CuotaPatronoRiesgoProfesional',@codpai,null,null,null), 0)--CuotaPatronoRiesgoProfesional
+SELECT	@isss_por_desc_pat = COALESCE(gen.get_valor_parametro_money('CuotaPatronoSeguroSocial',@codpai,null,null,null), 0), --CuotaPatronoSeguroSocial
+		@isss_por_desc_pat_xiii = COALESCE(gen.get_valor_parametro_money('CuotaPatronoSeguroSocialXIII',@codpai,null,null,null), 0), --CuotaPatronoSeguroSocialXIII
+		@seg_educativo_por_pat = COALESCE(gen.get_valor_parametro_money('CuotaPatronoSeguroEducativo',@codpai,null,null,null), 0), --CuotaPatronoSeguroEducativo
+		@por_provision_indemnizacion = COALESCE(gen.get_valor_parametro_money('ProvisionIndemnizacion',@codpai,null,null,null), 0), --ProvisionIndemnizacion
+		@por_provision_prima_antiguedad = COALESCE(gen.get_valor_parametro_money('ProvisionPrimaAntiguedad',@codpai,null,null,null), 0), --ProvisionPrimaAntiguedad
+		@por_provision_vacacion = COALESCE(gen.get_valor_parametro_money('ProvisionVacacion',@codpai,null,null,null), 0),--ProvisionVacacion
+		@por_provision_xiii_mes = COALESCE(gen.get_valor_parametro_money('ProvisionXIIIMes',@codpai,null,null,null), 0),--ProvisionXIIIMes
+		@por_riesgo_prof = COALESCE(gen.get_valor_parametro_money('CuotaPatronoRiesgoProfesional',@codpai,null,null,null), 0)--CuotaPatronoRiesgoProfesional
 
 
 -- Elimina las reservas

@@ -1,16 +1,12 @@
-USE [EvoData]
-GO
-
 /****** Object:  View [sal].[dcc_descuentos_ciclicos_v]    Script Date: 1/23/2017 4:36:17 PM ******/
+IF EXISTS ( SELECT  *
+            FROM    sys.objects
+            WHERE   object_id = OBJECT_ID(N'sal.dcc_descuentos_ciclicos_v')
+                    AND type IN ( N'V' ) )
 DROP VIEW [sal].[dcc_descuentos_ciclicos_v]
 GO
 
 /****** Object:  View [sal].[dcc_descuentos_ciclicos_v]    Script Date: 1/23/2017 4:36:17 PM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
 
 CREATE VIEW [sal].[dcc_descuentos_ciclicos_v]
 AS
@@ -70,9 +66,5 @@ SELECT	dcc_codigo,
              ON pdc_coddcc = dcc_codigo
              AND ISNULL(c1.cdc_ultima_cuota, 0) + 1 >= pdc_cuota_inicial
         AND ISNULL(c1.cdc_ultima_cuota, 0) + 1 <= pdc_cuota_final
-
-
-
-
 GO
 

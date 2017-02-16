@@ -40,9 +40,9 @@ select @codcia = tpl_codcia,
     on tpl_Codigo = ppl_Codtpl
  where ppl_codigo = @codppl
 
-select @diasAdjudicados = gen.get_valor_parametro_int('PA_FondoIncapacidadDias', cia_codpai, null, null, null),
-       @maximodias = isnull(gen.get_valor_parametro_int('PA_FondoIncapacidadMaximoDias', cia_codpai, null, null, null),0),
-	   @codrin = isnull(gen.get_valor_parametro_int('PA_CodigoRiesgoFondo', cia_codpai, null, null, null),0)
+select @diasAdjudicados = gen.get_valor_parametro_int('FondoIncapacidadDias', cia_codpai, null, null, null),
+       @maximodias = isnull(gen.get_valor_parametro_int('FondoIncapacidadMaximoDias', cia_codpai, null, null, null),0),
+	   @codrin = isnull(gen.get_valor_parametro_int('CodigoRiesgoFondo', cia_codpai, null, null, null),0)
   from eor.cia_companias
  where cia_codigo = @codcia
 

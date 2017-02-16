@@ -109,7 +109,7 @@ ON codemp = ixe_codemp
 join exp.emp_empleos on emp_codigo = ixe_codemp and emp_estado = 'A'
 join acc.rin_riesgos_incapacidades on rin_codigo = ixe_codrin
 left join acc.fin_fondos_incapacidad on fin_codemp = ixe_codemp 
-and fin_codrin = isnull(gen.get_valor_parametro_int('PA_CodigoRiesgoFondo',null,null,@codcia,null), 5)
+and fin_codrin = isnull(gen.get_valor_parametro_int('CodigoRiesgoFondo',null,null,@codcia,null), 5)
 WHERE ixe_codppl = @codppl
   and rin_utiliza_fondo = 1
   and rin_Codpai = @codpai

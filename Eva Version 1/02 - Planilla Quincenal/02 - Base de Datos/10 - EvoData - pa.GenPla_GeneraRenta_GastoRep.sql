@@ -29,6 +29,7 @@ declare @codpai varchar(2),
 		@codtpl int,
 		@codtpl_ordinario int,
 		@codtpl_decimo int,
+		@codtpl_vacaciones int,
 		@fecha_ini datetime,
 		@fecha_fin datetime,
 		@anio int,
@@ -54,39 +55,39 @@ JOIN sal.tpl_tipo_planilla ON tpl_codigo = ppl_codtpl
 join eor.cia_companias on cia_codigo = tpl_codcia
 WHERE ppl_codigo = @codppl
 
-select @isr_deduccion_legal = gen.get_valor_parametro_float('PA_ISRDeduccionLegal', @codpai, null, null, null)
+select @isr_deduccion_legal = gen.get_valor_parametro_float('ISRDeduccionLegal', @codpai, null, null, null)
 
 -- Elimina los registros calculados previamente
 DELETE FROM sal.rag_renta_anual_panama_gr
  WHERE rag_codppl = @codppl
 
-select @agr_base_xiii = gen.get_valor_parametro_int('PA_BaseXIII_GastoRep_CodigoAgrupador', @codpai, null, null, null)
+select @agr_base_xiii = gen.get_valor_parametro_int('BaseXIII_GastoRep_CodigoAgrupador', @codpai, null, null, null)
 
 select @agr_descuentos_isr = agr_codigo from sal.agr_agrupadores where agr_codpai = @codpai and agr_abreviatura='DescuentosRentaGRepPTY'
 select @agr_base_isr = agr_codigo from sal.agr_agrupadores where agr_codpai = @codpai and agr_abreviatura='IngresosRentaGRepPTY'
 
 --DECLARE @INCLUIR_DECIMO VARCHAR(1)
---SELECT @INCLUIR_DECIMO = COALESCE(gen.get_valor_parametro_varchar('PA_ISRIncluyeDecimo', @codpai, null, null, null), 'S')
+--SELECT @INCLUIR_DECIMO = COALESCE(gen.get_valor_parametro_varchar('ISRIncluyeDecimo', @codpai, null, null, null), 'S')
 
-SET @codrsa = isnull(gen.get_valor_parametro_int ('PA_CodigoRubroGastoRep',null,null,@codcia,null),0)
+SET @codrsa = isnull(gen.get_valor_parametro_int ('CodigoRubroGastoRep',null,null,@codcia,null),0)
 
-SET @codtpl_ordinario = isnull(gen.get_valor_parametro_int ('PA_CodigoPlanillaQuincenal',null,null,@codcia,null),0)
-SET @codtpl_decimo    = isnull(gen.get_valor_parametro_int ('PA_CodigoPlanillaDecimo',null,null,@codcia,null),0)
---SET @codtpl_Vacaciones   = isnull(gen.get_valor_parametro_int ('PA_codtpl_vacaciones',null,null,@codcia,null),0)
---SET @codtpl_GtosRep      = isnull(gen.get_valor_parametro_int ('PA_codtpl_GtosRep',null,null,@codcia,null),0)
+SET @codtpl_ordinario = isnull(gen.get_valor_parametro_int ('CodigoPlanillaQuincenal',null,null,@codcia,null),0)
+SET @codtpl_decimo    = isnull(gen.get_valor_parametro_int ('CodigoPlanillaDecimo',null,null,@codcia,null),0)
+SET @codtpl_vacaciones= isnull(gen.get_valor_parametro_int ('CodigoPlanillaVacacion',null,null,@codcia,null),0)
    
---SET @PERIODO_INI = CONVERT(DATETIME,'01/01/'+CONVERT(VARCHAR, @ANIO), 103)
 SET @anio_fin = CONVERT(DATETIME,'31/12/'+CONVERT(VARCHAR, @anio), 103)
 
-SET @quincenas_pendientes = CONVERT(INT, DATEDIFF(DD, @fecha_ini, @anio_fin) / 15)
+SET @quincenas_pendientes = CONVERT(INT, DATEDIFF(DD, (case @codtpl when @codtpl_decimo then @fecha_fin else @fecha_ini end), @anio_fin) / 15)
 
-SELECT @decimos_pendientes = 4 - ppl_frecuencia
-FROM sal.ppl_periodos_planilla
-WHERE ppl_codtpl = @codtpl_decimo
-AND @fecha_ini >= ppl_fecha_ini
-AND @fecha_ini <= ppl_fecha_fin
+select @decimos_pendientes = 3 - isnull(count(1), 0)
+from sal.ppl_periodos_planilla
+where ppl_codtpl = @codtpl_decimo
+and ppl_anio = @anio
+and ppl_estado = 'Autorizado'
 
-SET @periodos_restantes_calculo = @quincenas_pendientes --+ @decimos_pendientes * 2 / 3
+set @decimos_pendientes = isnull(@decimos_pendientes, 0)
+
+set @periodos_restantes_calculo = @quincenas_pendientes + @decimos_pendientes * 2 / 3
 
 INSERT INTO sal.rag_renta_anual_panama_gr(
 	rag_codcia,
@@ -99,32 +100,55 @@ INSERT INTO sal.rag_renta_anual_panama_gr(
 	rag_desc_legal,
 	rag_periodos_restantes
 )
-SELECT @codcia codcia,
+select codcia,
+	   codtpl,
+	   codppl,
+	   codemp,
+	   acumulado,
+	   retenido,
+	   proyectado,
+	   deduccion_legal,
+	   periodos_restantes_calculo
+from (
+select @codcia codcia,
 	   @codtpl codtpl,
 	   @codppl codppl,
 	   codemp,
 	   pa.fn_agrupador_valores_periodo_isr2 (@codcia, codemp, @anio, @agr_base_isr) acumulado,
 	   pa.fn_agrupador_valores_periodo_isr2 (@codcia, codemp, @anio, @agr_descuentos_isr) retenido,
-	   CONVERT(NUMERIC(12, 2), ese_salario_quincenal * (CASE WHEN @quincenas_pendientes <= 0 THEN 0 ELSE (@quincenas_pendientes - 1) END)) proyectado,
-	   (CASE codclr WHEN 'E' THEN @isr_deduccion_legal ELSE 0 END) deduccion_legal,
+	   CONVERT(NUMERIC(12, 2), ese_salario_quincenal * (case when @quincenas_pendientes <= 0 then 0 else (@quincenas_pendientes - (case when @codtpl in (@codtpl_ordinario, @codtpl_vacaciones) then isnull(dva_dias / 15, 1) else 0 end)) end))
+	   + convert(numeric(12, 2), (ese_salario_mensual * @decimos_pendientes * 1) / 3)
+	   as proyectado,
+	   (case codclr when 'E' then @isr_deduccion_legal else 0 end) deduccion_legal,
 	   @periodos_restantes_calculo periodos_restantes_calculo
-FROM (
+from (
 	SELECT emp_codigo codemp,
-		   ISNULL(gen.get_pb_field_data(exp_property_bag_data, 'exp_clase_renta'), 'A') codclr,
-		   ese_salario_quincenal
+		   isnull(gen.get_pb_field_data(exp_property_bag_data, 'exp_clase_renta'), 'A') codclr,
+		   ese_salario_quincenal,
+		   ese_salario_mensual
 	  FROM exp.emp_empleos
-	  JOIN exp.exp_expedientes
-	  ON exp_codigo = emp_codexp
-	  JOIN (SELECT ese_codemp, CONVERT(NUMERIC(12,2), ese_valor / 2.00) ese_salario_quincenal
-			FROM exp.ese_estructura_sal_empleos
-			WHERE ese_estado = 'V'
-			AND ese_codrsa = @codrsa
+	  join exp.exp_expedientes
+	  on exp_codigo = emp_codexp
+	  join (select ese_codemp, convert(numeric(12,2), ese_valor / 2.00) ese_salario_quincenal, ese_valor ese_salario_mensual
+			from exp.ese_estructura_sal_empleos
+			where ese_estado = 'V'
+			and ese_codrsa = @codrsa
 		) salarios
-	  ON ese_codemp = emp_codigo
+	  on ese_codemp = emp_codigo
 	  WHERE emp_codtpl = @codtpl_ordinario
 	   AND emp_estado = 'A'
 	   AND emp_fecha_ingreso <= @FECHA_FIN
 ) V
+left join (
+	select vac_codemp, isnull(sum(isnull(dva_dias, 0)), 0) dva_dias
+	from acc.dva_dias_vacacion
+	join acc.vac_vacaciones
+	on vac_codigo = dva_codvac
+	where dva_codppl = @codppl
+	group by vac_codemp
+) vacaciones
+on vac_codemp = codemp
+) W
 ORDER BY codemp
 
 END

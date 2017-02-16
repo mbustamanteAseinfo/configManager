@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <Author>Generado por VH4</Author>
+    <Created>2017-02-10T15:51:23</Created>
+  </DocumentProperties>
+  <Styles>
+    <Style ss:ID="ApplicationName">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="14" />
+    </Style>
+    <Style ss:ID="Titulo">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="14" />
+    </Style>
+    <Style ss:ID="SubTitulo">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="14" />
+    </Style>
+    <Style ss:ID="Celda_GeneratedComment">
+      <Font ss:FontName="Calibri" ss:Size="10" />
+    </Style>
+    <Style ss:ID="Celda">
+      <Font ss:FontName="Calibri" ss:Size="10" />
+    </Style>
+    <Style ss:ID="reportDate">
+      <Font ss:FontName="Calibri" ss:Size="10" />
+      <NumberFormat ss:Format="General Date" />
+    </Style>
+    <Style ss:ID="Header">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="10" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1" />
+      </Borders>
+    </Style>
+    <Style ss:ID="GroupHeader">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="10" />
+    </Style>
+    <Style ss:ID="GroupHeaderRow">
+      <Font ss:FontName="Calibri" ss:Size="10" />
+    </Style>
+    <Style ss:ID="GrandTotalHeader">
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="11" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1" />
+      </Borders>
+    </Style>
+    <Style ss:ID="Celda_cdt_codigo">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:FontName="Calibri" ss:Size="10" />
+      <NumberFormat ss:Format="0" />
+    </Style>
+    <Style ss:ID="GrandTotal_cdt_codigo">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="11" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1" />
+      </Borders>
+      <NumberFormat ss:Format="0" />
+    </Style>
+    <Style ss:ID="GroupSubTotal_cdt_codigo">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="10" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+      </Borders>
+      <NumberFormat ss:Format="0" />
+    </Style>
+    <Style ss:ID="Celda_cdt_descripcion">
+      <Alignment ss:Horizontal="Left" />
+      <Font ss:FontName="Calibri" ss:Size="10" />
+    </Style>
+    <Style ss:ID="GrandTotal_cdt_descripcion">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="11" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1" />
+      </Borders>
+    </Style>
+    <Style ss:ID="GroupSubTotal_cdt_descripcion">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="10" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+      </Borders>
+    </Style>
+    <Style ss:ID="GrandTotal">
+      <Alignment ss:Horizontal="Right" />
+      <Font ss:Bold="1" ss:FontName="Calibri" ss:Size="11" />
+      <Borders>
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1" />
+        <Border ss:Color="black" ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1" />
+      </Borders>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="Hoja1">
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <Selected />
+    </WorksheetOptions>
+    <Table>
+      <Column ss:AutoFitWidth="1" ss:StyleID="Celda_cdt_codigo" />
+      <Column ss:AutoFitWidth="1" ss:StyleID="Celda_cdt_descripcion" />
+      <Row>
+        <Cell ss:StyleID="ApplicationName">
+          <ss:Data ss:Type="String">ASEINFO Evolution</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="reportDate">
+          <ss:Data ss:Type="DateTime">2017-02-10</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:MergeAcross="1" ss:StyleID="Titulo">
+          <ss:Data ss:Type="String">Centros de Trabajo de la Compañia</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:MergeAcross="1" ss:StyleID="SubTitulo">
+          <ss:Data ss:Type="String">Aseinfo</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:MergeAcross="1" ss:StyleID="Celda_GeneratedComment">
+          <ss:Data ss:Type="String">Generado por Administrador</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:MergeAcross="1" ss:StyleID="Celda" />
+      </Row>
+      <Row>
+        <Cell ss:MergeAcross="1" ss:StyleID="Celda" />
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Header">
+          <ss:Data ss:Type="String">Codigo Centro de Trabajo</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Header">
+          <ss:Data ss:Type="String">Nombre Centro de Trabajo</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">3</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">CENTRO DE VISITANTES</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">5</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">CONTENEDOR RIVER VALLEY</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">4</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">CONTENEDOR WOODLAND</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">2</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">OFICINA 723</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">1</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">OFICINA PRINCIPAL</ss:Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Celda_cdt_codigo">
+          <ss:Data ss:Type="Number">6</ss:Data>
+        </Cell>
+        <Cell ss:StyleID="Celda_cdt_descripcion">
+          <ss:Data ss:Type="String">PACIFICO LIFE CENTER</ss:Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

@@ -20,12 +20,12 @@ select @codpai = cia_codpai
 from eor.cia_companias
 where cia_codigo = @codcia
 
-SELECT gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc_pat,
-       gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_decimo,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_pat_decimo,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoRiesgoProfesional'', @codpai, null, null, null) pge_riesgo_prof_por_desc_pat,
-       gen.get_valor_parametro_float(''PA_CuotaPrimaAntiguedad'', @codpai, null, null, null) pge_profuturo_pa
+SELECT gen.get_valor_parametro_float(''CuotaEmpleadoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc_pat,
+       gen.get_valor_parametro_float(''CuotaEmpleadoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_decimo,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_pat_decimo,
+       gen.get_valor_parametro_float(''CuotaPatronoRiesgoProfesional'', @codpai, null, null, null) pge_riesgo_prof_por_desc_pat,
+       gen.get_valor_parametro_float(''CuotaPrimaAntiguedad'', @codpai, null, null, null) pge_profuturo_pa
        ','TodosExcluyendo',0,0);
 
 

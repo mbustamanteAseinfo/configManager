@@ -1,11 +1,12 @@
 update sal.fcu_formulacion_cursores
-set fcu_select_run = 'declare @codcia int, @codrsa int, @codpai varchar(2), @codppl int, @codtpl_ordinario int, @codtpl int
+set fcu_select_run = 'declare @codcia int, @codrsa int, @codpai varchar(2), @codppl int, @codtpl_ordinario int, @codtpl int, @codtpl_vacaciones int
 
 set @codcia = $$CODCIA$$
 set @codppl = $$CODPPL$$
 set @codtpl = $$CODTPL$$
-set @codrsa = gen.get_valor_parametro_int (''PA_CodigoRubroSalario'',null,null,@codcia,null)
-set @codtpl_ordinario = isnull(gen.get_valor_parametro_int (''PA_CodigoPlanillaQuincenal'',null,null,@codcia,null),0)
+set @codrsa = gen.get_valor_parametro_int (''CodigoRubroSalario'',null,null,@codcia,null)
+set @codtpl_ordinario = isnull(gen.get_valor_parametro_int (''CodigoPlanillaQuincenal'',null,null,@codcia,null),0)
+set @codtpl_vacaciones= isnull(gen.get_valor_parametro_int (''CodigoPlanillaVacacion'',null,null,@codcia,null),0)
 
 select @codpai = cia_codpai
 from eor.cia_companias
@@ -31,9 +32,9 @@ select codemp,
 	   rap_proyectado, 
 	   rap_desc_legal, 
 	   rap_periodos_restantes
-from gen.get_valor_rango_parametro(''PA_TablaRentaMensual'', @codpai, null, null, null, null),
+from gen.get_valor_rango_parametro(''TablaRentaMensual'', @codpai, null, null, null, null),
 	(select rap_codemp codemp, 
-			convert(numeric(12,2), rap_acumulado + rap_proyectado + convert(numeric(12,2), ese_valor / 2.00) * (case @codtpl when @codtpl_ordinario then isnull(dva_dias / 15, 1) else 0 end) - rap_desc_legal) salario_anual, 
+			convert(numeric(12,2), rap_acumulado + rap_proyectado + convert(numeric(12,2), ese_valor / 2.00) * (case when @codtpl in (@codtpl_ordinario, @codtpl_vacaciones) then isnull(dva_dias / 15, 1) else 0 end) - rap_desc_legal) salario_anual, 
 			convert(numeric(12,2), ese_valor / 2.00) salario_quincenal, rap_retenido, rap_periodos_restantes
 	, rap_acumulado, rap_proyectado, rap_desc_legal
 	from sal.rap_renta_anual_panama
@@ -58,4 +59,4 @@ and salario_anual <= fin
 ) w
 order by codemp
 '
-where fcu_nombre = 'ISR_Salario'
+where fcu_nombre = 'ISR_Salario' and fcu_codpai = 'pa'

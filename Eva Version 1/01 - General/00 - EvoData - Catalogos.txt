@@ -1,6 +1,6 @@
 begin transaction
 
-declare @codigo_visual int,
+declare @codigo_visual varchar(10),
 		@codcia int,
 		@tempVisual varchar(10)
 set @tempVisual = 'Default'

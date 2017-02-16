@@ -45,10 +45,10 @@ BEGIN
 
 declare @parametro_salarial varchar(100),@semanasxmes numeric (10,4)
 
-if @rubro_salarial = 'S' set @parametro_salarial = 'PA_CodigoRubroSalario'
-if @rubro_salarial = 'G' set @parametro_salarial = 'PA_CodigoRubroGastoRep'
+if @rubro_salarial = 'S' set @parametro_salarial = 'CodigoRubroSalario'
+if @rubro_salarial = 'G' set @parametro_salarial = 'CodigoRubroGastoRep'
 
-select @semanasxmes = isnull(gen.get_valor_parametro_float('PA_FactorSemanasxMes', @codpai, null, null, null),4.3333)
+select @semanasxmes = isnull(gen.get_valor_parametro_float('FactorSemanasxMes', @codpai, null, null, null),4.3333)
 if @semanasxmes  = 0
     set @semanasxmes   = 4.3333
 

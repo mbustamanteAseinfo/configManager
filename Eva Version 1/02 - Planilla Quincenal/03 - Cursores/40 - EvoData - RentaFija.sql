@@ -14,7 +14,7 @@ SELECT @codpai = cia_codpai
 FROM eor.cia_companias
 WHERE cia_codigo = @codcia
 
-select @num_meses = gen.get_valor_parametro_varchar(''PA_ISRNumeroMeses'', ''pa'', null, null, null) + 1
+select @num_meses = gen.get_valor_parametro_varchar(''ISRNumeroMeses'', ''pa'', null, null, null) + 1
 
 SELECT @fecha = ppl_fecha_fin
 FROM sal.ppl_periodos_planilla

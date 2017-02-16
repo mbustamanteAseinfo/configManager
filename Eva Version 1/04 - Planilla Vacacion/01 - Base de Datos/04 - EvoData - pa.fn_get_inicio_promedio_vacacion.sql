@@ -28,7 +28,7 @@ BEGIN
 declare @fecha_ini datetime, @codtpl_pago int, @num_meses numeric(12,2), @num_meses_vac int, @continuar smallint, @fecha_ingreso datetime,
 		@agr_ing_salario int
 
-set @codtpl_pago = gen.get_valor_parametro_int ('PA_CodigoPlanillaQuincenal',null,null,@codcia,null)
+set @codtpl_pago = gen.get_valor_parametro_int ('CodigoPlanillaQuincenal',null,null,@codcia,null)
 
 select @agr_ing_salario = agr_codigo
 from sal.agr_agrupadores

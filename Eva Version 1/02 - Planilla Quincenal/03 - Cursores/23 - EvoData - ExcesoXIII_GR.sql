@@ -26,7 +26,7 @@ FROM (
    FROM sal.dss_descuentos
    JOIN sal.ppl_periodos_planilla
    ON ppl_codigo = dss_codppl
-   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''PA_CodigoTDCExcesoXIII_GR'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES GR
+   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''CodigoTDCExcesoXIII_GR'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES GR
    AND PPL_ESTADO = ''Autorizado''
    GROUP BY DSS_CODEMP
 ) V

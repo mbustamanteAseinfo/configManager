@@ -7,7 +7,7 @@ delete from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_
 
 insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_nombre],[fcu_descripcion],[fcu_select_edit],[fcu_select_run],[fcu_field_codemp],[fcu_field_codcia],[fcu_modo_asociacion_tpl],[fcu_loop_calculo],[fcu_updatable]) values ('pa','Planilla','DiasPendientesPagoNuevoIngreso','DiasPendientesPagoNuevoIngreso','SELECT 0 EMP_CODCIA, 0 EMP_CODIGO, 0.00 salario_proporcional, 0.00 gasto_rep_proporcional, 0 dias','declare @codcia int, @codtpl int, @fecha_ini datetime, @fecha_fin datetime, @codpla_ult int
 set @codcia = $$CODCIA$$
-set @codtpl = isnull(gen.get_valor_parametro_varchar(''PA_CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
+set @codtpl = isnull(gen.get_valor_parametro_varchar(''CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
 
 -- Periodo de pago de la planilla inmediata anterior
 SELECT TOP 1 @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN, @codpla_ult = ppl_codigo

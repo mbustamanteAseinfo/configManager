@@ -21,7 +21,7 @@ DECLARE @renta_anual MONEY, @renta_periodo MONEY,
 		@codpai VARCHAR(2), @salario_anual MONEY,
 		@incluir_decimo VARCHAR(1), @num_meses REAL
 
-SELECT @num_meses = gen.get_valor_parametro_varchar('PA_ISRNumeroMeses', 'pa', NULL, NULL, NULL)
+SELECT @num_meses = gen.get_valor_parametro_varchar('ISRNumeroMeses', 'pa', NULL, NULL, NULL)
 SET @salario_anual = @salario * @num_meses
 
 SELECT @codpai = cia_codpai

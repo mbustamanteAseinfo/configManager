@@ -15,8 +15,8 @@ select @codpai = cia_codpai
 from eor.cia_companias
 where cia_codigo = @codcia
 
-SELECT gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_desc,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_pat
+SELECT gen.get_valor_parametro_float(''CuotaEmpleadoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_desc,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_pat
 ','TodosExcluyendo',0,0);
 
 

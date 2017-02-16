@@ -53,7 +53,7 @@ select @codtpl = ppl_codtpl,
 
 
 -- OBTIENE EL TIPO DE PLANILLA RESPECTIVO A LA EMPRESA
-select @codtpl_quincenal = isnull(gen.get_valor_parametro_varchar('PA_CodigoPlanillaQuincenal', null, null, @codcia, null), 1)
+select @codtpl_quincenal = isnull(gen.get_valor_parametro_varchar('CodigoPlanillaQuincenal', null, null, @codcia, null), 1)
 
 --*
 --* Marca el período como autorizado

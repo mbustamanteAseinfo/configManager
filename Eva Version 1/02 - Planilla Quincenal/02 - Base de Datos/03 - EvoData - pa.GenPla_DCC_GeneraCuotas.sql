@@ -35,7 +35,7 @@ from sal.ppl_periodos_planilla
 join sal.tpl_tipo_planilla on tpl_codigo = ppl_codtpl
 where ppl_codigo = @codppl
 
-select @codtpl_vac = gen.get_valor_parametro_int ('PA_CodigoPlanillaVacacion',null,null,@codcia,null)
+select @codtpl_vac = gen.get_valor_parametro_int ('CodigoPlanillaVacacion',null,null,@codcia,null)
 
 -- Tabla que contiene los codigos de empleos que
 -- participan en la planilla que se esta generando

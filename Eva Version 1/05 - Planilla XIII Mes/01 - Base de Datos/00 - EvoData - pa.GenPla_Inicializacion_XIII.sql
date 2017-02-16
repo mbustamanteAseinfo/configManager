@@ -37,7 +37,7 @@ begin transaction
 	WHERE ppl_codigo = @codppl
 
 	-- OBTIENE EL TIPO DE PLANILLA RESPECTIVO A LA EMPRESA
-	select @codtpl_quincenal = isnull(gen.get_valor_parametro_int('PA_CodigoPlanillaQuincenal', null, null, @codcia, null), 1)
+	select @codtpl_quincenal = isnull(gen.get_valor_parametro_int('CodigoPlanillaQuincenal', null, null, @codcia, null), 1)
 
 	-- INGRESOS
 	delete from sal.inn_ingresos

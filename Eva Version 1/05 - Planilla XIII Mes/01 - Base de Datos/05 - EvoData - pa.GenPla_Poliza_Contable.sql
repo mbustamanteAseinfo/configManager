@@ -39,7 +39,7 @@ WHERE PPL_CODIGO = @CODPPL
 delete pa.dco_datos_contables
  where dco_codppl = @codppl
 	   
-SET @CTA_Salarios_por_Pagar = isnull(gen.get_valor_parametro_varchar ('PA_CuentaContableSalarioPorPagar',null,null,@codcia,null),'PENDIENTE')
+SET @CTA_Salarios_por_Pagar = isnull(gen.get_valor_parametro_varchar ('CuentaContableSalarioPorPagar',null,null,@codcia,null),'PENDIENTE')
 
 -- INGRESOS APLICADOS EN LA PLANILLA
 

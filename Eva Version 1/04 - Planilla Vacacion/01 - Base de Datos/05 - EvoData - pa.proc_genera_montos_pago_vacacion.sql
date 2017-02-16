@@ -54,13 +54,13 @@ BEGIN
 	where ipv_codppl = @codppl
 	and ipv_tipo_ingreso = @tipo_ingreso
 
-	select @codtpl_quincenal = gen.get_valor_parametro_int ('PA_CodigoPlanillaQuincenal',null,null,@codcia,null)
+	select @codtpl_quincenal = gen.get_valor_parametro_int ('CodigoPlanillaQuincenal',null,null,@codcia,null)
 
 	select @agr_ing_salario = agr_codigo
 	from sal.agr_agrupadores
 	where agr_abreviatura = (case @tipo_ingreso when 'S' then 'IngresosVacacion' else 'IngresosVacacionGRep' end)
 
-	select @codrsa = isnull(gen.get_valor_parametro_int ((case @tipo_ingreso when 'S' then 'PA_CodigoRubroSalario' else 'PA_CodigoRubroGastoRep' end),null,null,@codcia,null),0)
+	select @codrsa = isnull(gen.get_valor_parametro_int ((case @tipo_ingreso when 'S' then 'CodigoRubroSalario' else 'CodigoRubroGastoRep' end),null,null,@codcia,null),0)
 
 	-- Toma los datos de la ultima planilla autorizada
 	-- previo a la planilla de vacaciones para la cual se genera el reporte

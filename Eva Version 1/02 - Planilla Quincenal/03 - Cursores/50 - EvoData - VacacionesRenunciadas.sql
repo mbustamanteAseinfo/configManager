@@ -17,7 +17,7 @@ set @codcia = $$CODCIA$$
 set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
-SET @CODTPL_VACACION = gen.get_valor_parametro_int(''PA_CodigoPlanillaVacacion'', null, null, @CODCIA, null)
+SET @CODTPL_VACACION = gen.get_valor_parametro_int(''CodigoPlanillaVacacion'', null, null, @CODCIA, null)
 
 if @codtpl = @CODTPL_VACACION 
    set  @codppl_vacacion =  @codppl

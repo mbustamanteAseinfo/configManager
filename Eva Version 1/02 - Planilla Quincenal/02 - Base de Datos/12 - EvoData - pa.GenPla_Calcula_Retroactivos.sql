@@ -36,7 +36,7 @@ WHERE PPL_CODIGO = @codppl
 -- Elimina los registros generados previamente para el salario en esta planilla
 DELETE FROM tmp.PIR_PAGOS_INC_RETROACT--TMP_PIR_PAGOS_INCREMENTOS_RETROACTIVOS
 WHERE PIR_CODPPL = @codppl
-AND PIR_CODRSA = gen.get_valor_parametro_int('PA_CodigoRubroSalario', null, null, @codcia, null)
+AND PIR_CODRSA = gen.get_valor_parametro_int('CodigoRubroSalario', null, null, @codcia, null)
 AND sal.empleado_en_gen_planilla(@sessionId, PIR_CODEMP) = 1
 
 --DECLARE @max_id INT
@@ -66,7 +66,7 @@ AND inc_fecha_solicitud <= @ppl_fecha_fin
 AND idr_es_retroactivo = 1
 AND idr_fecha_vigencia < @ppl_fecha_ini
 AND idr_accion in ('Modificar','Agregar')
-AND idr_codrsa = gen.get_valor_parametro_int('PA_CodigoRubroSalario', null, null, @codcia, null)
+AND idr_codrsa = gen.get_valor_parametro_int('CodigoRubroSalario', null, null, @codcia, null)
 AND sal.empleado_en_gen_planilla(@sessionId, inc_codemp) = 1
 
 
@@ -138,7 +138,7 @@ BEGIN
 	IF @retroactivo > 0
 	BEGIN
 		INSERT INTO tmp.PIR_PAGOS_INC_RETROACT(/*PIR_CODIGO,*/ PIR_CODPPL, PIR_CODEMP, PIR_MONTO_RETROACTIVO, PIR_DIAS_RETROACTIVO, PIR_CODRSA)
-		VALUES (/*@max_id,*/ @codppl, @codemp, @retroactivo, @horas_laborales, gen.get_valor_parametro_int('PA_CodigoRubroSalario', NULL, NULL, @codcia, NULL))
+		VALUES (/*@max_id,*/ @codppl, @codemp, @retroactivo, @horas_laborales, gen.get_valor_parametro_int('CodigoRubroSalario', NULL, NULL, @codcia, NULL))
 	
 		--SET @max_id = @max_id + 1
 	END

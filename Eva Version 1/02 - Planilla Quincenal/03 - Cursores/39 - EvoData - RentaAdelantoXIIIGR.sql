@@ -11,7 +11,7 @@ set @codcia = $$CODCIA$$
 set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
-select @codtdc_renta = gen.get_valor_parametro_int(''PA_Liq_codtdc_rentaGastosRep'',null,null,@codcia,null)
+select @codtdc_renta = gen.get_valor_parametro_int(''Liq_codtdc_rentaGastosRep'',null,null,@codcia,null)
 set @codtpl_adelanto_xiii = 0
 
 SELECT @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN

@@ -49,11 +49,11 @@ declare @ppl_estado varchar(1)
 
 declare @codtpl_xiii int, @AGR_XIII_PROYECTADO int, @AGR_XIII_GR_PROYECTADO int
 
-select @AGR_XIII_PROYECTADO = gen.get_valor_parametro_int('PA_BaseXIII_Salario_CodigoAgrupador', 'pa', null, null, null)
-select @AGR_XIII_GR_PROYECTADO = gen.get_valor_parametro_int('PA_BaseXIII_GastoRep_CodigoAgrupador', 'pa', null, null, null)
+select @AGR_XIII_PROYECTADO = gen.get_valor_parametro_int('BaseXIII_Salario_CodigoAgrupador', 'pa', null, null, null)
+select @AGR_XIII_GR_PROYECTADO = gen.get_valor_parametro_int('BaseXIII_GastoRep_CodigoAgrupador', 'pa', null, null, null)
 
 -- Tipo de planilla: Decimo Tercero
-set @codtpl_xiii = isnull(gen.get_valor_parametro_int('PA_CodigoPlanillaDecimo',null,null,@codcia,null), 2)
+set @codtpl_xiii = isnull(gen.get_valor_parametro_int('CodigoPlanillaDecimo',null,null,@codcia,null), 2)
 
 if @codtpl = @codtpl_xiii
 begin
