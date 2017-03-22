@@ -18,6 +18,7 @@ namespace EvoScriptExecute
         string _evoData = "";
         string _evoTemp = "";
         string directorio = "";
+        string _ruta_reportes = @"C:\inetpub\wwwroot\Evolution\Reports\";
         List<Item> scriptsList;
         public Form1()
         {
@@ -39,7 +40,6 @@ namespace EvoScriptExecute
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
 
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
@@ -86,7 +86,7 @@ namespace EvoScriptExecute
 
                         foreach (Item i in ordered)
                         {
-                            if (i.Ejecutado == "0")
+                            if (i.Ejecutado == "0" && i.Nombre.Contains(".sql"))
                             {
                                 textBox1.Text += "Ejecutando el script " + i.Nombre + "\r\n";
                                 var fileInfo = new FileInfo(i.Ruta);
@@ -125,7 +125,8 @@ namespace EvoScriptExecute
                                     {
                                         sqlConnectionHelper.ExecuteScript(scriptutf8);
                                     }
-                                    else {
+                                    else
+                                    {
                                         sqlConnectionHelper.ExecuteScript(script);
 
                                     }
@@ -136,6 +137,25 @@ namespace EvoScriptExecute
                                     textBox1.Text += "Error " + ex.Message + " en el script " + i.Nombre + "\r\n";
                                     error = true;
                                     break;
+                                }
+                            }
+                            else
+                            {
+                                if (i.Nombre.Contains(".rpt")) {
+                                    try
+                                    {
+                                        File.Copy(i.Ruta, _ruta_reportes + "\\" + i.Nombre.Split('-')[2].Trim());
+                                        try
+                                        {
+                                            sqlConnectionHelper.updateUpload(i.Nombre.Split('-')[2].Trim(), _ruta_reportes);
+                                        }
+                                        catch (Exception exep){
+                                            textBox1.Text += "\n ERRROR AL ACTUALIZAR LOS UPLOADS + " + exep.Message + " \n";
+                                        }
+                                    }
+                                    catch (Exception exepc){
+                                        textBox1.Text += " \n EL REPORTE " + i.Nombre + " PUEDE TENER ERRORES: " + exepc.Message + " \n";
+                                    }
                                 }
                             }
                         }
@@ -193,7 +213,7 @@ namespace EvoScriptExecute
             {
                 foreach (FileInfo f in fileEntries)
                 {
-                    if (f.Extension == ".sql") {
+                    if (f.Extension == ".sql" || f.Extension == ".rpt") {
                         Item nItem = new Item();
                         nItem.Ruta = f.FullName;
                         nItem.Posicion = dadStep.Replace(' ', '.') + f.Name.Split('-')[0].Trim().ToString();
@@ -323,6 +343,22 @@ namespace EvoScriptExecute
         private void btnUncheck_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFolderReportes_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+
+                _ruta_reportes = folderBrowserDialog.SelectedPath;
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ on tnt_codigo = tnn_codtnt
 WHERE tnn_estado = ''Autorizado''
 and tnn_ignorar_en_planilla = 0
 and tnt_goce_sueldo = 0
-and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Permiso No Pagado_PA'')
+and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Permiso No Pagado'' AND tdc_codcia = $$CODCIA$$)
 and tnn_codppl = $$CODPPL$$','tnn_codemp','tnn_codppl','TodosExcluyendo',0,1);
 
 

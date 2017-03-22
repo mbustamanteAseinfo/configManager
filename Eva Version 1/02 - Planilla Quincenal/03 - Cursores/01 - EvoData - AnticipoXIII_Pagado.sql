@@ -15,8 +15,8 @@ set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
 SET @codtpl_anticipo = 6 -- Planilla de anticipo XIII
-SELECT @codtig_anticipoXIII = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_PA'' -- Ingreso de anticipo XIII
-SELECT @codtig_anticipoXIII_GR = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_GR_PA'' -- Ingreso de anticipo XIII Gasto de Representacion
+SELECT @codtig_anticipoXIII = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII'' -- Ingreso de anticipo XIII
+SELECT @codtig_anticipoXIII_GR = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_GR'' -- Ingreso de anticipo XIII Gasto de Representacion
 
 SELECT @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN
 FROM sal.ppl_periodos_planilla

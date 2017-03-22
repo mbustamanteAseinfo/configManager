@@ -37,8 +37,8 @@ set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
 SET @codtpl_anticipo = 6 -- Planilla de anticipo XIII
-SELECT @codtig_anticipoXIII = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_PA'' -- Ingreso de anticipo XIII
-SELECT @codtig_anticipoXIII_GR = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_GR_PA'' -- Ingreso de anticipo XIII Gasto de Representacion
+SELECT @codtig_anticipoXIII = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII'' -- Ingreso de anticipo XIII
+SELECT @codtig_anticipoXIII_GR = tig_codigo FROM sal.tig_tipos_ingreso where tig_codcia=@codcia and tig_abreviatura=''ADELANTO_XIII_GR'' -- Ingreso de anticipo XIII Gasto de Representacion
 
 SELECT @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN
 FROM sal.ppl_periodos_planilla
@@ -170,7 +170,7 @@ delete from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_
 
 insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_nombre],[fcu_descripcion],[fcu_select_edit],[fcu_select_run],[fcu_field_codemp],[fcu_field_codcia],[fcu_modo_asociacion_tpl],[fcu_loop_calculo],[fcu_updatable]) values ('pa','Planilla','DiasPendientesPagoNuevoIngreso','DiasPendientesPagoNuevoIngreso','SELECT 0 EMP_CODCIA, 0 EMP_CODIGO, 0.00 salario_proporcional, 0.00 gasto_rep_proporcional, 0 dias','declare @codcia int, @codtpl int, @fecha_ini datetime, @fecha_fin datetime, @codpla_ult int
 set @codcia = $$CODCIA$$
-set @codtpl = isnull(gen.get_valor_parametro_varchar(''PA_CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
+set @codtpl = isnull(gen.get_valor_parametro_varchar(''CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
 
 -- Periodo de pago de la planilla inmediata anterior
 SELECT TOP 1 @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN, @codpla_ult = ppl_codigo
@@ -680,7 +680,7 @@ on tnt_codigo = tnn_codtnt
 WHERE tnn_estado = ''Autorizado''
 and tnn_ignorar_en_planilla = 0
 and tnt_goce_sueldo = 0
-and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Tardanza_PA'')
+and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Tardanza'' and tdc_codcia = $$CODCIA$$)
 and tnn_codppl = $$CODPPL$$','tnn_codemp','tnn_codppl','TodosExcluyendo',0,1);
 
 
@@ -704,7 +704,7 @@ on tnt_codigo = tnn_codtnt
 WHERE tnn_estado = ''Autorizado''
 and tnn_ignorar_en_planilla = 0
 and tnt_goce_sueldo = 0
-and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Ausencias_PA'')
+and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Ausencias'' and tdc_codcia = $$CODCIA$$)
 and tnn_codppl = $$CODPPL$$','tnn_codemp','tnn_codppl','TodosExcluyendo',0,1);
 
 
@@ -728,7 +728,7 @@ on tnt_codigo = tnn_codtnt
 WHERE tnn_estado = ''Autorizado''
 and tnn_ignorar_en_planilla = 0
 and tnt_goce_sueldo = 0
-and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Ausencias_PA'')
+and tnt_codtdc = (select tdc_codigo from sal.tdc_tipos_descuento where tdc_abreviatura = ''Ausencias'' and tdc_codcia = $$CODCIA$$)
 and tnn_codppl = $$CODPPL$$','tnn_codemp','tnn_codppl','TodosExcluyendo',0,1);
 
 
@@ -762,7 +762,7 @@ FROM (
    FROM sal.dss_descuentos
    JOIN sal.ppl_periodos_planilla
    ON ppl_codigo = dss_codppl
-   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''PA_CodigoTDCExcesoXIII'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES
+   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''CodigoTDCExcesoXIII'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES
    AND PPL_ESTADO = ''Autorizado''
    GROUP BY DSS_CODEMP
 ) V
@@ -799,7 +799,7 @@ FROM (
    FROM sal.dss_descuentos
    JOIN sal.ppl_periodos_planilla
    ON ppl_codigo = dss_codppl
-   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''PA_CodigoTDCExcesoXIII_GR'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES GR
+   WHERE DSS_CODTDC = isnull(gen.get_valor_parametro_int(''CodigoTDCExcesoXIII_GR'',null,null,@codcia,null), 0) -- PAGO EN EXCESO DE XIII MES GR
    AND PPL_ESTADO = ''Autorizado''
    GROUP BY DSS_CODEMP
 ) V
@@ -844,7 +844,7 @@ select *, ese_valor / 2 quincena
    and ppl_mes = @mes
    and ppl_frecuencia = 2
    and inn_codemp = emp_codigo 
-   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where tig_abreviatura = ''Gasto Rep_PA'') )
+   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where tig_abreviatura = ''Gasto Rep'' and tig_codcia = @codcia) )
   ) salario
 from (
 select emp_codigo, exp_codigo_alternativo, exp_nombres_apellidos, ese_valor, convert(numeric(12,2), ese_valor / 2) - ese_valor / 2 dif
@@ -1169,12 +1169,12 @@ select @codpai = cia_codpai
 from eor.cia_companias
 where cia_codigo = @codcia
 
-SELECT gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc_pat,
-       gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_decimo,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_pat_decimo,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoRiesgoProfesional'', @codpai, null, null, null) pge_riesgo_prof_por_desc_pat,
-       gen.get_valor_parametro_float(''PA_CuotaPrimaAntiguedad'', @codpai, null, null, null) pge_profuturo_pa
+SELECT gen.get_valor_parametro_float(''CuotaEmpleadoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroSocial'', @codpai, null, null, null) pge_isss_por_desc_pat,
+       gen.get_valor_parametro_float(''CuotaEmpleadoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_decimo,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroSocialXIII'', @codpai, null, null, null) pge_isss_por_desc_pat_decimo,
+       gen.get_valor_parametro_float(''CuotaPatronoRiesgoProfesional'', @codpai, null, null, null) pge_riesgo_prof_por_desc_pat,
+       gen.get_valor_parametro_float(''CuotaPrimaAntiguedad'', @codpai, null, null, null) pge_profuturo_pa
        ','TodosExcluyendo',0,0);
 
 
@@ -1197,8 +1197,8 @@ select @codpai = cia_codpai
 from eor.cia_companias
 where cia_codigo = @codcia
 
-SELECT gen.get_valor_parametro_float(''PA_CuotaEmpleadoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_desc,
-       gen.get_valor_parametro_float(''PA_CuotaPatronoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_pat
+SELECT gen.get_valor_parametro_float(''CuotaEmpleadoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_desc,
+       gen.get_valor_parametro_float(''CuotaPatronoSeguroEducativo'', @codpai, null, null, null) pge_seg_educativo_por_pat
 ','TodosExcluyendo',0,0);
 
 
@@ -1292,8 +1292,8 @@ insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_no
 
 select @codcia = $$CODCIA$$
 
-select @codtpl_quincenal = isnull(gen.get_valor_parametro_int(''PA_CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
-select @codtpl_vacacion = isnull(gen.get_valor_parametro_int(''PA_CodigoPlanillaVacacion'', null, null, @codcia, null), 1)
+select @codtpl_quincenal = isnull(gen.get_valor_parametro_int(''CodigoPlanillaQuincenal'', null, null, @codcia, null), 1)
+select @codtpl_vacacion = isnull(gen.get_valor_parametro_int(''CodigoPlanillaVacacion'', null, null, @codcia, null), 1)
 
 -- Agrupador que contiene los ingresos utilizados para calcular el promedio
 select @agr_ingresos = agr_codigo from sal.agr_agrupadores where agr_codpai = ''pa'' and agr_abreviatura = ''IngresosVacacion'' -- Agrupador ingresos calculo de vacacion
@@ -1382,7 +1382,7 @@ set @codcia = $$CODCIA$$
 set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
-select @codtdc_renta = gen.get_valor_parametro_int(''PA_Liq_codtdc_renta'',null,null,@codcia,null)
+select @codtdc_renta = gen.get_valor_parametro_int(''Liq_codtdc_renta'',null,null,@codcia,null)
 set @codtpl_adelanto_xiii = 0
 
 SELECT @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN
@@ -1415,7 +1415,7 @@ set @codcia = $$CODCIA$$
 set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
-select @codtdc_renta = gen.get_valor_parametro_int(''PA_Liq_codtdc_rentaGastosRep'',null,null,@codcia,null)
+select @codtdc_renta = gen.get_valor_parametro_int(''Liq_codtdc_rentaGastosRep'',null,null,@codcia,null)
 set @codtpl_adelanto_xiii = 0
 
 SELECT @fecha_ini = PPL_FECHA_INI, @fecha_fin = PPL_FECHA_FIN
@@ -1451,7 +1451,7 @@ SELECT @codpai = cia_codpai
 FROM eor.cia_companias
 WHERE cia_codigo = @codcia
 
-select @num_meses = gen.get_valor_parametro_varchar(''PA_ISRNumeroMeses'', ''pa'', null, null, null) + 1
+select @num_meses = gen.get_valor_parametro_varchar(''ISRNumeroMeses'', ''pa'', null, null, null) + 1
 
 SELECT @fecha = ppl_fecha_fin
 FROM sal.ppl_periodos_planilla
@@ -1499,7 +1499,7 @@ delete from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_
 insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_nombre],[fcu_descripcion],[fcu_select_edit],[fcu_select_run],[fcu_field_codemp],[fcu_field_codppl],[fcu_modo_asociacion_tpl],[fcu_loop_calculo],[fcu_updatable]) values ('pa','Planilla','RetroactivoSalario','RetroactivoSalario','SELECT * FROM tmp.PIR_PAGOS_INC_RETROACT 
 WHERE PIR_CODIGO < 0','SELECT * FROM tmp.PIR_PAGOS_INC_RETROACT 
 WHERE PIR_CODPPL = $$CODPPL$$
-AND PIR_CODRSA = gen.get_valor_parametro_int(''PA_CodigoRubroSalario'', ''pa'', null, null, null)','PIR_CODEMP','PIR_CODPPL','TodosExcluyendo',0,0);
+AND PIR_CODRSA = gen.get_valor_parametro_int(''CodigoRubroSalario'', ''pa'', null, null, null)','PIR_CODEMP','PIR_CODPPL','TodosExcluyendo',0,0);
 
 
 commit transaction;
@@ -1514,7 +1514,7 @@ delete from [sal].[fcu_formulacion_cursores] where [fcu_codpai] = 'pa' and [fcu_
 insert into [sal].[fcu_formulacion_cursores] ([fcu_codpai],[fcu_proceso],[fcu_nombre],[fcu_descripcion],[fcu_select_edit],[fcu_select_run],[fcu_field_codemp],[fcu_field_codppl],[fcu_modo_asociacion_tpl],[fcu_loop_calculo],[fcu_updatable]) values ('pa','Planilla','RetroGastoRep','RetroGastoRep','SELECT * FROM tmp.PIR_PAGOS_INC_RETROACT 
 WHERE PIR_CODIGO < 0','SELECT * FROM tmp.PIR_PAGOS_INC_RETROACT 
 WHERE PIR_CODPPL = $$CODPPL$$
-AND PIR_CODRSA = gen.get_valor_parametro_int(''PA_CodigoRubroGastoRep'', ''pa'', null, null, null)','PIR_CODEMP','PIR_CODPPL','TodosExcluyendo',0,0);
+AND PIR_CODRSA = gen.get_valor_parametro_int(''CodigoRubroGastoRep'', ''pa'', null, null, null)','PIR_CODEMP','PIR_CODPPL','TodosExcluyendo',0,0);
 
 
 commit transaction;
@@ -1555,7 +1555,7 @@ select *, ese_valor / 2 quincena
    and ppl_mes = @mes
    and ppl_frecuencia = 1
    and inn_codemp = emp_codigo 
-   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where tig_abreviatura = ''Salario_PA'' or tig_abreviatura = ''Certificado Medico_PA''))
+   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where (tig_abreviatura = ''Salario'' or tig_abreviatura = ''Certificado Medico'') and tig_codcia = @codcia))
   ) salario
 from (
 select emp_codigo, exp_codigo_alternativo, exp_nombres_apellidos, ese_valor, convert(numeric(12,2), ese_valor / 2) - ese_valor / 2 dif
@@ -1615,7 +1615,7 @@ from eor.cia_companias
 where cia_codigo = @codcia
 
 select inicio isr_desde, fin isr_hasta, porcentaje isr_pct, excedente isr_excedente, valor isr_valor
-from gen.get_valor_rango_parametro(''PA_TablaRentaMensual'', @codpai, null, null, null, null)
+from gen.get_valor_rango_parametro(''TablaRentaMensual'', @codpai, null, null, null, null)
 ','TodosExcluyendo',0,0);
 
 
@@ -1639,7 +1639,7 @@ from eor.cia_companias
 where cia_codigo = @codcia
 
 select inicio isr_desde, fin isr_hasta, porcentaje isr_pct, excedente isr_excedente, valor isr_valor
-from gen.get_valor_rango_parametro(''PA_TablaRentaMensualGastoRep'', @codpai, null, null, null, null)
+from gen.get_valor_rango_parametro(''TablaRentaMensualGastoRep'', @codpai, null, null, null, null)
 ','TodosExcluyendo',0,0);
 
 
@@ -1735,7 +1735,7 @@ set @codcia = $$CODCIA$$
 set @codtpl = $$CODTPL$$
 set @codppl = $$CODPPL$$
 
-SET @CODTPL_VACACION = gen.get_valor_parametro_int(''PA_CodigoPlanillaVacacion'', null, null, @CODCIA, null)
+SET @CODTPL_VACACION = gen.get_valor_parametro_int(''CodigoPlanillaVacacion'', null, null, @CODCIA, null)
 
 if @codtpl = @CODTPL_VACACION 
    set  @codppl_vacacion =  @codppl

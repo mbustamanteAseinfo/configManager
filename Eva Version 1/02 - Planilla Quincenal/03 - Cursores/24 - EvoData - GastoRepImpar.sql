@@ -34,7 +34,7 @@ select *, ese_valor / 2 quincena
    and ppl_mes = @mes
    and ppl_frecuencia = 2
    and inn_codemp = emp_codigo 
-   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where tig_abreviatura = ''Gasto Rep_PA'') )
+   and inn_codtig in ( (select tig_codigo from sal.tig_tipos_ingreso where tig_abreviatura = ''Gasto Rep'' and tig_codcia = @codcia) )
   ) salario
 from (
 select emp_codigo, exp_codigo_alternativo, exp_nombres_apellidos, ese_valor, convert(numeric(12,2), ese_valor / 2) - ese_valor / 2 dif
