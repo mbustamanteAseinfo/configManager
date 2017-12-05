@@ -1,0 +1,731 @@
+[
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\00 - EvoData - Catalogos_con_xml.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "01.00",
+    "Nombre": "00 - EvoData - Catalogos_con_xml.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\02 - EvoData - Departamentos y Municipios.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "01.02",
+    "Nombre": "02 - EvoData - Departamentos y Municipios.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\03 - EvoData - fnVacaciones.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "01.03",
+    "Nombre": "03 - EvoData - fnVacaciones.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\04 - EvoData - fn_total_horas_laborales_periodo_salario.sql",
+    "Paso": "04",
+    "Necesario": "1",
+    "Posicion": "01.04",
+    "Nombre": "04 - EvoData - fn_total_horas_laborales_periodo_salario.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\05 - EvoData - fn_total_horas_laborales_periodo.sql",
+    "Paso": "05",
+    "Necesario": "1",
+    "Posicion": "01.05",
+    "Nombre": "05 - EvoData - fn_total_horas_laborales_periodo.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\06 - EvoData - FN_DIAS_DOMINGO.sql",
+    "Paso": "06",
+    "Necesario": "1",
+    "Posicion": "01.06",
+    "Nombre": "06 - EvoData - FN_DIAS_DOMINGO.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\07 - EvoData - sal.fn_get_renta_periodo.sql",
+    "Paso": "07",
+    "Necesario": "1",
+    "Posicion": "01.07",
+    "Nombre": "07 - EvoData - sal.fn_get_renta_periodo.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\08 - EvoData - sal.fn_get_renta_anual.sql",
+    "Paso": "08",
+    "Necesario": "1",
+    "Posicion": "01.08",
+    "Nombre": "08 - EvoData - sal.fn_get_renta_anual.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\01 - General\\09 - EvoData - pa.proc_cur_SalarioNuevoIngreso.sql",
+    "Paso": "09",
+    "Necesario": "1",
+    "Posicion": "01.09",
+    "Nombre": "09 - EvoData - pa.proc_cur_SalarioNuevoIngreso.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\01 - EvoData - pa.GenPla_Inicializacion.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "02.01",
+    "Nombre": "01 - EvoData - pa.GenPla_Inicializacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\02 - EvoData - pa.proc_traslada_no_aplicados.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "02.02",
+    "Nombre": "02 - EvoData - pa.proc_traslada_no_aplicados.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\03 - EvoData - pa.GenPla_DCC_GeneraCuotas.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "02.03",
+    "Nombre": "03 - EvoData - pa.GenPla_DCC_GeneraCuotas.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\04 - EvoData - pa.GenPla_IGC_GeneraCuotas.sql",
+    "Paso": "04",
+    "Necesario": "1",
+    "Posicion": "02.04",
+    "Nombre": "04 - EvoData - pa.GenPla_IGC_GeneraCuotas.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\05 - EvoData - pa.GenPla_TNT_Revalua.sql",
+    "Paso": "05",
+    "Necesario": "1",
+    "Posicion": "02.05",
+    "Nombre": "05 - EvoData - pa.GenPla_TNT_Revalua.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\06 - EvoData - pa.GenPla_HorasExtras_Revalua.sql",
+    "Paso": "06",
+    "Necesario": "1",
+    "Posicion": "02.06",
+    "Nombre": "06 - EvoData - pa.GenPla_HorasExtras_Revalua.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\07 - EvoData - exp.fn_get_datos_rubro_salarial.sql",
+    "Paso": "07",
+    "Necesario": "1",
+    "Posicion": "02.07",
+    "Nombre": "07 - EvoData - exp.fn_get_datos_rubro_salarial.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\08 - EvoData - pa.GenPla_INC_GeneraPeriodosIncapacidad.sql",
+    "Paso": "08",
+    "Necesario": "1",
+    "Posicion": "02.08",
+    "Nombre": "08 - EvoData - pa.GenPla_INC_GeneraPeriodosIncapacidad.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\09 - EvoData - pa.GenPla_GeneraRenta.sql",
+    "Paso": "09",
+    "Necesario": "1",
+    "Posicion": "02.09",
+    "Nombre": "09 - EvoData - pa.GenPla_GeneraRenta.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\10 - EvoData - pa.GenPla_GeneraRenta_GastoRep.sql",
+    "Paso": "10",
+    "Necesario": "1",
+    "Posicion": "02.10",
+    "Nombre": "10 - EvoData - pa.GenPla_GeneraRenta_GastoRep.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\11 - EvoData - pa.GenPla_IngresosEventuales_Revalua.sql",
+    "Paso": "11",
+    "Necesario": "1",
+    "Posicion": "02.11",
+    "Nombre": "11 - EvoData - pa.GenPla_IngresosEventuales_Revalua.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\12 - EvoData - pa.GenPla_Calcula_Retroactivos.sql",
+    "Paso": "12",
+    "Necesario": "1",
+    "Posicion": "02.12",
+    "Nombre": "12 - EvoData - pa.GenPla_Calcula_Retroactivos.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\13 - EvoData - pa.GenPla_Calcula_Retroactivos_GastoRep.sql",
+    "Paso": "13",
+    "Necesario": "1",
+    "Posicion": "02.13",
+    "Nombre": "13 - EvoData - pa.GenPla_Calcula_Retroactivos_GastoRep.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\14 - EvoData - sal.tbl_rap_renta_anual_panama.sql",
+    "Paso": "14",
+    "Necesario": "1",
+    "Posicion": "02.14",
+    "Nombre": "14 - EvoData - sal.tbl_rap_renta_anual_panama.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\15 - EvoData - sal.tbl_rag_renta_anual_panama_gr.sql",
+    "Paso": "15",
+    "Necesario": "1",
+    "Posicion": "02.15",
+    "Nombre": "15 - EvoData - sal.tbl_rag_renta_anual_panama_gr.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\16 - EvoData - pa.fn_agrupador_valores_periodo_isr2.sql",
+    "Paso": "16",
+    "Necesario": "1",
+    "Posicion": "02.16",
+    "Nombre": "16 - EvoData - pa.fn_agrupador_valores_periodo_isr2.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\17 - EvoData - pa.fn_agrupador_valores_periodo_isr.sql",
+    "Paso": "17",
+    "Necesario": "1",
+    "Posicion": "02.17",
+    "Nombre": "17 - EvoData - pa.fn_agrupador_valores_periodo_isr.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\18 - EvoData - pa.tbl_qui_quincenal.sql",
+    "Paso": "18",
+    "Necesario": "1",
+    "Posicion": "02.18",
+    "Nombre": "18 - EvoData - pa.tbl_qui_quincenal.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\19 - EvoData - pa.GenPla_Finalizacion.sql",
+    "Paso": "19",
+    "Necesario": "1",
+    "Posicion": "02.19",
+    "Nombre": "19 - EvoData - pa.GenPla_Finalizacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\20 - EvoData - pa.GenPla_Genera_Reservas.sql",
+    "Paso": "20",
+    "Necesario": "1",
+    "Posicion": "02.20",
+    "Nombre": "20 - EvoData - pa.GenPla_Genera_Reservas.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\21 - EvoData - pa.GenPla_genera_partida_contable.sql",
+    "Paso": "21",
+    "Necesario": "1",
+    "Posicion": "02.21",
+    "Nombre": "21 - EvoData - pa.GenPla_genera_partida_contable.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\22 - EvoData - pa.tbl_dco_datos_contables.sql",
+    "Paso": "22",
+    "Necesario": "1",
+    "Posicion": "02.22",
+    "Nombre": "22 - EvoData - pa.tbl_dco_datos_contables.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\23 - EvoData - pa.aupla_autoriza_planilla.sql",
+    "Paso": "23",
+    "Necesario": "1",
+    "Posicion": "02.23",
+    "Nombre": "23 - EvoData - pa.aupla_autoriza_planilla.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\02 - Planilla Quincenal\\24 - EvoData - pa.proc_cur_DiasPSGS.sql",
+    "Paso": "24",
+    "Necesario": "1",
+    "Posicion": "02.24",
+    "Nombre": "24 - EvoData - pa.proc_cur_DiasPSGS.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\03 - Planilla Intermedia\\01 - EvoData - pa.tbl_aju_ajustes.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "03.01",
+    "Nombre": "01 - EvoData - pa.tbl_aju_ajustes.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\01 - EvoData - pa.vac_vacacion.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "04.01.01",
+    "Nombre": "01 - EvoData - pa.vac_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\02 - EvoData - pa.tbl_mpv_montos_pago_vacacion.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "04.01.02",
+    "Nombre": "02 - EvoData - pa.tbl_mpv_montos_pago_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\03 - EvoData - pa.tbl_ipv_inicio_promedio_vacacion.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "04.01.03",
+    "Nombre": "03 - EvoData - pa.tbl_ipv_inicio_promedio_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\04 - EvoData - pa.fn_get_inicio_promedio_vacacion.sql",
+    "Paso": "04",
+    "Necesario": "1",
+    "Posicion": "04.01.04",
+    "Nombre": "04 - EvoData - pa.fn_get_inicio_promedio_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\05 - EvoData - pa.proc_genera_montos_pago_vacacion.sql",
+    "Paso": "05",
+    "Necesario": "1",
+    "Posicion": "04.01.05",
+    "Nombre": "05 - EvoData - pa.proc_genera_montos_pago_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\06 - EvoData - pa.GenPla_Inicializacion_vac.sql",
+    "Paso": "06",
+    "Necesario": "1",
+    "Posicion": "04.01.06",
+    "Nombre": "06 - EvoData - pa.GenPla_Inicializacion_vac.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\07 - EvoData - pa.dpv_dias_pago_vacacion.sql",
+    "Paso": "07",
+    "Necesario": "1",
+    "Posicion": "04.01.07",
+    "Nombre": "07 - EvoData - pa.dpv_dias_pago_vacacion.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\08 - EvoData - pa.GenPla_Genera_Fondo_Incapacidad.sql",
+    "Paso": "08",
+    "Necesario": "1",
+    "Posicion": "04.01.08",
+    "Nombre": "08 - EvoData - pa.GenPla_Genera_Fondo_Incapacidad.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\04 - Planilla Vacacion\\01 - Base de Datos\\09 - EvoData - pa.aupla_autoriza_planilla_vac.sql",
+    "Paso": "09",
+    "Necesario": "1",
+    "Posicion": "04.01.09",
+    "Nombre": "09 - EvoData - pa.aupla_autoriza_planilla_vac.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\00 - EvoData - pa.GenPla_Inicializacion_XIII.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "05.00",
+    "Nombre": "00 - EvoData - pa.GenPla_Inicializacion_XIII.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\01 - EvoData - pa.tbl_dpx_datos_prom_xiii.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "05.01",
+    "Nombre": "01 - EvoData - pa.tbl_dpx_datos_prom_xiii.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\02 - EvoData - sal.fn_ingresos_acumulados_xiii.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "05.02",
+    "Nombre": "02 - EvoData - sal.fn_ingresos_acumulados_xiii.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\03 - EvoData - pa.GenPla_Finalizacion_XIII.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "05.03",
+    "Nombre": "03 - EvoData - pa.GenPla_Finalizacion_XIII.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\04 - EvoData - pa.dco_datos_contables.sql",
+    "Paso": "04",
+    "Necesario": "1",
+    "Posicion": "05.04",
+    "Nombre": "04 - EvoData - pa.dco_datos_contables.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\05 - EvoData - pa.GenPla_Poliza_Contable.sql",
+    "Paso": "05",
+    "Necesario": "1",
+    "Posicion": "05.05",
+    "Nombre": "05 - EvoData - pa.GenPla_Poliza_Contable.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\05 - Planilla XIII Mes\\06 - EvoData - pa.ter_decimo.sql",
+    "Paso": "06",
+    "Necesario": "1",
+    "Posicion": "05.06",
+    "Nombre": "06 - EvoData - pa.ter_decimo.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\06 - Vistas\\01 - EvoData - DCC_Descuentos_Ciclicos_V.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "06.01",
+    "Nombre": "01 - EvoData - DCC_Descuentos_Ciclicos_V.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\06 - Vistas\\02 - EvoData - view_estructura_organizativa.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "06.02",
+    "Nombre": "02 - EvoData - view_estructura_organizativa.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\01 - Reporte de planilla\\00 - EvoData - rpe_cne.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.01.00",
+    "Nombre": "00 - EvoData - rpe_cne.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "1"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\01 - Reporte de planilla\\01 - EvoConfig - configuracion_reporte.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.01.01",
+    "Nombre": "01 - EvoConfig - configuracion_reporte.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\01 - Reporte de planilla\\02 - EvoData - rpe_cne.rpt",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.01.02",
+    "Nombre": "02 - EvoData - rpe_cne.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\02 - Reporte de cheque\\00 - EvoData - net_neto_v.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.02.00",
+    "Nombre": "00 - EvoData - net_neto_v.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\02 - Reporte de cheque\\01 - EvoData - rpe_informe_pago_cheque.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.02.01",
+    "Nombre": "01 - EvoData - rpe_informe_pago_cheque.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\02 - Reporte de cheque\\02 - EvoConfig - configuracion_reporte.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.02.02",
+    "Nombre": "02 - EvoConfig - configuracion_reporte.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\02 - Reporte de cheque\\03 - EvoData - rpe_informe_pago_cheque.rpt",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "07.02.03",
+    "Nombre": "03 - EvoData - rpe_informe_pago_cheque.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\03 - Recibo Pago\\00 - EvoData - rep_recibo_pago.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.03.00",
+    "Nombre": "00 - EvoData - rep_recibo_pago.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\03 - Recibo Pago\\01 - EvoConfig - configuracion_recibo_pago.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.03.01",
+    "Nombre": "01 - EvoConfig - configuracion_recibo_pago.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\03 - Recibo Pago\\02 - EvoData - rpe_recibo_pago.rpt",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.03.02",
+    "Nombre": "02 - EvoData - rpe_recibo_pago.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\04 - Informe pago ACH\\00 - EvoData - rpe_informe_pago_ach.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.04.00",
+    "Nombre": "00 - EvoData - rpe_informe_pago_ach.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\04 - Informe pago ACH\\01 - EvoConfig - configuracion_reporte_pago_ach.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.04.01",
+    "Nombre": "01 - EvoConfig - configuracion_reporte_pago_ach.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\04 - Informe pago ACH\\02 - EvoData - rpe_informe_pago_ach.rpt",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.04.02",
+    "Nombre": "02 - EvoData - rpe_informe_pago_ach.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\05 - Informe pago Cheque\\00 - EvoData - rpe_informe_pago_cheque.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.05.00",
+    "Nombre": "00 - EvoData - rpe_informe_pago_cheque.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\05 - Informe pago Cheque\\01 - EvoConfig - configuracion_reporte_informepagocheque.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.05.01",
+    "Nombre": "01 - EvoConfig - configuracion_reporte_informepagocheque.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\05 - Informe pago Cheque\\02 - EvoData - rpe_informe_pago_cheque.rpt",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.05.02",
+    "Nombre": "02 - EvoData - rpe_informe_pago_cheque.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\06 - Anexo 03\\00 - EvoData - fn_anexo03.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.06.00",
+    "Nombre": "00 - EvoData - fn_anexo03.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\06 - Anexo 03\\01 - EvoData - rpe_anexo03.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.06.01",
+    "Nombre": "01 - EvoData - rpe_anexo03.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\06 - Anexo 03\\02 - EvoConfig - configuracion_reporte_rpe_anexo_03.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.06.02",
+    "Nombre": "02 - EvoConfig - configuracion_reporte_rpe_anexo_03.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\06 - Anexo 03\\03 - EvoData - rpe_anexo03.rpt",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "07.06.03",
+    "Nombre": "03 - EvoData - rpe_anexo03.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\00 - EvoData - tbl_iss_seguro.sql",
+    "Paso": "00",
+    "Necesario": "1",
+    "Posicion": "07.07.00",
+    "Nombre": "00 - EvoData - tbl_iss_seguro.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\01 - EvoData - proc_llena_issp.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "07.07.01",
+    "Nombre": "01 - EvoData - proc_llena_issp.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\02 - EvoData - fn_contar_caracteres.sql",
+    "Paso": "02",
+    "Necesario": "1",
+    "Posicion": "07.07.02",
+    "Nombre": "02 - EvoData - fn_contar_caracteres.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\03 - EvoData - fn_es_letra.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "07.07.03",
+    "Nombre": "03 - EvoData - fn_es_letra.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\03 - EvoData - rpe_issp_reporte.sql",
+    "Paso": "03",
+    "Necesario": "1",
+    "Posicion": "07.07.03",
+    "Nombre": "03 - EvoData - rpe_issp_reporte.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\04 - EvoConfig - configuracion_reporte_Rep_PreElaborada.sql",
+    "Paso": "04",
+    "Necesario": "1",
+    "Posicion": "07.07.04",
+    "Nombre": "04 - EvoConfig - configuracion_reporte_Rep_PreElaborada.sql",
+    "DataBase": "EvoConfig",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\05 - EvoData - vw_identificacion_expediente.sql",
+    "Paso": "05",
+    "Necesario": "1",
+    "Posicion": "07.07.05",
+    "Nombre": "05 - EvoData - vw_identificacion_expediente.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\07 - Reportes de Ley\\07 - Pre-Elaborada\\06 - EvoData - rpe_planilla_issPanama.rpt",
+    "Paso": "06",
+    "Necesario": "1",
+    "Posicion": "07.07.06",
+    "Nombre": "06 - EvoData - rpe_planilla_issPanama.rpt",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  },
+  {
+    "Ruta": "C:\\Users\\mbustamante\\Source\\Repos\\configManager\\Single Script\\08 - Mod Contratacion\\01 - EvoData - alter_contrataciones.sql",
+    "Paso": "01",
+    "Necesario": "1",
+    "Posicion": "08.01",
+    "Nombre": "01 - EvoData - alter_contrataciones.sql",
+    "DataBase": "EvoData",
+    "Ejecutado": "0"
+  }
+]

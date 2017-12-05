@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EvoScriptExecute
+﻿namespace EvoScriptExecute
 {
     class Item
     {
@@ -105,6 +99,11 @@ namespace EvoScriptExecute
             {
                 ejecutado = value;
             }
+        }
+
+        public override string ToString()
+        {
+            return this.posicion + " - " + this.nombre.Split('-')[1].Trim() + " - " + this.nombre.Split('-')[2];
         }
     }
 }

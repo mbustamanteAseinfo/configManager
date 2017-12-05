@@ -10,13 +10,12 @@ c:\users\mbustamante\documents\visual studio 2015\Projects\Generador de Mapa de 
 c:\users\mbustamante\documents\visual studio 2015\Projects\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.exe
 c:\users\mbustamante\documents\visual studio 2015\Projects\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.pdb
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\bin\Debug\Generador de Mapa de Ejecución.exe.config
-C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.exe
-C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.pdb
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\bin\Debug\Generador de Mapa de Ejecución.exe
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\bin\Debug\Generador de Mapa de Ejecución.pdb
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\bin\Debug\Newtonsoft.Json.dll
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\bin\Debug\Newtonsoft.Json.xml
-C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.csprojResolveAssemblyReference.cache
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador_de_Mapa_de_Ejecución.Form1.resources
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador_de_Mapa_de_Ejecución.Properties.Resources.resources
 C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.csproj.GenerateResource.Cache
+C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.exe
+C:\Users\mbustamante\Source\Repos\configManager\Generador de Mapa de Ejecución\Generador de Mapa de Ejecución\obj\Debug\Generador de Mapa de Ejecución.pdb

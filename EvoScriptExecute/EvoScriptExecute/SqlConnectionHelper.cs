@@ -1,11 +1,8 @@
 ﻿using Microsoft.SqlServer.Management.Common;
 using Microsoft.SqlServer.Management.Smo;
-using System;
-using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 
 namespace EvoScriptExecute
@@ -55,6 +52,22 @@ namespace EvoScriptExecute
         {
             var server = GetServer();
             server.ConnectionContext.ExecuteNonQuery(scriptText);
+        }
+
+        public void updateUpload(string rpt_name, string ruta) {
+            using (SqlConnection con = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("gen.update_uploads_rpt", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@reportName", SqlDbType.VarChar).Value = rpt_name;
+                    cmd.Parameters.Add("@url", SqlDbType.VarChar).Value = ruta;
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
